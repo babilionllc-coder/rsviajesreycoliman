@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Cotización Servicios Mensuales — RS Viajes Rey Colimán | JegoDigital</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap');
+        
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        :root {
+            --bg: #0F0F0F;
+            --card: #1A1A1A;
+            --card-border: #2A2A2A;
+            --gold: #C9A84C;
+            --gold-light: #E8D48B;
+            --text: #E0E0E0;
+            --text-muted: #888;
+            --green: #34D399;
+            --blue: #60A5FA;
+            --purple: #A78BFA;
+            --orange: #FB923C;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            font-size: 13px;
+            line-height: 1.6;
+        }
+        
+        /* ── COVER PAGE ── */
+        .cover {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 60px 40px;
+            position: relative;
+            page-break-after: always;
+            background: radial-gradient(ellipse at 30% 20%, rgba(201,168,76,0.08) 0%, transparent 60%),
+                        radial-gradient(ellipse at 70% 80%, rgba(96,165,250,0.05) 0%, transparent 60%),
+                        var(--bg);
+        }
+        
+        .cover-logo {
+            font-size: 36px;
+            font-weight: 800;
+            letter-spacing: -1px;
+            margin-bottom: 60px;
+        }
+        .cover-logo .jego { color: var(--gold); }
+        .cover-logo .digital { color: #fff; }
+        
+        .cover-badge {
+            display: inline-block;
+            background: rgba(201,168,76,0.15);
+            color: var(--gold);
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            padding: 8px 24px;
+            border-radius: 30px;
+            border: 1px solid rgba(201,168,76,0.3);
+            margin-bottom: 30px;
+        }
+        
+        .cover-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 42px;
+            font-weight: 700;
+            text-align: center;
+            color: #fff;
+            line-height: 1.2;
+            margin-bottom: 16px;
+        }
+        
+        .cover-subtitle {
+            font-size: 16px;
+            color: var(--text-muted);
+            text-align: center;
+            max-width: 500px;
+            margin-bottom: 50px;
+        }
+        
+        .cover-meta {
+            display: flex;
+            gap: 48px;
+            text-align: center;
+        }
+        
+        .cover-meta-label {
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--gold);
+            margin-bottom: 6px;
+        }
+        
+        .cover-meta-value {
+            font-size: 14px;
+            font-weight: 500;
+            color: #fff;
+        }
+        
+        .cover-footer {
+            position: absolute;
+            bottom: 30px;
+            font-size: 10px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--text-muted);
+        }
+        
+        /* ── CONTENT PAGES ── */
+        .content {
+            padding: 50px 60px;
+            page-break-before: always;
+        }
+        
+        .page-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 20px;
+            border-bottom: 1px solid var(--card-border);
+            margin-bottom: 36px;
+        }
+        
+        .page-header-logo {
+            font-size: 18px;
+            font-weight: 800;
+        }
+        .page-header-logo .jego { color: var(--gold); }
+        .page-header-logo .digital { color: #fff; }
+        
+        .page-number {
+            font-size: 11px;
+            color: var(--text-muted);
+        }
+        
+        .section-num {
+            display: inline-block;
+            background: var(--gold);
+            color: #000;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 4px;
+            margin-bottom: 12px;
+        }
+        
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 28px;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 8px;
+        }
+        
+        .section-desc {
+            font-size: 14px;
+            color: var(--text-muted);
+            margin-bottom: 30px;
+            max-width: 600px;
+        }
+        
+        /* ── INTRO TEXT ── */
+        .intro-text {
+            background: var(--card);
+            border: 1px solid var(--card-border);
+            border-radius: 12px;
+            padding: 28px 32px;
+            margin-bottom: 30px;
+            font-size: 14px;
+            line-height: 1.8;
+            color: var(--text);
+        }
+        
+        .intro-text strong {
+            color: #fff;
+        }
+        
+        /* ── SERVICE CARDS ── */
+        .service-group {
+            background: var(--card);
+            border: 1px solid var(--card-border);
+            border-radius: 12px;
+            padding: 28px 28px 20px;
+            margin-bottom: 20px;
+        }
+        
+        .service-group-header {
+            font-size: 16px;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 20px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid var(--card-border);
+        }
+        
+        .service-item {
+            display: flex;
+            gap: 14px;
+            margin-bottom: 16px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid rgba(255,255,255,0.04);
+        }
+        
+        .service-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        
+        .icon-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            margin-top: 5px;
+            flex-shrink: 0;
+        }
+        
+        .icon-dot.green { background: var(--green); }
+        .icon-dot.blue { background: var(--blue); }
+        .icon-dot.purple { background: var(--purple); }
+        .icon-dot.orange { background: var(--orange); }
+        .icon-dot.gold { background: var(--gold); }
+        
+        .service-title {
+            font-weight: 600;
+            color: #fff;
+            font-size: 13.5px;
+            margin-bottom: 4px;
+        }
+        
+        .service-desc {
+            font-size: 12.5px;
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+        
+        .service-qty {
+            display: inline-block;
+            background: rgba(201,168,76,0.15);
+            color: var(--gold);
+            font-size: 11px;
+            font-weight: 600;
+            padding: 2px 10px;
+            border-radius: 4px;
+            margin-left: 8px;
+        }
+        
+        /* ── PRICE BOX ── */
+        .price-box {
+            background: linear-gradient(135deg, rgba(201,168,76,0.12) 0%, rgba(201,168,76,0.04) 100%);
+            border: 2px solid var(--gold);
+            border-radius: 16px;
+            padding: 36px 40px;
+            text-align: center;
+            margin: 36px 0;
+        }
+        
+        .price-label {
+            font-size: 12px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-bottom: 8px;
+        }
+        
+        .price-amount {
+            font-family: 'Playfair Display', serif;
+            font-size: 52px;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 4px;
+        }
+        
+        .price-currency {
+            font-size: 22px;
+            color: var(--gold);
+            font-weight: 400;
+        }
+        
+        .price-period {
+            font-size: 14px;
+            color: var(--text-muted);
+            margin-bottom: 12px;
+        }
+        
+        .price-note {
+            font-size: 12px;
+            color: var(--text-muted);
+            font-style: italic;
+        }
+        
+        /* ── DELIVERABLES TABLE ── */
+        .deliverables-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 24px 0;
+        }
+        
+        .deliverables-table th {
+            background: rgba(201,168,76,0.15);
+            color: var(--gold);
+            text-align: left;
+            padding: 12px 16px;
+            font-size: 11px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+        
+        .deliverables-table td {
+            padding: 12px 16px;
+            border-bottom: 1px solid var(--card-border);
+            font-size: 12.5px;
+        }
+        
+        .deliverables-table tr:last-child td {
+            border-bottom: none;
+        }
+        
+        .deliverables-table tbody tr:nth-child(even) {
+            background: rgba(255,255,255,0.02);
+        }
+        
+        .qty-badge {
+            display: inline-block;
+            background: rgba(52,211,153,0.15);
+            color: var(--green);
+            font-weight: 600;
+            font-size: 11px;
+            padding: 2px 10px;
+            border-radius: 4px;
+        }
+        
+        /* ── TERMS ── */
+        .terms {
+            background: var(--card);
+            border: 1px solid var(--card-border);
+            border-radius: 12px;
+            padding: 24px 28px;
+            margin-top: 24px;
+        }
+        
+        .terms h3 {
+            font-size: 14px;
+            color: #fff;
+            margin-bottom: 14px;
+        }
+        
+        .terms li {
+            font-size: 12px;
+            color: var(--text-muted);
+            margin-bottom: 8px;
+            margin-left: 16px;
+        }
+        
+        /* ── SIGNATURES ── */
+        .signatures {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 60px;
+            padding-top: 30px;
+        }
+        
+        .sig-block {
+            width: 45%;
+            text-align: center;
+        }
+        
+        .sig-line {
+            border-top: 1px solid var(--card-border);
+            padding-top: 12px;
+            margin-top: 60px;
+        }
+        
+        .sig-name {
+            font-weight: 600;
+            color: #fff;
+            font-size: 13px;
+        }
+        
+        .sig-role {
+            font-size: 11px;
+            color: var(--text-muted);
+        }
+        
+        /* ── FOOTER ── */
+        .page-footer {
+            text-align: center;
+            padding-top: 30px;
+            margin-top: 40px;
+            border-top: 1px solid var(--card-border);
+            font-size: 10px;
+            color: var(--text-muted);
+            letter-spacing: 1px;
+        }
+        
+        @media print {
+            body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+            .content { page-break-before: always; }
+            .service-group { page-break-inside: avoid; }
+            .price-box { page-break-inside: avoid; }
+            .terms { page-break-inside: avoid; }
+            .signatures { page-break-inside: avoid; }
+            .intro-text { page-break-inside: avoid; }
+            .deliverables-table { page-break-inside: avoid; }
+            .service-item { page-break-inside: avoid; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ==================== COVER ==================== -->
+    <div class="cover">
+        <div class="cover-logo"><span class="jego">Jego</span><span class="digital">Digital</span></div>
+        <div class="cover-badge">Cotización de Servicios</div>
+        <div class="cover-title">Plan de Marketing<br>Digital Mensual</div>
+        <div class="cover-subtitle">Estrategia integral de contenido, SEO orgánico y email marketing para posicionar a RS Viajes Rey Colimán como la agencia líder en Colima.</div>
+        
+        <div class="cover-meta">
+            <div>
+                <div class="cover-meta-label">Preparado Por</div>
+                <div class="cover-meta-value">Alex Jego —<br>JegoDigital</div>
+            </div>
+            <div>
+                <div class="cover-meta-label">Preparado Para</div>
+                <div class="cover-meta-value">Nely Galindo —<br>RS Viajes Rey Colimán</div>
+            </div>
+            <div>
+                <div class="cover-meta-label">Fecha</div>
+                <div class="cover-meta-value">25 de Marzo,<br>2026</div>
+            </div>
+            <div>
+                <div class="cover-meta-label">Vigencia</div>
+                <div class="cover-meta-value">30 días a partir<br>de esta fecha</div>
+            </div>
+        </div>
+        <div class="cover-footer">CONFIDENCIAL — jegodigital.com — La Ventaja Impulsada por IA</div>
+    </div>
+
+    <!-- ==================== PAGE 2: INTRO + SERVICIOS ==================== -->
+    <div class="content">
+        <div class="page-header">
+            <div class="page-header-logo"><span class="jego">Jego</span><span class="digital">Digital</span></div>
+            <div class="page-number">Página 2 de 4</div>
+        </div>
+
+        <div class="section-num">01</div>
+        <div class="section-title">Propuesta de Servicios</div>
+        <div class="section-desc">Estrategia mensual diseñada para impulsar el crecimiento orgánico de RS Viajes Rey Colimán a través de contenido, SEO y presencia digital.</div>
+
+        <div class="intro-text">
+            Estimada <strong>Nely Galindo</strong> — RS Viajes Rey Colimán,<br><br>
+            Tras haber completado exitosamente la optimización integral de su sitio web — incluyendo SEO técnico, sistema bilingüe, blog SEO, Google Analytics 4 y Google Search Console — presentamos esta propuesta de servicios mensuales para continuar el crecimiento de su presencia digital.<br><br>
+            <strong>Nuestro objetivo principal es aumentar la visibilidad de RS Viajes Rey Colimán</strong> en Google y redes sociales para que más personas en Colima y México encuentren sus servicios cuando buscan agencias de viajes, paquetes turísticos y destinos.<br><br>
+            Nuestro enfoque se centra exclusivamente en <strong>tráfico orgánico</strong>: posicionamiento natural en Google, contenido de valor y nurturing de clientes a través de email marketing. <strong>No utilizamos publicidad pagada (Google Ads o Meta Ads)</strong>, sino estrategias de contenido que generan resultados sostenibles a largo plazo.<br><br>
+            En JegoDigital no prometemos resultados mágicos — <strong>prometemos trabajo profesional, dedicado y transparente</strong>. Nuestro único objetivo es el éxito de nuestros clientes. Cada acción que tomamos está diseñada para asegurar que usted esté satisfecha con los resultados y que su negocio crezca de manera sostenible.<br><br>
+            Además, nos comprometemos a <strong>analizar constantemente a la competencia</strong>, estudiar las tendencias del mercado turístico y evaluar los reportes y analíticas de su sitio para <strong>proponer nuevas ideas y estrategias</strong> cada mes. Nuestro trabajo no es estático — siempre buscamos cómo mejorar el contenido, optimizar lo que funciona y encontrar nuevas oportunidades basadas en datos reales para mantener a RS Viajes un paso adelante.
+        </div>
+
+        <!-- Blog & Content -->
+        <div class="service-group">
+            <div class="service-group-header">✍️ Creación de Contenido SEO</div>
+            <div class="service-item">
+                <div class="icon-dot green"></div>
+                <div>
+                    <div class="service-title">Blog Posts SEO Optimizados <span class="service-qty">8–12 por mes</span></div>
+                    <div class="service-desc">Artículos de 1,500–3,000 palabras orientados a keywords estratégicos de viaje. Cada post incluye: investigación de keywords, schema JSON-LD (BlogPosting + FAQ), meta tags SEO completos, Open Graph para redes sociales, y enlaces internos. Objetivo: 2-3 publicaciones por semana para construir autoridad orgánica en Google y mejorar posicionamiento en buscadores.</div>
+                </div>
+            </div>
+            <div class="service-item">
+                <div class="icon-dot green"></div>
+                <div>
+                    <div class="service-title">Actualización de Datos Estructurados <span class="service-qty">Mensual</span></div>
+                    <div class="service-desc">Agregar nuevas preguntas FAQ al schema del sitio, actualizar datos estructurados con nuevos servicios y paquetes, y optimizar contenido para mejorar la aparición en resultados enriquecidos de Google.</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Social Media -->
+        <div class="service-group">
+            <div class="service-group-header">📱 Gestión de Redes Sociales</div>
+            <div class="service-item">
+                <div class="icon-dot blue"></div>
+                <div>
+                    <div class="service-title">Publicaciones en Redes Sociales <span class="service-qty">12–16 por mes</span></div>
+                    <div class="service-desc">Diseño y publicación de contenido para Instagram, Facebook y TikTok. Incluye: imágenes promocionales de destinos, carruseles informativos, Reels/Stories con tips de viaje, y publicaciones de engagement. Calendario editorial mensual con aprobación previa.</div>
+                </div>
+            </div>
+            <div class="service-item">
+                <div class="icon-dot blue"></div>
+                <div>
+                    <div class="service-title">Gestión de Google Business Profile <span class="service-qty">Semanal</span></div>
+                    <div class="service-desc">Publicaciones semanales en Google Business Profile con ofertas y destinos. Respuesta a reseñas de clientes. Actualización de fotos, horarios y servicios. Crítico para búsquedas locales como "agencia de viajes en Colima".</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== PAGE 3: MORE SERVICES + PRICE ==================== -->
+    <div class="content">
+        <div class="page-header">
+            <div class="page-header-logo"><span class="jego">Jego</span><span class="digital">Digital</span></div>
+            <div class="page-number">Página 3 de 4</div>
+        </div>
+
+        <div class="section-num">02</div>
+        <div class="section-title">Servicios Adicionales Incluidos</div>
+
+        <!-- Email Marketing -->
+        <div class="service-group">
+            <div class="service-group-header">📧 Email Marketing & Nurturing</div>
+            <div class="service-item">
+                <div class="icon-dot purple"></div>
+                <div>
+                    <div class="service-title">Campañas de Email Marketing <span class="service-qty">4 por mes</span></div>
+                    <div class="service-desc">Diseño y envío de newsletters semanales a la base de suscriptores. Contenido: nuevos destinos, promociones exclusivas, tips de viaje y ofertas de temporada. Incluye diseño responsive, copy persuasivo en español, y call-to-action directos a WhatsApp.</div>
+                </div>
+            </div>
+            <div class="service-item">
+                <div class="icon-dot purple"></div>
+                <div>
+                    <div class="service-title">Secuencias de Automatización <span class="service-qty">Setup inicial + optimización</span></div>
+                    <div class="service-desc">Configuración de flujos automáticos: bienvenida a nuevos suscriptores, seguimiento post-cotización, recordatorios de viajes apartados, y re-engagement de contactos inactivos. Nurturing automatizado que convierte prospectos en clientes.</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Monitoring & Reporting -->
+        <div class="service-group">
+            <div class="service-group-header">📊 Monitoreo, SEO & Reportes</div>
+            <div class="service-item">
+                <div class="icon-dot orange"></div>
+                <div>
+                    <div class="service-title">Monitoreo de Google Analytics & Search Console <span class="service-qty">Continuo</span></div>
+                    <div class="service-desc">Seguimiento de métricas clave: tráfico orgánico, palabras clave posicionadas, páginas más visitadas, tasa de rebote y conversiones. Detección y resolución de errores de rastreo.</div>
+                </div>
+            </div>
+            <div class="service-item">
+                <div class="icon-dot orange"></div>
+                <div>
+                    <div class="service-title">Reporte Mensual de Rendimiento <span class="service-qty">1 por mes</span></div>
+                    <div class="service-desc">Informe ejecutivo con métricas de tráfico, crecimiento SEO, rendimiento de blog posts, engagement en redes sociales, y resultados de email marketing. Incluye recomendaciones y plan para el siguiente mes.</div>
+                </div>
+            </div>
+            <div class="service-item">
+                <div class="icon-dot orange"></div>
+                <div>
+                    <div class="service-title">Mantenimiento Web <span class="service-qty">Según necesidad</span></div>
+                    <div class="service-desc">Actualizaciones menores del sitio web: nuevos paquetes de viaje, cambio de banners promocionales, ajustes de contenido, y soporte técnico general.</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Strategy & Competitive Analysis -->
+        <div class="service-group">
+            <div class="service-group-header">🎯 Estrategia & Análisis de Competencia</div>
+            <div class="service-item">
+                <div class="icon-dot gold"></div>
+                <div>
+                    <div class="service-title">Análisis de Competencia <span class="service-qty">Mensual</span></div>
+                    <div class="service-desc">Estudio mensual de las estrategias digitales de agencias de viajes competidoras en Colima y la región. Identificación de oportunidades de contenido, keywords donde la competencia no está posicionada, y tendencias del mercado turístico para mantener a RS Viajes siempre un paso adelante.</div>
+                </div>
+            </div>
+            <div class="service-item">
+                <div class="icon-dot gold"></div>
+                <div>
+                    <div class="service-title">Propuestas de Nuevas Estrategias <span class="service-qty">Continuo</span></div>
+                    <div class="service-desc">Basándonos en los reportes de analítica, tendencias de búsqueda y el análisis de competencia, proponemos nuevas ideas y estrategias cada mes: tipos de contenido, temas de blog, campañas de temporada, mejoras al sitio web y oportunidades de crecimiento.</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- BONUS -->
+        <div class="service-group" style="border-color: var(--gold); border-width: 2px;">
+            <div class="service-group-header">🎁 BONUS Incluido — Chatbot & Automatización</div>
+            <div class="service-item">
+                <div class="icon-dot gold"></div>
+                <div>
+                    <div class="service-title">Chatbot Automatizado para el Sitio Web <span class="service-qty" style="background:rgba(52,211,153,0.15);color:var(--green);">INCLUIDO</span></div>
+                    <div class="service-desc">Configuración e implementación de un chatbot en el sitio web de RS Viajes que atiende a sus clientes <strong style="color:#fff;">24 horas al día, 7 días a la semana</strong> — incluso cuando la oficina está cerrada. Responde consultas sobre paquetes, destinos, horarios, precios y dirige al contacto por WhatsApp. Nos encargamos de que todo funcione correctamente y siempre esté actualizado.</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ── PRICE ── -->
+        <div class="price-box">
+            <div class="price-label">Inversión Mensual</div>
+            <div class="price-amount">$5,000 <span class="price-currency">MXN</span></div>
+            <div class="price-period">por mes · IVA incluido</div>
+            <div class="price-note">Pago mensual · Sin contrato a largo plazo · Cancelación con 15 días de aviso</div>
+        </div>
+    </div>
+
+    <!-- ==================== PAGE 4: DELIVERABLES + TERMS ==================== -->
+    <div class="content">
+        <div class="page-header">
+            <div class="page-header-logo"><span class="jego">Jego</span><span class="digital">Digital</span></div>
+            <div class="page-number">Página 4 de 4</div>
+        </div>
+
+        <div class="section-num">03</div>
+        <div class="section-title">Resumen de Entregables</div>
+        <div class="section-desc">Detalle de todo lo que recibirá cada mes como parte del plan de marketing digital.</div>
+
+        <table class="deliverables-table">
+            <thead>
+                <tr>
+                    <th>Entregable</th>
+                    <th>Cantidad</th>
+                    <th>Frecuencia</th>
+                    <th>Descripción</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="color:#fff;font-weight:600;">Blog Posts SEO</td>
+                    <td><span class="qty-badge">8–12</span></td>
+                    <td>2–3 por semana</td>
+                    <td>Artículos optimizados con keywords + schema</td>
+                </tr>
+                <tr>
+                    <td style="color:#fff;font-weight:600;">Posts Redes Sociales</td>
+                    <td><span class="qty-badge">12–16</span></td>
+                    <td>3–4 por semana</td>
+                    <td>Instagram, Facebook, TikTok</td>
+                </tr>
+                <tr>
+                    <td style="color:#fff;font-weight:600;">Newsletters Email</td>
+                    <td><span class="qty-badge">4</span></td>
+                    <td>1 por semana</td>
+                    <td>Promos, destinos, tips de viaje</td>
+                </tr>
+                <tr>
+                    <td style="color:#fff;font-weight:600;">Google Business Posts</td>
+                    <td><span class="qty-badge">4</span></td>
+                    <td>1 por semana</td>
+                    <td>Ofertas y destinos en GBP</td>
+                </tr>
+                <tr>
+                    <td style="color:#fff;font-weight:600;">Actualización Datos Estructurados</td>
+                    <td><span class="qty-badge">1</span></td>
+                    <td>Mensual</td>
+                    <td>FAQs, datos estructurados, Google</td>
+                </tr>
+                <tr>
+                    <td style="color:#fff;font-weight:600;">Reporte de Rendimiento</td>
+                    <td><span class="qty-badge">1</span></td>
+                    <td>Mensual</td>
+                    <td>Métricas, análisis y recomendaciones</td>
+                </tr>
+                <tr>
+                    <td style="color:#fff;font-weight:600;">Mantenimiento Web</td>
+                    <td><span class="qty-badge">—</span></td>
+                    <td>Según necesidad</td>
+                    <td>Actualizaciones, ajustes, soporte</td>
+                </tr>
+                <tr>
+                    <td style="color:#fff;font-weight:600;">Análisis de Competencia</td>
+                    <td><span class="qty-badge">1</span></td>
+                    <td>Mensual</td>
+                    <td>Estudio de competidores y oportunidades</td>
+                </tr>
+                <tr>
+                    <td style="color:#fff;font-weight:600;">Automatización Email</td>
+                    <td><span class="qty-badge">—</span></td>
+                    <td>Setup + optimización</td>
+                    <td>Flujos de bienvenida, seguimiento, re-engagement</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Terms -->
+        <div class="terms">
+            <h3>📋 Términos y Condiciones</h3>
+            <ul>
+                <li>El servicio inicia a partir de la confirmación del primer pago.</li>
+                <li>Los contenidos de blog y redes sociales serán enviados para aprobación antes de su publicación.</li>
+                <li>El calendario editorial mensual se presenta durante los primeros 3 días de cada mes.</li>
+                <li>Las métricas y reportes se entregan entre el día 1 y 5 de cada mes.</li>
+                <li>El mantenimiento web cubre ajustes menores. Rediseños o funcionalidades nuevas se cotizan por separado.</li>
+                <li>La plataforma de email marketing será seleccionada e implementada como parte del setup inicial (sin costo adicional).</li>
+                <li>Cancelación del servicio con mínimo 15 días de anticipación.</li>
+                <li>Esta cotización tiene una vigencia de 30 días a partir de la fecha de emisión.</li>
+            </ul>
+            <div style="margin-top:18px; padding:16px 20px; background:rgba(201,168,76,0.08); border:1px solid rgba(201,168,76,0.25); border-radius:8px;">
+                <div style="font-size:12px; font-weight:600; color:#C9A84C; text-transform:uppercase; letter-spacing:1.5px; margin-bottom:8px;">💳 Datos Bancarios para Pago</div>
+                <div style="font-size:13px; color:#E0E0E0; line-height:1.8;">
+                    <strong style="color:#fff;">Banco:</strong> Bancoppel<br>
+                    <strong style="color:#fff;">CLABE:</strong> 137691105047334204<br>
+                    <strong style="color:#fff;">Beneficiario:</strong> Alex Jego
+                </div>
+            </div>
+        </div>
+
+        <!-- Signatures -->
+        <div class="signatures">
+            <div class="sig-block">
+                <div class="sig-line">
+                    <div class="sig-name">Alex Jego</div>
+                    <div class="sig-role">Director — JegoDigital</div>
+                </div>
+            </div>
+            <div class="sig-block">
+                <div class="sig-line">
+                    <div class="sig-name">Nely Galindo</div>
+                    <div class="sig-role">RS Viajes Rey Colimán<br>Tel: 312 550 4084 · reycoliman@rsviajes.com.mx</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="page-footer">
+            CONFIDENCIAL — jegodigital.com — Marketing Digital Profesional<br>
+            Contacto: info@jegodigital.com · WhatsApp: +52 998 787 5321
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,4 +1,8 @@
 User-agent: *
 Allow: /
+Disallow: /*.csv$
+Disallow: /*.zip$
+Disallow: /SEO antigravity/
+Disallow: /report/
 
 Sitemap: https://rsviajesreycoliman.com/sitemap.xml

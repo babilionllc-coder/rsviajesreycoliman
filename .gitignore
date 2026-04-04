@@ -1,0 +1,14 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Lead/outreach CSV files (never in repo root — go in /outreach/)
+*.csv
+*.txt
+
+# Internal tools and docs
+SEO antigravity/
+SEO-AEO-PLAN-ABRIL-2026.md
+RS_VIAJES_STRATEGY_INSTRUCTIONS.md
+proxy.php
+README.txt

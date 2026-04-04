@@ -17,6 +17,18 @@
     <priority>0.8</priority>
   </url>
 
+  <!-- Pillar Page: Guía Completa de Viajes desde México (Topic Hub) -->
+  <url>
+    <loc>https://rsviajesreycoliman.com/blog/guia-completa-viajes-desde-mexico</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://rsviajesreycoliman.com/blog/images/guia-completa-viajes-desde-mexico.png</image:loc>
+      <image:caption>Guía Completa de Viajes desde México — Destinos, Precios y Tips 2026</image:caption>
+    </image:image>
+  </url>
+
   <!-- Blog Post: Cuánto Cuesta Viajar a Europa desde México -->
   <url>
     <loc>https://rsviajesreycoliman.com/blog/cuanto-cuesta-viajar-a-europa-desde-mexico</loc>
@@ -122,6 +134,74 @@
     <image:image>
       <image:loc>https://rsviajesreycoliman.com/blog/images/viajes-costa-rica-todo-incluido.png</image:loc>
       <image:caption>Viajes a Costa Rica todo incluido — Volcán Arenal y playas del Pacífico</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Interior Pages -->
+  <url>
+    <loc>https://rsviajesreycoliman.com/viajes-internacionales</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://rsviajesreycoliman.com/viajes-nacionales</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://rsviajesreycoliman.com/mas-destinos</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://rsviajesreycoliman.com/revista</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://rsviajesreycoliman.com/sobre-nosotros</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Blog Post: Viajes a París desde México 2026 -->
+  <url>
+    <loc>https://rsviajesreycoliman.com/blog/viajes-a-paris-desde-mexico</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://rsviajesreycoliman.com/blog/images/viajes-a-paris-desde-mexico.png</image:loc>
+      <image:caption>Viajes a París desde México 2026 — Paquetes y precios desde Colima</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Blog Post: Viajes a Italia desde México 2026 -->
+  <url>
+    <loc>https://rsviajesreycoliman.com/blog/viajes-a-italia-desde-mexico</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://rsviajesreycoliman.com/blog/images/viajes-a-italia-desde-mexico.png</image:loc>
+      <image:caption>Viajes a Italia desde México 2026 — Roma, Venecia, Florencia desde Colima</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Blog Post: Mejor Agencia de Viajes en Colima -->
+  <url>
+    <loc>https://rsviajesreycoliman.com/blog/mejor-agencia-de-viajes-en-colima</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://rsviajesreycoliman.com/blog/images/mejor-agencia-de-viajes-en-colima.png</image:loc>
+      <image:caption>Mejor agencia de viajes en Colima 2026 — RS Viajes Rey Colimán</image:caption>
     </image:image>
   </url>
 

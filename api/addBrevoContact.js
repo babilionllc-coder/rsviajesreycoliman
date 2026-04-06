@@ -27,6 +27,25 @@ export default async function handler(req, res) {
       return res.status(500).json({ error: 'Falta configuración del servidor.' });
     }
 
+    // Parse and sanitize WhatsApp number
+    const attributes = {
+      NOMBRE: nombre,
+      DESTINO: destino || '',
+      PASAJEROS: pasajeros || '',
+      FECHAS: fechas || '',
+      MENSAJE: mensaje || '',
+    };
+
+    if (whatsapp) {
+      let cleanPhone = whatsapp.replace(/\D/g, '');
+      if (cleanPhone.length === 10) {
+        cleanPhone = '52' + cleanPhone; // Default to Mexico (+52) if 10 digits
+      }
+      if (cleanPhone.length > 0) {
+        attributes.WHATSAPP = '+' + cleanPhone; // Brevo requires + prefix
+      }
+    }
+
     // 1. Create/update contact in Brevo with attributes
     const response = await fetch('https://api.brevo.com/v3/contacts', {
       method: 'POST',
@@ -36,14 +55,7 @@ export default async function handler(req, res) {
       },
       body: JSON.stringify({
         email,
-        attributes: {
-          NOMBRE: nombre,
-          WHATSAPP: whatsapp || '',
-          DESTINO: destino || '',
-          PASAJEROS: pasajeros || '',
-          FECHAS: fechas || '',
-          MENSAJE: mensaje || '',
-        },
+        attributes,
         listIds: [6],          // List #6 — Leads Web RS Viajes (triggers automation)
         updateEnabled: true,   // Update if contact already exists
       })

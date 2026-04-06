@@ -365,6 +365,7 @@ var tripRenderer = (function () {
       if (card.days) html += '      <span class="trip-badge trip-badge--days"><i class="fas fa-sun"></i> ' + card.days + ' ' + (lang === 'en' ? 'Days' : 'Días') + '</span>';
       if (card.nights) html += '      <span class="trip-badge trip-badge--nights"><i class="fas fa-moon"></i> ' + card.nights + ' ' + (lang === 'en' ? 'Nights' : 'Noches') + '</span>';
       html += '    </div>';
+      html += '    <button class="trip-card__cotizar-badge" onclick="event.preventDefault();event.stopPropagation();CotizarModal.open(\'' + escHtml(card.title).replace(/'/g, "\\'") + '\')" title="' + (lang === 'en' ? 'Get Quote' : 'Cotizar') + '"><i class="fas fa-tag"></i> ' + (lang === 'en' ? 'Quote' : 'Cotizar') + '</button>';
       if (card.price) {
         html += '    <div class="trip-card__price-tag">' + (lang === 'en' ? 'From' : 'Desde') + ' <strong>' + card.price + '</strong> ' + card.currency;
         if (card.extraPrice) html += ' <small>' + card.extraPrice + '</small>';
@@ -504,10 +505,15 @@ var tripRenderer = (function () {
       html += '</div>';
     }
 
-    /* CTA */
-    html += '<div class="trip-detail__cta-section">';
-    html += '  <a href="https://wa.me/525565838317?text=' + encodeURIComponent((lang === 'en' ? 'Hi! I\'m interested in the trip: ' : '¡Hola! Me interesa el viaje: ') + detail.title) + '" target="_blank" class="trip-detail__cta-btn">';
-    html += '    <i class="fab fa-whatsapp"></i> ' + (lang === 'en' ? 'Book Now via WhatsApp' : 'Reserva por WhatsApp');
+    /* CTA — Dual buttons: Cotizar (primary) + WhatsApp (secondary) */
+    var waPhone = '523125504084';
+    try { var _d = JSON.parse(localStorage.getItem('data')); if (_d && _d.contacto && _d.contacto.whatsapp) waPhone = '52' + _d.contacto.whatsapp; } catch(e){}
+    html += '<div class="trip-detail__cta-dual">';
+    html += '  <button class="trip-detail__cta-primary" onclick="CotizarModal.open(\'' + escHtml(detail.title).replace(/'/g, "\\'") + '\')">';
+    html += '    <i class="fas fa-tag"></i> ' + (lang === 'en' ? 'Get a Free Quote' : 'Cotizar Este Viaje');
+    html += '  </button>';
+    html += '  <a href="https://api.whatsapp.com/send/?phone=' + waPhone + '&text=' + encodeURIComponent((lang === 'en' ? 'Hi! I\'m interested in the trip: ' : '¡Hola! Me interesa el viaje: ') + detail.title) + '" target="_blank" rel="noopener noreferrer" class="trip-detail__cta-secondary">';
+    html += '    <i class="fab fa-whatsapp"></i> ' + (lang === 'en' ? 'Or message us on WhatsApp' : 'O escríbenos por WhatsApp');
     html += '  </a>';
     html += '</div>';
 

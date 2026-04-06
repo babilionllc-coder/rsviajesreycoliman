@@ -176,10 +176,15 @@ function loadViaje(){
           bodyHtml += '</div>'
         }
 
-        // WhatsApp CTA
-        bodyHtml += '<div class="trip-detail__cta-section">'
-        bodyHtml += '<a href="https://api.whatsapp.com/send/?phone=523125504084&text=' + encodeURIComponent(i18n.t('wa.message') + ' ' + viaje.nombre) + '" target="_blank" rel="noopener noreferrer" class="trip-detail__cta-btn">'
-        bodyHtml += '<i class="fab fa-whatsapp"></i> ' + (i18n.getLang() === 'en' ? 'Book on WhatsApp' : 'Reservar por WhatsApp')
+        // Dual CTA: Cotizar (primary) + WhatsApp (secondary)
+        var _waPhone = '523125504084';
+        try { var _cd = JSON.parse(localStorage.getItem('data')); if (_cd && _cd.contacto && _cd.contacto.whatsapp) _waPhone = '52' + _cd.contacto.whatsapp; } catch(e){}
+        bodyHtml += '<div class="trip-detail__cta-dual">'
+        bodyHtml += '<button class="trip-detail__cta-primary" onclick="CotizarModal.open(\'' + viaje.nombre.replace(/'/g, "\\'") + '\')">'
+        bodyHtml += '<i class="fas fa-tag"></i> ' + (i18n.getLang() === 'en' ? 'Get a Free Quote' : 'Cotizar Este Viaje')
+        bodyHtml += '</button>'
+        bodyHtml += '<a href="https://api.whatsapp.com/send/?phone=' + _waPhone + '&text=' + encodeURIComponent(i18n.t('wa.message') + ' ' + viaje.nombre) + '" target="_blank" rel="noopener noreferrer" class="trip-detail__cta-secondary">'
+        bodyHtml += '<i class="fab fa-whatsapp"></i> ' + (i18n.getLang() === 'en' ? 'Or message us on WhatsApp' : 'O escríbenos por WhatsApp')
         bodyHtml += '</a>'
         bodyHtml += '</div>'
 

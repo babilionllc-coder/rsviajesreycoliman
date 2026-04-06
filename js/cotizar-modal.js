@@ -447,19 +447,23 @@ var CotizarModal = (function () {
 
     document.body.appendChild(bar);
 
-    // Show after 3 seconds of scrolling
-    var scrollTimer;
+    // Show quickly after light scroll
     var shown = false;
     window.addEventListener('scroll', function () {
       if (shown) return;
-      clearTimeout(scrollTimer);
-      scrollTimer = setTimeout(function () {
-        if (window.scrollY > 400 && !shown) {
-          bar.classList.add('cotizar-sticky-bar--visible');
-          shown = true;
-        }
-      }, 300);
+      if (window.scrollY > 150) {
+        bar.classList.add('cotizar-sticky-bar--visible');
+        shown = true;
+      }
     });
+
+    // Also show after 4 seconds even without scroll
+    setTimeout(function () {
+      if (!shown) {
+        bar.classList.add('cotizar-sticky-bar--visible');
+        shown = true;
+      }
+    }, 4000);
   }
 
   function dismissBar() {

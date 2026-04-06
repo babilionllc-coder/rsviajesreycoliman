@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Propuesta Digital — RS Viajes Rey Colimán | JegoDigital</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background: #0a0c10;
+            color: #e2e8f0;
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+        .page {
+            width: 210mm;
+            min-height: 297mm;
+            padding: 15mm;
+            box-sizing: border-box;
+            background-image: 
+                radial-gradient(circle at top right, rgba(197, 160, 89, 0.05) 0%, transparent 40%),
+                radial-gradient(circle at bottom left, rgba(197, 160, 89, 0.05) 0%, transparent 40%);
+        }
+        .page-break { page-break-before: always; }
+        .gradient-text { color: #E5C585; }
+        .avoid-break { break-inside: avoid; page-break-inside: avoid; }
+        .gold { color: #C5A059; }
+        .gold-bg { background: #C5A059; }
+        .plan-badge {
+            display: inline-block;
+            padding: 2px 10px;
+            border-radius: 12px;
+            font-size: 10px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        @page { size: A4; margin: 0; }
+        @media print {
+            body { background: #0a0c10; }
+            .page { margin: 0; box-shadow: none; border-radius: 0; padding: 15mm; min-height: 100vh; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- ==================== PAGE 1: COVER ==================== -->
+<div class="page">
+    <!-- Header -->
+    <header class="flex justify-between items-start mb-12 border-b border-gray-800 pb-8">
+        <div>
+            <h1 class="text-3xl font-bold tracking-tight"><span class="text-[#C5A059]">Jego</span><span class="text-white">Digital</span></h1>
+            <p class="text-sm text-gray-400 mt-1">The AI-Powered Edge</p>
+        </div>
+        <div class="text-right">
+            <h2 class="text-xl font-semibold text-white">Propuesta de Transformación Digital</h2>
+            <p class="text-sm text-gray-400 mt-2">Fecha: 6 de Abril, 2026</p>
+        </div>
+    </header>
+
+    <!-- Client Info -->
+    <section class="mb-10 grid grid-cols-2 gap-8 bg-gray-900/50 p-6 rounded-xl border border-gray-800 avoid-break">
+        <div>
+            <h3 class="text-xs uppercase tracking-wider text-gray-500 font-semibold mb-3">Preparado Para</h3>
+            <p class="font-bold text-lg text-white">RS Viajes Rey Colimán</p>
+            <p class="text-gray-300">Agencia de Viajes</p>
+            <p class="text-sm text-gray-400 mt-2">rsviajesreycoliman.com</p>
+            <p class="text-sm text-gray-400">Villa de Álvarez, Colima, México</p>
+        </div>
+        <div class="text-right">
+            <h3 class="text-xs uppercase tracking-wider text-gray-500 font-semibold mb-3">Preparado Por</h3>
+            <p class="font-bold text-white">Alex Jego</p>
+            <p class="text-gray-300">Director Ejecutivo, JegoDigital</p>
+            <p class="text-sm text-gray-400 mt-2">info@jegodigital.com</p>
+            <p class="text-sm text-gray-400">jegodigital.com</p>
+        </div>
+    </section>
+
+    <!-- Executive Summary -->
+    <section class="mb-10 avoid-break">
+        <h3 class="text-2xl font-bold mb-4 gradient-text">Resumen Ejecutivo</h3>
+        <p class="text-gray-300 leading-relaxed mb-4">
+            RS Viajes Rey Colimán necesita evolucionar de una página web informativa a un <strong>sistema inteligente de captación y seguimiento de clientes</strong>. El reto principal es que los precios de viajes internacionales cambian constantemente por el tipo de cambio y las fechas de salida, por lo que implementar un carrito de compra online no es viable.
+        </p>
+        <p class="text-gray-300 leading-relaxed mb-4">
+            Siguiendo el modelo exitoso de <strong>Megatravel y Nefertari</strong> (sus propios proveedores), la solución ideal es un <strong>sistema de cotización inteligente</strong> que capture leads de forma automática y les dé seguimiento por email y WhatsApp hasta cerrar la venta.
+        </p>
+        <p class="text-gray-300 leading-relaxed">
+            A continuación presentamos <strong>3 opciones de implementación</strong> adaptadas a las necesidades de la agencia, desde una implementación rápida hasta un sistema completamente automatizado con inteligencia artificial.
+        </p>
+    </section>
+
+    <!-- The Problem -->
+    <section class="mb-8 avoid-break">
+        <h3 class="text-xl font-bold mb-4 text-white">🎯 ¿Qué Problema Resolvemos?</h3>
+        <div class="grid grid-cols-3 gap-4">
+            <div class="bg-red-900/20 p-4 rounded-lg border border-red-800/40">
+                <p class="text-red-400 font-bold text-sm mb-1">❌ Hoy</p>
+                <p class="text-gray-400 text-sm">Los visitantes ven la página, pero no hay forma fácil de cotizar. Se van sin dejar datos.</p>
+            </div>
+            <div class="bg-yellow-900/20 p-4 rounded-lg border border-yellow-800/40">
+                <p class="text-yellow-400 font-bold text-sm mb-1">⚠️ El Riesgo</p>
+                <p class="text-gray-400 text-sm">Sin seguimiento, el 80% de los leads se pierden en las primeras 48 horas.</p>
+            </div>
+            <div class="bg-green-900/20 p-4 rounded-lg border border-green-800/40">
+                <p class="text-green-400 font-bold text-sm mb-1">✅ La Solución</p>
+                <p class="text-gray-400 text-sm">Capturar datos → seguimiento automático → cerrar venta por WhatsApp/teléfono.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visual Flow -->
+    <section class="avoid-break bg-gray-900/50 p-6 rounded-xl border border-gray-800">
+        <h4 class="text-sm uppercase tracking-wider text-gray-500 font-semibold mb-4">Flujo del Cliente Ideal</h4>
+        <div class="flex items-center justify-between text-center">
+            <div class="flex-1">
+                <div class="text-2xl mb-2">🌐</div>
+                <p class="text-xs text-gray-400">Visita la página</p>
+            </div>
+            <div class="text-[#C5A059]">→</div>
+            <div class="flex-1">
+                <div class="text-2xl mb-2">📋</div>
+                <p class="text-xs text-gray-400">Pide cotización</p>
+            </div>
+            <div class="text-[#C5A059]">→</div>
+            <div class="flex-1">
+                <div class="text-2xl mb-2">💬</div>
+                <p class="text-xs text-gray-400">Recibe WhatsApp</p>
+            </div>
+            <div class="text-[#C5A059]">→</div>
+            <div class="flex-1">
+                <div class="text-2xl mb-2">📧</div>
+                <p class="text-xs text-gray-400">Emails automáticos</p>
+            </div>
+            <div class="text-[#C5A059]">→</div>
+            <div class="flex-1">
+                <div class="text-2xl mb-2">✈️</div>
+                <p class="text-xs text-gray-400">¡Cierra la venta!</p>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- ==================== PAGE 2: OPTION 1 — ESSENTIALS ==================== -->
+<div class="page page-break">
+    <header class="flex justify-between items-center mb-8 border-b border-gray-800 pb-4">
+        <h1 class="text-xl font-bold"><span class="text-[#C5A059]">Jego</span><span class="text-white">Digital</span></h1>
+        <p class="text-sm text-gray-500">Propuesta RS Viajes — Abril 2026</p>
+    </header>
+
+    <div class="mb-6">
+        <span class="plan-badge bg-blue-500/20 text-blue-400">Opción 1</span>
+    </div>
+
+    <h2 class="text-3xl font-bold text-white mb-2">🟢 Plan Esencial</h2>
+    <p class="text-gray-400 mb-8 text-lg">Lo mínimo necesario para empezar a capturar y cerrar más ventas.</p>
+
+    <!-- Website -->
+    <section class="mb-8 avoid-break">
+        <h3 class="text-xl font-bold mb-4 gradient-text">🌐 Sitio Web — Sistema de Cotización</h3>
+        <div class="bg-gray-900/30 p-5 rounded-lg border border-gray-800/80 space-y-3">
+            <div class="flex items-start gap-3">
+                <span class="text-green-400 text-lg mt-0.5">✓</span>
+                <div>
+                    <p class="text-white font-medium">Páginas de Destino Estáticas con Precios de Referencia</p>
+                    <p class="text-gray-500 text-sm">Cada paquete muestra "Desde $XX,XXX MXN" con descripción, itinerario y fotos. Precios indicativos que cambian según temporada.</p>
+                </div>
+            </div>
+            <div class="flex items-start gap-3">
+                <span class="text-green-400 text-lg mt-0.5">✓</span>
+                <div>
+                    <p class="text-white font-medium">Botón "Cotizar este Viaje" → WhatsApp</p>
+                    <p class="text-gray-500 text-sm">Cada paquete tiene un botón que abre WhatsApp con mensaje pre-escrito: <em>"Hola, me interesa el paquete [nombre] para [cantidad] personas en [fecha]"</em>.</p>
+                </div>
+            </div>
+            <div class="flex items-start gap-3">
+                <span class="text-green-400 text-lg mt-0.5">✓</span>
+                <div>
+                    <p class="text-white font-medium">Formulario Simple de Contacto (Nombre, WhatsApp, Email)</p>
+                    <p class="text-gray-500 text-sm">Para quienes prefieran dejar sus datos en vez de escribir por WhatsApp. Los datos llegan al correo de la agencia.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Email -->
+    <section class="mb-8 avoid-break">
+        <h3 class="text-xl font-bold mb-4 gradient-text">📧 Email — Seguimiento Manual</h3>
+        <div class="bg-gray-900/30 p-5 rounded-lg border border-gray-800/80 space-y-3">
+            <div class="flex items-start gap-3">
+                <span class="text-green-400 text-lg mt-0.5">✓</span>
+                <div>
+                    <p class="text-white font-medium">Recolección de Emails en Base de Datos</p>
+                    <p class="text-gray-500 text-sm">Todos los leads se guardan en una hoja de cálculo o lista de Brevo. No hay automatización, pero tienes los datos organizados.</p>
+                </div>
+            </div>
+            <div class="flex items-start gap-3">
+                <span class="text-green-400 text-lg mt-0.5">✓</span>
+                <div>
+                    <p class="text-white font-medium">1 Plantilla de Email Profesional</p>
+                    <p class="text-gray-500 text-sm">Un template de bienvenida con el branding de RS Viajes para enviar manualmente cuando te contacten clientes nuevos.</p>
+                </div>
+            </div>
+            <div class="flex items-start gap-3">
+                <span class="text-gray-600 text-lg mt-0.5">✗</span>
+                <div>
+                    <p class="text-gray-500 font-medium">Sin automatización de secuencias</p>
+                    <p class="text-gray-600 text-sm">El envío de emails de seguimiento se hace de forma manual.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp -->
+    <section class="mb-8 avoid-break">
+        <h3 class="text-xl font-bold mb-4 gradient-text">💬 WhatsApp — Configuración Básica</h3>
+        <div class="bg-gray-900/30 p-5 rounded-lg border border-gray-800/80 space-y-3">
+            <div class="flex items-start gap-3">
+                <span class="text-green-400 text-lg mt-0.5">✓</span>
+                <div>
+                    <p class="text-white font-medium">WhatsApp Business App (Gratis)</p>
+                    <p class="text-gray-500 text-sm">Configuración profesional: foto de perfil, descripción, horarios, catálogo de paquetes top.</p>
+                </div>
+            </div>
+            <div class="flex items-start gap-3">
+                <span class="text-green-400 text-lg mt-0.5">✓</span>
+                <div>
+                    <p class="text-white font-medium">5 Respuestas Rápidas Predefinidas</p>
+                    <p class="text-gray-500 text-sm">Templates para: saludo, solicitar datos, enviar cotización, confirmar reservación, y mensaje de seguimiento.</p>
+                </div>
+            </div>
+            <div class="flex items-start gap-3">
+                <span class="text-green-400 text-lg mt-0.5">✓</span>
+                <div>
+                    <p class="text-white font-medium">Mensaje de Ausencia Automático</p>
+                    <p class="text-gray-500 text-sm">Respuesta fuera de horario: <em>"Gracias por contactarnos, te atenderemos en horario de 9am a 6pm."</em></p>
+                </div>
+            </div>
+            <div class="flex items-start gap-3">
+                <span class="text-gray-600 text-lg mt-0.5">✗</span>
+                <div>
+                    <p class="text-gray-500 font-medium">Sin chatbot ni respuestas automáticas inteligentes</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline -->
+    <section class="avoid-break">
+        <div class="bg-gradient-to-br from-blue-900/20 to-gray-900/50 p-6 rounded-xl border border-blue-500/30 text-center">
+            <p class="text-blue-400 font-bold text-lg">⏱️ Tiempo de implementación: 5 días hábiles</p>
+        </div>
+    </section>
+</div>
+
+<!-- ==================== PAGE 3: OPTION 2 — PROFESSIONAL ==================== -->
+<div class="page page-break">
+    <header class="flex justify-between items-center mb-8 border-b border-gray-800 pb-4">
+        <h1 class="text-xl font-bold"><span class="text-[#C5A059]">Jego</span><span class="text-white">Digital</span></h1>
+        <p class="text-sm text-gray-500">Propuesta RS Viajes — Abril 2026</p>
+    </header>
+
+    <div class="mb-6">
+        <span class="plan-badge bg-[#C5A059]/20 text-[#C5A059]">Opción 2 — Recomendada</span>
+    </div>
+
+    <h2 class="text-3xl font-bold text-white mb-2">⭐ Plan Profesional</h2>
+    <p class="text-gray-400 mb-8 text-lg">El balance perfecto entre automatización y resultados. Seguimiento automático por email + WhatsApp.</p>
+
+    <!-- Website -->
+    <section class="mb-6 avoid-break">
+        <h3 class="text-xl font-bold mb-4 gradient-text">🌐 Sitio Web — Sistema de Cotización Inteligente</h3>
+        <div class="bg-gray-900/30 p-5 rounded-lg border border-[#C5A059]/30 space-y-3">
+            <div class="flex items-start gap-3">
+                <span class="text-green-400 text-lg mt-0.5">✓</span>
+                <div>
+                    <p class="text-white font-medium">Páginas de Destino Premium (Estilo Megatravel)</p>
+                    <p class="text-gray-500 text-sm">Hero con imagen + quick stats (días, noches, ciudades) + precio "Desde" + pestañas de itinerario, incluye/no incluye, y datos importantes.</p>
+                </div>
+            </div>
+            <div class="flex items-start gap-3">
+                <span class="text-green-400 text-lg mt-0.5">✓</span>
+                <div>
+                    <p class="text-white font-medium">Formulario de Cotización Completo</p>
+                    <p class="text-gray-500 text-sm">Nombre, WhatsApp, Email, Destino, Fechas preferidas, Nº viajeros, Presupuesto. Los datos se guardan en Brevo CRM automáticamente.</p>
+                </div>
+            </div>
+            <div class="flex items-start gap-3">
+                <span class="text-green-400 text-lg mt-0.5">✓</span>
+                <div>
+                    <p class="text-white font-medium">Confirmación Instantánea por WhatsApp</p>
+                    <p class="text-gray-500 text-sm">Al enviar el formulario, el cliente recibe un WhatsApp automático confirmando que su solicitud fue recibida.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Email -->
+    <section class="mb-6 avoid-break">
+        <h3 class="text-xl font-bold mb-4 gradient-text">📧 Email — Secuencia Automática de 5 Emails</h3>
+        <div class="bg-gray-900/30 p-5 rounded-lg border border-[#C5A059]/30 space-y-3">
+            <div class="flex items-start gap-3">
+                <span class="text-green-400 text-lg mt-0.5">✓</span>
+                <div>
+                    <p class="text-white font-medium">Plataforma: Brevo (antes Sendinblue) — Plan Gratuito</p>
+                    <p class="text-gray-500 text-sm">Hasta 300 emails/día gratis. CRM integrado para organizar y segmentar todos los leads.</p>
+                </div>
+            </div>
+            <div class="flex items-start gap-3">
+                <span class="text-green-400 text-lg mt-0.5">✓</span>
+                <div>
+                    <p class="text-white font-medium">5 Plantillas de Email con Branding RS Viajes</p>
+                    <p class="text-gray-500 text-sm">Diseño premium con colores, logo y fotos de la agencia.</p>
+                </div>
+            </div>
+            <div class="flex items-start gap-3">
+                <span class="text-green-400 text-lg mt-0.5">✓</span>
+                <div>
+                    <p class="text-white font-medium">Secuencia Automática de Seguimiento (14 días)</p>
+                </div>
+            </div>
+        </div>
+        <div class="bg-gray-800/40 p-4 rounded-lg mt-3 border border-gray-700/50">
+            <p class="text-xs uppercase tracking-wider text-gray-500 font-semibold mb-3">Secuencia Automática</p>
+            <div class="space-y-2 text-sm">
+                <div class="flex items-center gap-3">
+                    <span class="text-[#C5A059] font-mono text-xs w-16">Día 0</span>
+                    <span class="text-white">📩 "¡Gracias por tu interés!" — Confirmación + resumen del paquete</span>
+                </div>
+                <div class="flex items-center gap-3">
+                    <span class="text-[#C5A059] font-mono text-xs w-16">Día 2</span>
+                    <span class="text-white">🗺️ "Tu guía de [Destino]" — Info útil sobre el destino</span>
+                </div>
+                <div class="flex items-center gap-3">
+                    <span class="text-[#C5A059] font-mono text-xs w-16">Día 5</span>
+                    <span class="text-white">⭐ "Lo que dicen nuestros viajeros" — Testimonios reales</span>
+                </div>
+                <div class="flex items-center gap-3">
+                    <span class="text-[#C5A059] font-mono text-xs w-16">Día 7</span>
+                    <span class="text-white">🔥 "Oferta especial esta semana" — Urgencia + descuento</span>
+                </div>
+                <div class="flex items-center gap-3">
+                    <span class="text-[#C5A059] font-mono text-xs w-16">Día 14</span>
+                    <span class="text-white">💬 "¿Todavía piensas en [Destino]?" — Reenganche + link WhatsApp</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp -->
+    <section class="mb-6 avoid-break">
+        <h3 class="text-xl font-bold mb-4 gradient-text">💬 WhatsApp — Business + Respuestas Automáticas</h3>
+        <div class="bg-gray-900/30 p-5 rounded-lg border border-[#C5A059]/30 space-y-3">
+            <div class="flex items-start gap-3">
+                <span class="text-green-400 text-lg mt-0.5">✓</span>
+                <div>
+                    <p class="text-white font-medium">Todo del Plan Esencial +</p>
+                </div>
+            </div>
+            <div class="flex items-start gap-3">
+                <span class="text-green-400 text-lg mt-0.5">✓</span>
+                <div>
+                    <p class="text-white font-medium">Catálogo de Paquetes en WhatsApp Business</p>
+                    <p class="text-gray-500 text-sm">Los clientes pueden ver fotos, precios y descripciones de los destinos directamente dentro de WhatsApp.</p>
+                </div>
+            </div>
+            <div class="flex items-start gap-3">
+                <span class="text-green-400 text-lg mt-0.5">✓</span>
+                <div>
+                    <p class="text-white font-medium">Etiquetas de Seguimiento</p>
+                    <p class="text-gray-500 text-sm">Sistema de etiquetas para clasificar leads: "Nuevo", "Cotizado", "En seguimiento", "Reservado", "Pagado".</p>
+                </div>
+            </div>
+            <div class="flex items-start gap-3">
+                <span class="text-green-400 text-lg mt-0.5">✓</span>
+                <div>
+                    <p class="text-white font-medium">10 Plantillas de Mensajes Predefinidos</p>
+                    <p class="text-gray-500 text-sm">Para cada etapa del proceso de venta: saludo, cotización, seguimiento, confirmación, documentos, etc.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline -->
+    <section class="avoid-break">
+        <div class="bg-gradient-to-br from-[#C5A059]/10 to-gray-900/50 p-6 rounded-xl border border-[#C5A059]/40 text-center">
+            <p class="text-[#C5A059] font-bold text-lg">⏱️ Tiempo de implementación: 10 días hábiles</p>
+        </div>
+    </section>
+</div>
+
+<!-- ==================== PAGE 4: OPTION 3 — PREMIUM ==================== -->
+<div class="page page-break">
+    <header class="flex justify-between items-center mb-8 border-b border-gray-800 pb-4">
+        <h1 class="text-xl font-bold"><span class="text-[#C5A059]">Jego</span><span class="text-white">Digital</span></h1>
+        <p class="text-sm text-gray-500">Propuesta RS Viajes — Abril 2026</p>
+    </header>
+
+    <div class="mb-6">
+        <span class="plan-badge bg-purple-500/20 text-purple-400">Opción 3</span>
+    </div>
+
+    <h2 class="text-3xl font-bold text-white mb-2">🚀 Plan Premium con IA</h2>
+    <p class="text-gray-400 mb-8 text-lg">Automatización completa. Un asistente de IA que captura, califica y da seguimiento a cada lead 24/7.</p>
+
+    <!-- Website -->
+    <section class="mb-6 avoid-break">
+        <h3 class="text-xl font-bold mb-4 gradient-text">🌐 Sitio Web — Motor de Cotización con IA</h3>
+        <div class="bg-gray-900/30 p-5 rounded-lg border border-purple-800/40 space-y-3">
+            <div class="flex items-start gap-3">
+                <span class="text-green-400 text-lg mt-0.5">✓</span>
+                <div>
+                    <p class="text-white font-medium">Todo del Plan Profesional +</p>
+                </div>
+            </div>
+            <div class="flex items-start gap-3">
+                <span class="text-green-400 text-lg mt-0.5">✓</span>
+                <div>
+                    <p class="text-white font-medium">Buscador de Destinos con Filtros</p>
+                    <p class="text-gray-500 text-sm">Los clientes filtran por: tipo (playa, cultura, aventura), presupuesto, temporada, origen de salida. Resultados instantáneos.</p>
+                </div>
+            </div>
+            <div class="flex items-start gap-3">
+                <span class="text-green-400 text-lg mt-0.5">✓</span>
+                <div>
+                    <p class="text-white font-medium">Panel de Administración para Actualizar Precios</p>
+                    <p class="text-gray-500 text-sm">La agencia puede cambiar precios, fechas y disponibilidad sin necesidad de contactar al desarrollador.</p>
+                </div>
+            </div>
+            <div class="flex items-start gap-3">
+                <span class="text-green-400 text-lg mt-0.5">✓</span>
+                <div>
+                    <p class="text-white font-medium">Dashboard de Leads en Tiempo Real</p>
+                    <p class="text-gray-500 text-sm">Ver cuántos leads entraron, de qué destino, en qué etapa del funnel están, y cuáles necesitan seguimiento urgente.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Email -->
+    <section class="mb-6 avoid-break">
+        <h3 class="text-xl font-bold mb-4 gradient-text">📧 Email — Automatización Inteligente con Segmentación</h3>
+        <div class="bg-gray-900/30 p-5 rounded-lg border border-purple-800/40 space-y-3">
+            <div class="flex items-start gap-3">
+                <span class="text-green-400 text-lg mt-0.5">✓</span>
+                <div>
+                    <p class="text-white font-medium">Todo del Plan Profesional +</p>
+                </div>
+            </div>
+            <div class="flex items-start gap-3">
+                <span class="text-green-400 text-lg mt-0.5">✓</span>
+                <div>
+                    <p class="text-white font-medium">Segmentación por Interés</p>
+                    <p class="text-gray-500 text-sm">Si el lead preguntó por Europa, recibe emails de Europa. Si preguntó por cruceros, recibe emails de cruceros. Contenido personalizado automático.</p>
+                </div>
+            </div>
+            <div class="flex items-start gap-3">
+                <span class="text-green-400 text-lg mt-0.5">✓</span>
+                <div>
+                    <p class="text-white font-medium">Lead Scoring (Puntuación de Prospectos)</p>
+                    <p class="text-gray-500 text-sm">Los leads que abren emails y hacen clic se marcan como "calientes" automáticamente. Notificación al equipo para llamar al momento.</p>
+                </div>
+            </div>
+            <div class="flex items-start gap-3">
+                <span class="text-green-400 text-lg mt-0.5">✓</span>
+                <div>
+                    <p class="text-white font-medium">Campañas de Temporada Programadas</p>
+                    <p class="text-gray-500 text-sm">Promociones de Semana Santa, verano, Navidad programadas con anticipación para toda la base de datos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp -->
+    <section class="mb-6 avoid-break">
+        <h3 class="text-xl font-bold mb-4 gradient-text">💬 WhatsApp — Chatbot con Inteligencia Artificial</h3>
+        <div class="bg-gray-900/30 p-5 rounded-lg border border-purple-800/40 space-y-3">
+            <div class="flex items-start gap-3">
+                <span class="text-green-400 text-lg mt-0.5">✓</span>
+                <div>
+                    <p class="text-white font-medium">Todo del Plan Profesional +</p>
+                </div>
+            </div>
+            <div class="flex items-start gap-3">
+                <span class="text-green-400 text-lg mt-0.5">✓</span>
+                <div>
+                    <p class="text-white font-medium">Chatbot IA 24/7 (WATI o ManyChat)</p>
+                    <p class="text-gray-500 text-sm">Un asistente virtual que atiende preguntas automáticamente, recomienda destinos según presupuesto y agenda citas con asesores.</p>
+                </div>
+            </div>
+            <div class="flex items-start gap-3">
+                <span class="text-green-400 text-lg mt-0.5">✓</span>
+                <div>
+                    <p class="text-white font-medium">Protocolo Anti-Ghosting</p>
+                    <p class="text-gray-500 text-sm">Si el lead no responde en 24 horas, se activa un seguimiento automático con un mensaje diferente. 3 intentos con intervalos inteligentes.</p>
+                </div>
+            </div>
+            <div class="flex items-start gap-3">
+                <span class="text-green-400 text-lg mt-0.5">✓</span>
+                <div>
+                    <p class="text-white font-medium">Bandeja Compartida para Múltiples Asesores</p>
+                    <p class="text-gray-500 text-sm">Todo el equipo puede atender desde un solo número, con historial completo de cada conversación.</p>
+                </div>
+            </div>
+            <div class="flex items-start gap-3">
+                <span class="text-green-400 text-lg mt-0.5">✓</span>
+                <div>
+                    <p class="text-white font-medium">Broadcasts de Temporada</p>
+                    <p class="text-gray-500 text-sm">Envío masivo de promociones segmentadas por interés a toda la base de clientes anteriores.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline -->
+    <section class="avoid-break">
+        <div class="bg-gradient-to-br from-purple-900/20 to-gray-900/50 p-6 rounded-xl border border-purple-500/30 text-center">
+            <p class="text-purple-400 font-bold text-lg">⏱️ Tiempo de implementación: 3 semanas</p>
+            <p class="text-gray-500 text-xs mt-2">* Plataformas externas como WATI o ManyChat pueden tener costo propio según el proveedor</p>
+        </div>
+    </section>
+</div>
+
+<!-- ==================== PAGE 5: COMPARISON + NEXT STEPS ==================== -->
+<div class="page page-break">
+    <header class="flex justify-between items-center mb-8 border-b border-gray-800 pb-4">
+        <h1 class="text-xl font-bold"><span class="text-[#C5A059]">Jego</span><span class="text-white">Digital</span></h1>
+        <p class="text-sm text-gray-500">Propuesta RS Viajes — Abril 2026</p>
+    </header>
+
+    <!-- Comparison Table -->
+    <section class="mb-10 avoid-break">
+        <h3 class="text-2xl font-bold mb-6 gradient-text">📊 Comparación de Opciones</h3>
+        <div class="overflow-hidden rounded-xl border border-gray-800 bg-gray-900/50">
+            <table class="w-full text-left border-collapse text-sm">
+                <thead>
+                    <tr class="bg-gray-800/80 text-gray-300 uppercase tracking-wider text-xs">
+                        <th class="p-3 font-semibold">Característica</th>
+                        <th class="p-3 font-semibold text-center text-blue-400">🟢 Esencial</th>
+                        <th class="p-3 font-semibold text-center text-[#C5A059]">⭐ Profesional</th>
+                        <th class="p-3 font-semibold text-center text-purple-400">🚀 Premium</th>
+                    </tr>
+                </thead>
+                <tbody class="text-gray-300 divide-y divide-gray-800">
+                    <tr>
+                        <td class="p-3 font-medium text-white">Páginas de destino</td>
+                        <td class="p-3 text-center">Básicas</td>
+                        <td class="p-3 text-center">Premium (tipo Megatravel)</td>
+                        <td class="p-3 text-center">Premium + buscador</td>
+                    </tr>
+                    <tr>
+                        <td class="p-3 font-medium text-white">Sistema de precios</td>
+                        <td class="p-3 text-center">"Desde $X"</td>
+                        <td class="p-3 text-center">"Desde $X" + estacionalidad</td>
+                        <td class="p-3 text-center">Panel admin editable</td>
+                    </tr>
+                    <tr>
+                        <td class="p-3 font-medium text-white">Formulario de cotización</td>
+                        <td class="p-3 text-center">Básico</td>
+                        <td class="p-3 text-center">✅ Completo + CRM</td>
+                        <td class="p-3 text-center">✅ Completo + CRM</td>
+                    </tr>
+                    <tr>
+                        <td class="p-3 font-medium text-white">Emails automáticos</td>
+                        <td class="p-3 text-center">❌</td>
+                        <td class="p-3 text-center">✅ 5 emails (14 días)</td>
+                        <td class="p-3 text-center">✅ Segmentados + scoring</td>
+                    </tr>
+                    <tr>
+                        <td class="p-3 font-medium text-white">WhatsApp Bot</td>
+                        <td class="p-3 text-center">❌</td>
+                        <td class="p-3 text-center">❌</td>
+                        <td class="p-3 text-center">✅ IA 24/7</td>
+                    </tr>
+                    <tr>
+                        <td class="p-3 font-medium text-white">Anti-Ghosting automático</td>
+                        <td class="p-3 text-center">❌</td>
+                        <td class="p-3 text-center">Solo email</td>
+                        <td class="p-3 text-center">✅ Email + WhatsApp</td>
+                    </tr>
+                    <tr>
+                        <td class="p-3 font-medium text-white">Bandeja compartida</td>
+                        <td class="p-3 text-center">❌</td>
+                        <td class="p-3 text-center">❌</td>
+                        <td class="p-3 text-center">✅ Multi-agente</td>
+                    </tr>
+                    <tr>
+                        <td class="p-3 font-medium text-white">Dashboard de leads</td>
+                        <td class="p-3 text-center">❌</td>
+                        <td class="p-3 text-center">Brevo básico</td>
+                        <td class="p-3 text-center">✅ Tiempo real</td>
+                    </tr>
+                    <tr class="bg-gray-800/40">
+                        <td class="p-3 font-bold text-white">Implementación</td>
+                        <td class="p-3 text-center font-bold text-blue-400">5 días</td>
+                        <td class="p-3 text-center font-bold text-[#C5A059]">10 días</td>
+                        <td class="p-3 text-center font-bold text-purple-400">3 semanas</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Recommendation -->
+    <section class="mb-10 avoid-break bg-gradient-to-br from-gray-900 to-black p-6 rounded-xl border border-[#C5A059]/30">
+        <div class="flex items-center mb-4">
+            <h3 class="text-xl font-bold text-white">💡 Nuestra Recomendación</h3>
+            <span class="ml-3 px-2 py-0.5 bg-[#C5A059]/20 text-[#C5A059] text-xs font-bold rounded uppercase">Plan Profesional</span>
+        </div>
+        <p class="text-gray-300 text-sm leading-relaxed mb-3">
+            Para el tamaño y etapa actual de RS Viajes, el <strong>Plan Profesional</strong> ofrece el mejor balance entre funcionalidad y velocidad de implementación. Incluye todo lo necesario para capturar leads de forma profesional y darles seguimiento automático por email.
+        </p>
+        <p class="text-gray-300 text-sm leading-relaxed">
+            Si en 3-6 meses el volumen de leads crece y se necesita atender más clientes simultáneamente, se puede evolucionar al Plan Premium agregando el chatbot de WhatsApp sin necesidad de reconstruir nada.
+        </p>
+    </section>
+
+    <!-- Timeline -->
+    <section class="mb-10 avoid-break">
+        <h3 class="text-xl font-bold mb-4 text-white">📅 Tiempo de Implementación</h3>
+        <div class="grid grid-cols-3 gap-4">
+            <div class="bg-blue-900/20 p-4 rounded-lg border border-blue-800/40 text-center">
+                <p class="text-2xl font-bold text-blue-400">5 días</p>
+                <p class="text-xs text-gray-500 mt-1">Plan Esencial</p>
+            </div>
+            <div class="bg-[#C5A059]/10 p-4 rounded-lg border border-[#C5A059]/30 text-center">
+                <p class="text-2xl font-bold text-[#C5A059]">10 días</p>
+                <p class="text-xs text-gray-500 mt-1">Plan Profesional</p>
+            </div>
+            <div class="bg-purple-900/20 p-4 rounded-lg border border-purple-800/40 text-center">
+                <p class="text-2xl font-bold text-purple-400">3 semanas</p>
+                <p class="text-xs text-gray-500 mt-1">Plan Premium</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Next Steps & Signature -->
+    <section class="mt-8 pt-8 border-t border-gray-800 avoid-break">
+        <h3 class="text-xl font-bold mb-4 text-white">Siguientes Pasos</h3>
+        <div class="grid grid-cols-2 gap-8">
+            <div>
+                <ol class="list-decimal list-inside text-gray-300 space-y-2 text-sm">
+                    <li>Revisar esta propuesta y elegir la opción preferida</li>
+                    <li>Agendar una llamada rápida para resolver dudas</li>
+                    <li>Confirmar la opción elegida</li>
+                    <li>Enviar catálogo de paquetes y precios de referencia actuales</li>
+                    <li>¡Comenzamos a construir! 🚀</li>
+                </ol>
+            </div>
+            <div class="text-right">
+                <div class="mt-4">
+                    <p class="text-lg font-bold text-white">Alex Jego</p>
+                    <p class="text-sm text-[#C5A059] mb-2">Director Ejecutivo, JegoDigital</p>
+                    <p class="text-sm text-gray-400">info@jegodigital.com</p>
+                    <p class="text-sm text-gray-400">jegodigital.com</p>
+                    <p class="text-sm text-gray-400 mt-2">+52 998 787 5321</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="mt-12 pt-4 border-t border-gray-800 text-center">
+        <p class="text-xs text-gray-600">Esta propuesta es confidencial y ha sido preparada exclusivamente para RS Viajes Rey Colimán. Válida por 30 días a partir de la fecha de emisión.</p>
+        <p class="text-xs text-gray-700 mt-2">© 2026 JegoDigital — The AI-Powered Edge</p>
+    </footer>
+</div>
+
+</body>
+</html>

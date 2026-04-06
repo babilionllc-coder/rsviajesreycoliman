@@ -2,35 +2,126 @@
   "cleanUrls": true,
   "trailingSlash": false,
   "rewrites": [
-    { "source": "/blog", "destination": "/blog/index.html" },
-    { "source": "/blog/", "destination": "/blog/index.html" }
+    {
+      "source": "/blog",
+      "destination": "/blog/index.html"
+    },
+    {
+      "source": "/blog/",
+      "destination": "/blog/index.html"
+    }
   ],
   "headers": [
     {
       "source": "/(.*)",
       "headers": [
-        { "key": "X-Content-Type-Options", "value": "nosniff" },
-        { "key": "X-Frame-Options", "value": "SAMEORIGIN" },
-        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" }
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        }
       ]
     },
     {
       "source": "/images/(.*)",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
       ]
     },
     {
       "source": "/css/(.*)",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
       ]
     },
     {
       "source": "/blog/images/(.*)",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
       ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/cruceros-desde-mexico-todo-incluido",
+      "destination": "/blog/cruceros-desde-mexico-todo-incluido",
+      "permanent": true
+    },
+    {
+      "source": "/requisitos-viajar-extranjero-mexico",
+      "destination": "/blog/requisitos-viajar-extranjero-mexico",
+      "permanent": true
+    },
+    {
+      "source": "/viajes-a-italia-desde-mexico",
+      "destination": "/blog/viajes-a-italia-desde-mexico",
+      "permanent": true
+    },
+    {
+      "source": "/cuanto-cuesta-viajar-a-europa-desde-mexico",
+      "destination": "/blog/cuanto-cuesta-viajar-a-europa-desde-mexico",
+      "permanent": true
+    },
+    {
+      "source": "/mejor-agencia-de-viajes-en-colima",
+      "destination": "/blog/mejor-agencia-de-viajes-en-colima",
+      "permanent": true
+    },
+    {
+      "source": "/viajes-a-paris-desde-mexico",
+      "destination": "/blog/viajes-a-paris-desde-mexico",
+      "permanent": true
+    },
+    {
+      "source": "/mejores-destinos-viajar-desde-colima",
+      "destination": "/blog/mejores-destinos-viajar-desde-colima",
+      "permanent": true
+    },
+    {
+      "source": "/viajes-costa-rica-todo-incluido-desde-mexico",
+      "destination": "/blog/viajes-costa-rica-todo-incluido-desde-mexico",
+      "permanent": true
+    },
+    {
+      "source": "/guia-completa-viajes-desde-mexico",
+      "destination": "/blog/guia-completa-viajes-desde-mexico",
+      "permanent": true
+    },
+    {
+      "source": "/paquetes-viajes-todo-incluido",
+      "destination": "/blog/paquetes-viajes-todo-incluido",
+      "permanent": true
+    },
+    {
+      "source": "/destinos-baratos-viajar-mexico",
+      "destination": "/blog/destinos-baratos-viajar-mexico",
+      "permanent": true
+    },
+    {
+      "source": "/mejores-destinos-viajar-marzo",
+      "destination": "/blog/mejores-destinos-viajar-marzo",
+      "permanent": true
+    },
+    {
+      "source": "/viajes-colombia-todo-incluido-desde-mexico",
+      "destination": "/blog/viajes-colombia-todo-incluido-desde-mexico",
+      "permanent": true
     }
   ]
 }

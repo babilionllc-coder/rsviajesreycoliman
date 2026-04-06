@@ -359,41 +359,28 @@ var CotizarModal = (function () {
       fechaDisplay = monthNames[parseInt(parts[1]) - 1] + ' ' + parts[0];
     }
 
-    // 1) Send to email via existing API
-    var emailData = {
+    // 1) Send Lead to Brevo CRM via Vercel Serverless Function
+    var payload = {
       nombre: nombre,
-      correo: email,
-      asunto: '🎯 Cotización: ' + destino,
-      mensaje: '📍 Destino: ' + destino +
-        '\n📅 Fecha: ' + (fechaDisplay || 'Flexible') +
-        '\n👥 Viajeros: ' + pasajeros +
-        '\n📱 WhatsApp: ' + whatsapp +
-        '\n✉️ Email: ' + email +
-        (mensaje ? '\n💬 Mensaje: ' + mensaje : ''),
-      whatsapp: whatsapp
+      email: email,
+      whatsapp: whatsapp,
+      destino: destino,
+      pasajeros: pasajeros,
+      fechas: fechaDisplay || 'Flexible',
+      mensaje: mensaje
     };
 
-    if (typeof $ !== 'undefined' && typeof conf !== 'undefined') {
-      $.ajax({
-        type: 'POST',
-        url: conf.api + 'sendEmail',
-        data: JSON.stringify(emailData),
-        headers: {
-          'Content-Type': 'application/json; charset=utf-8',
-          'x-api-key': conf.apikey
-        },
-        success: function () {
-          showSuccess();
-        },
-        error: function () {
-          // Even if email fails, show success since WhatsApp is the primary channel
-          showSuccess();
-        }
-      });
-    } else {
-      // No API available, just show success
+    fetch('/api/addBrevoContact', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload)
+    })
+    .catch(function (error) {
+      console.error('Error registrando lead en Brevo:', error);
+    })
+    .finally(function () {
       showSuccess();
-    }
+    });
 
     // 2) Open WhatsApp with formatted message
     var waMsg = getLang() === 'en'

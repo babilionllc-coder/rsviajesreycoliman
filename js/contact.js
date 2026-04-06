@@ -79,6 +79,21 @@ function sendEmail() {
 
     let data = { nombre, correo, asunto, mensaje, whatsapp };
 
+    // Fire-and-forget: register lead in Brevo (triggers 14-day nurture sequence)
+    fetch('/api/addBrevoContact', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        nombre: nombre,
+        email: correo,
+        whatsapp: whatsapp,
+        destino: asunto,   // "Asunto" is the closest field — stores topic/destination
+        mensaje: mensaje
+      })
+    }).catch(function(err) {
+      console.error('Brevo registration error:', err);
+    });
+
     $.ajax({
       type: "POST",
       url: conf.api + 'sendEmail',

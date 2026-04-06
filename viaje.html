@@ -226,15 +226,39 @@
       var params = new URLSearchParams(window.location.search);
       var slug = params.get('tour');
       if (!slug) return;
+      
       // Convert slug to display name
       var name = slug.replace(/-/g, ' ').replace(/\b\w/g, function(c) { return c.toUpperCase(); });
       window._viajeName = name;
+      
       // Show the CTA section
       var cta = document.getElementById('viaje-cta-inline');
       if (cta) cta.style.display = '';
-      // Update cotizar button
+      
+      // Ensure z-index doesn't get squashed by broken iframes
+      var inner = document.querySelector('.cotizar-inline-cta__inner');
+      if (inner) {
+        inner.style.position = 'relative';
+        inner.style.zIndex = '99999';
+        inner.style.pointerEvents = 'auto';
+      }
+      
+      // Update cotizar button safely with EventListener
       var btn = document.getElementById('viaje-cotizar-btn');
-      if (btn) btn.setAttribute('onclick', "CotizarModal.open('" + name.replace(/'/g, "\\'") + "')");
+      if (btn) {
+        btn.removeAttribute('onclick'); // Remove unsafe inline
+        btn.addEventListener('click', function(e) {
+          e.preventDefault();
+          e.stopPropagation();
+          if (window.CotizarModal && window.CotizarModal.open) {
+            window.CotizarModal.open(window._viajeName);
+          } else {
+            // Safe fallback if JS hasn't loaded
+            window.open('https://api.whatsapp.com/send/?phone=523125504084&text=' + encodeURIComponent('¡Hola! Me interesa el viaje: ' + window._viajeName), '_blank');
+          }
+        });
+      }
+
       // Update WhatsApp link
       var waPhone = '523125504084';
       try { var d = JSON.parse(localStorage.getItem('data')); if (d && d.contacto && d.contacto.whatsapp) waPhone = '52' + d.contacto.whatsapp; } catch(e){}

@@ -35,12 +35,16 @@
   background: #fff;
   border-radius: 24px 24px 0 0;
   box-shadow: 0 -8px 60px rgba(0, 0, 0, 0.25);
-  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.35s ease, visibility 0.35s ease;
   font-family: 'Inter', 'Roboto', sans-serif;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 .cotizar-modal--active {
   transform: translateX(-50%) translateY(0);
+  visibility: visible;
+  pointer-events: auto;
 }
 
 /* Desktop: centered modal */
@@ -52,12 +56,13 @@
     border-radius: 24px;
     max-height: 90vh;
     opacity: 0;
-    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.35s ease;
   }
 
   .cotizar-modal--active {
     transform: translate(-50%, -50%) scale(1);
     opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
   }
 }
 

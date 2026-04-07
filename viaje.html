@@ -231,15 +231,18 @@
       var name = slug.replace(/-/g, ' ').replace(/\b\w/g, function(c) { return c.toUpperCase(); });
       window._viajeName = name;
       
-      // Show the CTA section
-      var cta = document.getElementById('viaje-cta-inline');
-      if (cta) cta.style.display = '';
-      
       // Ensure z-index doesn't get squashed by broken iframes
+      var cta = document.getElementById('viaje-cta-inline');
+      if (cta) {
+        cta.style.display = '';
+        cta.style.position = 'relative';
+        cta.style.zIndex = '10'; // Trap in a low stacking context
+      }
+      
       var inner = document.querySelector('.cotizar-inline-cta__inner');
       if (inner) {
         inner.style.position = 'relative';
-        inner.style.zIndex = '900';
+        inner.style.zIndex = '20';
         inner.style.pointerEvents = 'auto';
       }
       

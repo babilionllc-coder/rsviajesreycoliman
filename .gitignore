@@ -16,3 +16,4 @@ README.txt
 .env*.local
 brevo-form-integration.html
 JegoDigital-Setup-Brevo-RSViajes.pdf
+.agents/scripts/.env.audit

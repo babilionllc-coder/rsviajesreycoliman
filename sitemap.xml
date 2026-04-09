@@ -50,6 +50,17 @@
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
+  <!-- Blog Post: agencia-viajes-villa-de-alvarez -->
+  <url>
+    <loc>https://rsviajesreycoliman.com/blog/agencia-viajes-villa-de-alvarez</loc>
+    <lastmod>2026-04-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://rsviajesreycoliman.com/blog/images/agencia-villa-alvarez-colima.png</image:loc>
+      <image:caption>Tu Agencia de Viajes Local y Segura en Villa de Álvarez, Colima</image:caption>
+    </image:image>
+  </url>
   <!-- Blog Post: cruceros-desde-mexico-todo-incluido -->
   <url>
     <loc>https://rsviajesreycoliman.com/blog/cruceros-desde-mexico-todo-incluido</loc>
@@ -191,6 +202,17 @@
     <image:image>
       <image:loc>https://rsviajesreycoliman.com/blog/images/viajes-a-paris-desde-mexico.png</image:loc>
       <image:caption>Viajes a París desde México 2026 — Precios y Paquetes</image:caption>
+    </image:image>
+  </url>
+  <!-- Blog Post: viajes-a-peru-desde-mexico -->
+  <url>
+    <loc>https://rsviajesreycoliman.com/blog/viajes-a-peru-desde-mexico</loc>
+    <lastmod>2026-04-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://rsviajesreycoliman.com/blog/images/viajes-a-peru-mexico.png</image:loc>
+      <image:caption>Tour Definitivo a Perú y Machu Picchu desde México</image:caption>
     </image:image>
   </url>
   <!-- Blog Post: viajes-a-turquia-desde-mexico -->

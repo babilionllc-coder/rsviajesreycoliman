@@ -14,7 +14,9 @@ const staticUrls = [
     { loc: '/mas-destinos', lastmod: '2026-04-04', changefreq: 'weekly', priority: '0.7' },
     { loc: '/revista', lastmod: '2026-04-04', changefreq: 'monthly', priority: '0.7' },
     { loc: '/sobre-nosotros', lastmod: '2026-04-04', changefreq: 'monthly', priority: '0.8' },
-    { loc: '/privacidad', lastmod: '2026-01-01', changefreq: 'yearly', priority: '0.3' }
+    { loc: '/privacidad', lastmod: '2026-01-01', changefreq: 'yearly', priority: '0.3' },
+    { loc: '/tour', lastmod: '2026-04-09', changefreq: 'weekly', priority: '0.6' },
+    { loc: '/viaje', lastmod: '2026-04-09', changefreq: 'weekly', priority: '0.6' }
 ];
 
 console.log("🚀 Starting Sitemap Auto-Generation...");

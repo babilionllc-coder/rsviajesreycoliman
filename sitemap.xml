@@ -127,6 +127,17 @@
       <image:caption>Mejores Destinos para Viajar en Marzo y Semana Santa 2026</image:caption>
     </image:image>
   </url>
+  <!-- Blog Post: paquetes-de-viaje-colima -->
+  <url>
+    <loc>https://rsviajesreycoliman.com/blog/paquetes-de-viaje-colima</loc>
+    <lastmod>2026-04-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://rsviajesreycoliman.com/blog/images/paquetes-de-viaje-colima.png</image:loc>
+      <image:caption>Paquetes de Viaje desde Colima: Vuelos, Hoteles y Tours (2026)</image:caption>
+    </image:image>
+  </url>
   <!-- Blog Post: paquetes-viajes-todo-incluido -->
   <url>
     <loc>https://rsviajesreycoliman.com/blog/paquetes-viajes-todo-incluido</loc>
@@ -213,6 +224,17 @@
     <image:image>
       <image:loc>https://rsviajesreycoliman.com/blog/images/viajes-costa-rica-todo-incluido.png</image:loc>
       <image:caption>Viajes a Costa Rica Todo Incluido desde México 2026</image:caption>
+    </image:image>
+  </url>
+  <!-- Blog Post: viajes-de-graduacion-colima -->
+  <url>
+    <loc>https://rsviajesreycoliman.com/blog/viajes-de-graduacion-colima</loc>
+    <lastmod>2026-04-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://rsviajesreycoliman.com/blog/images/viajes-de-graduacion-colima.png</image:loc>
+      <image:caption>Viajes de Graduación en Colima: Paquetes Estudiantiles 2026</image:caption>
     </image:image>
   </url>
 </urlset>

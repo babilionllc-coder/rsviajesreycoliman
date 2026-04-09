@@ -183,6 +183,28 @@
       <image:caption>Requisitos para Viajar al Extranjero desde México 2026 — Guía Completa</image:caption>
     </image:image>
   </url>
+  <!-- Blog Post: viajes-a-canada-desde-mexico -->
+  <url>
+    <loc>https://rsviajesreycoliman.com/blog/viajes-a-canada-desde-mexico</loc>
+    <lastmod>2026-04-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://rsviajesreycoliman.com/blog/images/canada-montanas-rocosas.png</image:loc>
+      <image:caption>El Sueño Invernal: Viajando a Canadá desde México</image:caption>
+    </image:image>
+  </url>
+  <!-- Blog Post: viajes-a-egipto-y-dubai-desde-mexico -->
+  <url>
+    <loc>https://rsviajesreycoliman.com/blog/viajes-a-egipto-y-dubai-desde-mexico</loc>
+    <lastmod>2026-04-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://rsviajesreycoliman.com/blog/images/viajes-egipto-dubai-mexico.png</image:loc>
+      <image:caption>Viajes a Egipto y Dubái desde México: El Contraste Perfecto</image:caption>
+    </image:image>
+  </url>
   <!-- Blog Post: viajes-a-italia-desde-mexico -->
   <url>
     <loc>https://rsviajesreycoliman.com/blog/viajes-a-italia-desde-mexico</loc>

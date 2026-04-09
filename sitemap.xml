@@ -205,6 +205,30 @@
     </image:image>
   </url>
 
+  <!-- Blog Post: Viajes a Japón desde México 2026 -->
+  <url>
+    <loc>https://rsviajesreycoliman.com/blog/viajes-a-japon-desde-mexico</loc>
+    <lastmod>2026-04-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://rsviajesreycoliman.com/blog/images/viajes-a-japon-mexico.png</image:loc>
+      <image:caption>Templo japonés con vistas al Monte Fuji rodeado de cerezos</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Blog Post: Viajes a Turquía desde México 2026 -->
+  <url>
+    <loc>https://rsviajesreycoliman.com/blog/viajes-a-turquia-desde-mexico</loc>
+    <lastmod>2026-04-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://rsviajesreycoliman.com/blog/images/viajes-a-turquia-mexico.png</image:loc>
+      <image:caption>Globos aerostáticos y Capadocia en Turquía</image:caption>
+    </image:image>
+  </url>
+
   <!-- Privacy Policy -->
   <url>
     <loc>https://rsviajesreycoliman.com/privacidad</loc>

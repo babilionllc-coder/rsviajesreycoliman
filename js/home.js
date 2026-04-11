@@ -47,36 +47,40 @@ async function getHome(){
 }
 
 function loadCarrusel(){
-    let slides=[], indicators=[], html='', activeClass
-   for (let i = 0; i < carrousel.length; i++) {
+    const carouselItems = document.getElementById('carousel-items');
+    const existingHero = document.getElementById('hero-lcp-slide');
+    let indicators=[];
+    
+    for (let i = 0; i < carrousel.length; i++) {
         const item = carrousel[i];
         
-        activeClass = i == 0 ? 'active' : '';
-        let html = '<div class="carousel-item position-relative '+ activeClass +'" style="min-height: 100vh;">'
-        html += '<img class="position-absolute w-100 h-100" src="'+item.imagen+'" alt="'+(item.titulo || '')+' — RS Viajes Rey Colimán" style="object-fit: cover;">'
-        html += '<div class="carousel-caption d-flex flex-column align-items-center justify-content-center">'
-        html +=    '<div class="p-3" style="max-width: 900px;">'
-        html +=        '<h4 class="text-white text-uppercase mb-md-3 animate__animated animate__fadeInDown" style="letter-spacing: 3px;">' + (i18n.t('carousel.tag') === 'carousel.tag' ? 'Tu próximo destino' : i18n.t('carousel.tag')) + '</h4>'
-        html +=        '<h1 class="display-3 text-white mb-md-4 animate__animated animate__fadeInDown">' + item.titulo + '</h1>'
-        html +=        '<p class="mx-md-5 px-5 animate__animated animate__fadeInUp">' + (item.desc || '') + '</p>'
-        if(item.viaje.startsWith('http')){
-            html +=        '<a class="btn btn-outline-light py-3 px-4 mt-3 animate__animated animate__fadeInUp" href="'+item.viaje+'">' + i18n.t('carousel.btn') + '</a>'
-        }else{
-            html +=        '<a class="btn btn-outline-light py-3 px-4 mt-3 animate__animated animate__fadeInUp" href="viaje.html?tour='+item.viaje+'">' + i18n.t('carousel.btn') + '</a>'
+        let activeClassInd = i == 0 ? 'class="active"' : '';
+        indicators.push('<li data-target="#header-carousel" data-slide-to="'+i+'" '+activeClassInd+'></li>');
+
+        if (i === 0 && existingHero && item.titulo === "Euro Express 2026") {
+            // Keep the static DOM node to protect LCP score from Paint shift penalties
+            continue;
         }
-        html +=    '</div>'
-        html += '</div>'
-        html += '</div>'
-        slides.push(html);
 
-        activeClass = i == 0 ? 'class="active"' : '';
-        html = '<li data-target="#header-carousel" data-slide-to="'+i+'" '+activeClass+'></li>'
-        indicators.push(html);
-
+        let activeClassItem = (i == 0 && !existingHero) ? 'active' : '';
+        let htmlSnippet = '<div class="carousel-item position-relative '+ activeClassItem +'" style="min-height: 100vh;">'
+        htmlSnippet += '<img class="position-absolute w-100 h-100" src="'+item.imagen+'" alt="'+(item.titulo || '')+' — RS Viajes Rey Colimán" loading="lazy" style="object-fit: cover;">'
+        htmlSnippet += '<div class="carousel-caption d-flex flex-column align-items-center justify-content-center">'
+        htmlSnippet +=    '<div class="p-3" style="max-width: 900px;">'
+        htmlSnippet +=        '<h4 class="text-white text-uppercase mb-md-3 animate__animated animate__fadeInDown" style="letter-spacing: 3px;">' + (i18n.t('carousel.tag') === 'carousel.tag' ? 'Tu próximo destino' : i18n.t('carousel.tag')) + '</h4>'
+        htmlSnippet +=        '<h1 class="display-3 text-white mb-md-4 animate__animated animate__fadeInDown">' + item.titulo + '</h1>'
+        htmlSnippet +=        '<p class="mx-md-5 px-5 animate__animated animate__fadeInUp">' + (item.desc || '') + '</p>'
+        if(item.viaje.startsWith('http')){
+            htmlSnippet +=        '<a class="btn btn-outline-light py-3 px-4 mt-3 animate__animated animate__fadeInUp" href="'+item.viaje+'">' + i18n.t('carousel.btn') + '</a>'
+        } else {
+            htmlSnippet +=        '<a class="btn btn-outline-light py-3 px-4 mt-3 animate__animated animate__fadeInUp" href="viaje.html?tour='+item.viaje+'">' + i18n.t('carousel.btn') + '</a>'
+        }
+        htmlSnippet +=    '</div></div></div>'
+        
+        carouselItems.insertAdjacentHTML('beforeend', htmlSnippet);
     }
 
     document.getElementById('carousel-indicators').innerHTML = indicators.join('');
-    document.getElementById('carousel-items').innerHTML = slides.join('');
 }
 
 async function loadBestSellers(){

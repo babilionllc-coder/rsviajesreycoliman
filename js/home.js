@@ -32,10 +32,29 @@ async function getHome(){
             carrousel.push(...data.banner)
             portada = data.portada;
             revista = data.revista;
-            loadBestSellers();
             loadCarrusel();
-            loadRecents();
-            loadMagazine();
+
+            const observerOptions = { rootMargin: "400px" };
+            const createObserver = (elementId, loadFn) => {
+                const el = document.getElementById(elementId);
+                if (el) {
+                    const observer = new IntersectionObserver((entries, obs) => {
+                        entries.forEach(entry => {
+                            if (entry.isIntersecting) {
+                                loadFn();
+                                obs.unobserve(entry.target);
+                            }
+                        });
+                    }, observerOptions);
+                    observer.observe(el);
+                } else {
+                     loadFn();
+                }
+            };
+
+            createObserver("best-sellers", loadBestSellers);
+            createObserver("recents", loadRecents);
+            createObserver("magazine", loadMagazine);
         },
         error: function(XMLHttpRequest, textStatus, errorThrown) {
             if (typeof rsToast === 'function') {

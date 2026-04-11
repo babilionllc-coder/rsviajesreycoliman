@@ -79,13 +79,13 @@ function loadFooter() {
   html +=
     '<a class="social" href="https://www.tiktok.com/@rey.coliman" target="_blank" rel="noopener noreferrer"><img src="images/tiktok_icon.svg" alt="TikTok RS Viajes" loading="lazy"></img></a>';
   html +=
-    '<a class="social" href="https://www.facebook.com/REYCOLIMANAGENCIA/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>';
+    '<a class="social" aria-label="Facebook" href="https://www.facebook.com/REYCOLIMANAGENCIA/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>';
   html +=
-    '<a class="social" href="https://www.instagram.com/rsviajesreycoliman/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>';
+    '<a class="social" aria-label="Instagram" href="https://www.instagram.com/rsviajesreycoliman/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>';
   html +=
     '<a class="social" href="https://api.whatsapp.com/send/?phone=52' +
     contact.whatsapp +
-    '" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>';
+    '" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp" aria-label="WhatsApp"></i></a>';
   html += "</div>";
 
   // Clickable phone number
@@ -104,7 +104,7 @@ function loadWhatsapp() {
     '<a href="https://api.whatsapp.com/send/?phone=52' +
     contact.whatsapp +
     '&text=' + encodeURIComponent(i18n.t('wa.message')) +
-    '" class="float" target="_blank" rel="noopener noreferrer">';
+    '" class="float" aria-label="Chat on WhatsApp" target="_blank" rel="noopener noreferrer">';
   html += '<i class="fab fa-whatsapp my-float"></i>';
   html += "</a>";
 

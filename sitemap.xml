@@ -142,7 +142,7 @@
   <!-- Blog Post: mejores-destinos-viajar-marzo -->
   <url>
     <loc>https://rsviajesreycoliman.com/blog/mejores-destinos-viajar-marzo</loc>
-    <lastmod>2026-04-09</lastmod>
+    <lastmod>2026-04-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <image:image>
@@ -175,7 +175,7 @@
   <!-- Blog Post: requisitos-viajar-extranjero-mexico -->
   <url>
     <loc>https://rsviajesreycoliman.com/blog/requisitos-viajar-extranjero-mexico</loc>
-    <lastmod>2026-04-09</lastmod>
+    <lastmod>2026-04-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <image:image>
@@ -203,6 +203,28 @@
     <image:image>
       <image:loc>https://rsviajesreycoliman.com/blog/images/viajes-egipto-dubai-mexico.png</image:loc>
       <image:caption>Viajes a Egipto y Dubái desde México: El Contraste Perfecto</image:caption>
+    </image:image>
+  </url>
+  <!-- Blog Post: viajes-a-espana-desde-mexico -->
+  <url>
+    <loc>https://rsviajesreycoliman.com/blog/viajes-a-espana-desde-mexico</loc>
+    <lastmod>2026-04-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://rsviajesreycoliman.com/blog/images/viajes-a-espana-desde-mexico.png</image:loc>
+      <image:caption>Viajes a España desde México 2026 — Qué Incluye y Cuánto Cuesta</image:caption>
+    </image:image>
+  </url>
+  <!-- Blog Post: viajes-a-grecia-desde-mexico -->
+  <url>
+    <loc>https://rsviajesreycoliman.com/blog/viajes-a-grecia-desde-mexico</loc>
+    <lastmod>2026-04-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://rsviajesreycoliman.com/blog/images/viajes-a-grecia-desde-mexico.png</image:loc>
+      <image:caption>Viajes a Grecia desde México 2026 — Islas, Precios y Cruceros</image:caption>
     </image:image>
   </url>
   <!-- Blog Post: viajes-a-italia-desde-mexico -->
@@ -263,7 +285,7 @@
   <!-- Blog Post: viajes-colombia-todo-incluido-desde-mexico -->
   <url>
     <loc>https://rsviajesreycoliman.com/blog/viajes-colombia-todo-incluido-desde-mexico</loc>
-    <lastmod>2026-04-09</lastmod>
+    <lastmod>2026-04-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <image:image>
@@ -274,7 +296,7 @@
   <!-- Blog Post: viajes-costa-rica-todo-incluido-desde-mexico -->
   <url>
     <loc>https://rsviajesreycoliman.com/blog/viajes-costa-rica-todo-incluido-desde-mexico</loc>
-    <lastmod>2026-04-09</lastmod>
+    <lastmod>2026-04-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <image:image>

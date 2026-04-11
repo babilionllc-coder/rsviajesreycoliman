@@ -487,34 +487,41 @@
     <!-- Favicon -->
     <link href="favicon.ico" type="image/x-icon" rel="icon" />
 
-    <!-- Google Web Fonts -->
+    <!-- Preconnect to critical origins (LCP fix) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://www.api.salonnefertaritravel.com" crossorigin />
+    <link rel="preconnect" href="https://nefertaritravel.com.mx" crossorigin />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+    <link rel="dns-prefetch" href="https://code.jquery.com" />
+    <link rel="dns-prefetch" href="https://stackpath.bootstrapcdn.com" />
+
+    <!-- Google Web Fonts (swap=fastest text paint) -->
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
 
     <!-- Preload critical assets -->
+    <link rel="preload" href="css/style.css" as="style" />
     <link rel="preload" href="css/premium.min.css" as="style" />
-    <link rel="preload" href="images/logo-optimized.png" as="image" />
+    <link rel="preload" href="images/logo-optimized.png" as="image" fetchpriority="high" />
+    <link rel="preload" href="js/conf.js" as="script" />
+    <link rel="preload" href="js/home.js" as="script" />
 
-    <!-- Font Awesome -->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
-      rel="stylesheet"
-    />
-
-    <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet" />
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
-
-    <!-- Customized Bootstrap Stylesheet -->
+    <!-- Critical CSS (render-blocking — keep minimal) -->
     <link href="css/style.css" rel="stylesheet" />
-
-    <!-- Premium Design System -->
     <link href="css/premium.min.css" rel="stylesheet" />
-    <link href="css/cotizar-modal.css?v=3" rel="stylesheet" />
+
+    <!-- Non-critical CSS (deferred — won't block FCP) -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" /></noscript>
+    <link rel="preload" href="lib/animate/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link href="lib/animate/animate.min.css" rel="stylesheet" /></noscript>
+    <link rel="preload" href="lib/owlcarousel/assets/owl.carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" /></noscript>
+    <link rel="preload" href="css/cotizar-modal.css?v=3" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link href="css/cotizar-modal.css?v=3" rel="stylesheet" /></noscript>
   </head>
 
   <body>

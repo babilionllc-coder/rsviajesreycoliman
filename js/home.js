@@ -52,12 +52,13 @@ function loadCarrusel(){
         const item = carrousel[i];
         
         activeClass = i == 0 ? 'active' : '';
-        html = '<div class="carousel-item position-relative '+ activeClass +'" style="min-height: 100vh;">'
+        let html = '<div class="carousel-item position-relative '+ activeClass +'" style="min-height: 100vh;">'
         html += '<img class="position-absolute w-100 h-100" src="'+item.imagen+'" alt="'+(item.titulo || '')+' — RS Viajes Rey Colimán" style="object-fit: cover;">'
         html += '<div class="carousel-caption d-flex flex-column align-items-center justify-content-center">'
         html +=    '<div class="p-3" style="max-width: 900px;">'
-        html +=        '<h3 class="display-3 text-capitalize text-white mb-3">'+item.titulo+'</h3>'
-        html +=        '<p class="mx-md-5 px-5">'+item.desc+'</p>'
+        html +=        '<h4 class="text-white text-uppercase mb-md-3 animate__animated animate__fadeInDown" style="letter-spacing: 3px;">' + (i18n.t('carousel.tag') === 'carousel.tag' ? 'Tu próximo destino' : i18n.t('carousel.tag')) + '</h4>'
+        html +=        '<h1 class="display-3 text-white mb-md-4 animate__animated animate__fadeInDown">' + item.titulo + '</h1>'
+        html +=        '<p class="mx-md-5 px-5 animate__animated animate__fadeInUp">' + (item.desc || '') + '</p>'
         if(item.viaje.startsWith('http')){
             html +=        '<a class="btn btn-outline-light py-3 px-4 mt-3 animate__animated animate__fadeInUp" href="'+item.viaje+'">' + i18n.t('carousel.btn') + '</a>'
         }else{

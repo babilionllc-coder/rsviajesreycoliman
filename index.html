@@ -476,12 +476,18 @@
     </script>
 
     <!-- Google Analytics 4 -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PQEBBLW9GB"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-PQEBBLW9GB');
+      // Defer GTag execution to prevent main thread blocking during LCP/FCP
+      setTimeout(function() {
+        var s = document.createElement('script');
+        s.src = "https://www.googletagmanager.com/gtag/js?id=G-PQEBBLW9GB";
+        s.async = true;
+        document.head.appendChild(s);
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-PQEBBLW9GB');
+      }, 3500);
     </script>
 
     <!-- Favicon -->
@@ -496,11 +502,12 @@
     <link rel="dns-prefetch" href="https://code.jquery.com" />
     <link rel="dns-prefetch" href="https://stackpath.bootstrapcdn.com" />
 
-    <!-- Google Web Fonts (swap=fastest text paint) -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+    <!-- Google Web Fonts (async load to prevent render-blocking) -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap" as="style" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+    <noscript>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    </noscript>
 
     <!-- Preload critical assets -->
     <link rel="preload" href="css/style.css" as="style" />

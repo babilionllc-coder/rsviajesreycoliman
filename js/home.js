@@ -91,7 +91,7 @@ async function loadBestSellers(){
         if(item.imagen != null && item.imagen != ""){
         
             let html =   '<div class="service-item position-relative">'
-            html +=   '<img class="img-fluid" src="'+item.imagen+'" alt="'+(item.nombre || 'Trip')+' — RS Viajes Rey Colimán" loading="lazy">'
+            html +=   '<img class="img-fluid" src="'+item.imagen+'" alt="'+(item.nombre || 'Trip')+' — RS Viajes Rey Colimán" loading="lazy" width="600" height="850">'
             html +=    '<div class="service-text text-center">'
             html +=      '<div class="w-100 bg-white text-center p-4">'
             html +=          '<a class="btn btn-primary" href="viaje.html?tour='+item.viaje+'">' + i18n.t('best.btn') + '</a>'
@@ -141,7 +141,7 @@ function loadRecents(){
         if(item.imagen != null && item.imagen != ""){
         
             let html =   '<div class="service-item position-relative">'
-            html +=   '<img class="img-fluid" src="'+item.imagen+'" alt="'+(item.nombre || 'Trip')+' — RS Viajes Rey Colimán" loading="lazy">'
+            html +=   '<img class="img-fluid" src="'+item.imagen+'" alt="'+(item.nombre || 'Trip')+' — RS Viajes Rey Colimán" loading="lazy" width="600" height="850">'
             html +=    '<div class="service-text text-center">'
             html +=      '<div class="w-100 bg-white text-center p-4">'
             html +=          '<a class="btn btn-primary" href="viaje.html?tour='+item.viaje+'">' + i18n.t('best.btn') + '</a>'

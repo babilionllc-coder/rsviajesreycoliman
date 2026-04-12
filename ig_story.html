@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>JegoDigital Instagram Story</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --jego-gold: #C5A059;
+            --jego-dark: #121212;
+            --jego-gold-light: #E5C585;
+            --jego-gold-dark: #A8863C;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            /* Exactly Instagram Story dimensions */
+            width: 1080px;
+            height: 1920px;
+            background: linear-gradient(145deg, #1A1A1A 0%, #000000 100%);
+            font-family: 'Inter', sans-serif;
+            color: white;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Abstract Background Elements */
+        .bg-glow {
+            position: absolute;
+            top: -20%;
+            left: -30%;
+            width: 1000px;
+            height: 1000px;
+            background: radial-gradient(circle, rgba(197, 160, 89, 0.15) 0%, rgba(0,0,0,0) 70%);
+            border-radius: 50%;
+            z-index: 0;
+        }
+
+        .bg-glow-bottom {
+            position: absolute;
+            bottom: -10%;
+            right: -20%;
+            width: 800px;
+            height: 800px;
+            background: radial-gradient(circle, rgba(197, 160, 89, 0.1) 0%, rgba(0,0,0,0) 70%);
+            border-radius: 50%;
+            z-index: 0;
+        }
+
+        /* Header */
+        .header {
+            position: relative;
+            z-index: 10;
+            padding: 80px 60px 40px;
+            text-align: center;
+        }
+
+        .logo-wrap {
+            display: inline-block;
+            border: 2px solid rgba(197, 160, 89, 0.3);
+            padding: 10px 40px;
+            border-radius: 40px;
+            background: rgba(0,0,0,0.5);
+            backdrop-filter: blur(10px);
+            margin-bottom: 40px;
+        }
+
+        .logo {
+            font-size: 32px;
+            font-weight: 900;
+            letter-spacing: 4px;
+        }
+
+        .logo span:first-child { color: var(--jego-gold); }
+        .logo span:last-child { color: white; }
+
+        .title {
+            font-family: 'Playfair Display', serif;
+            font-size: 80px;
+            line-height: 1.1;
+            margin-bottom: 20px;
+            background: linear-gradient(to right, #FFF 0%, var(--jego-gold-light) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .subtitle {
+            font-size: 28px;
+            color: #A0A0A0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 600;
+        }
+
+        /* Content Container */
+        .content {
+            position: relative;
+            z-index: 10;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+            padding: 0 60px;
+        }
+
+        .card {
+            width: 100%;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 30px;
+            padding: 40px;
+            position: relative;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+            backdrop-filter: blur(20px);
+        }
+
+        /* The Gold Accent Border */
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 6px;
+            background: linear-gradient(90deg, #D32F2F, #FF5252);
+            border-top-left-radius: 30px;
+            border-top-right-radius: 30px;
+        }
+
+        .card.after::before {
+            background: linear-gradient(90deg, #388E3C, #4CAF50);
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .card-badge {
+            background: rgba(211, 47, 47, 0.2);
+            color: #FF5252;
+            padding: 10px 24px;
+            border-radius: 20px;
+            font-weight: 800;
+            font-size: 24px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border: 1px solid rgba(211, 47, 47, 0.5);
+        }
+
+        .card.after .card-badge {
+            background: rgba(56, 142, 60, 0.2);
+            color: #4CAF50;
+            border-color: rgba(56, 142, 60, 0.5);
+        }
+
+        .card-desc {
+            font-size: 24px;
+            color: white;
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+        }
+
+        .img-container {
+            width: 100%;
+            height: 380px;
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .img-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            object-position: center;
+        }
+
+        /* Footer */
+        .footer {
+            position: relative;
+            z-index: 10;
+            text-align: center;
+            padding: 60px;
+            padding-bottom: 100px;
+        }
+
+        .cta {
+            background: linear-gradient(90deg, var(--jego-gold-dark), var(--jego-gold));
+            color: var(--jego-dark);
+            font-size: 36px;
+            font-weight: 900;
+            padding: 24px 60px;
+            border-radius: 50px;
+            display: inline-block;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            box-shadow: 0 10px 30px rgba(197, 160, 89, 0.4);
+            margin-bottom: 30px;
+        }
+
+        .domain {
+            font-family: 'Playfair Display', serif;
+            color: rgba(255,255,255,0.6);
+            font-size: 28px;
+            letter-spacing: 1px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="bg-glow"></div>
+    <div class="bg-glow-bottom"></div>
+
+    <div class="header">
+        <div class="logo-wrap">
+            <div class="logo"><span>JEGO</span><span>DIGITAL</span></div>
+        </div>
+        <h1 class="title">Resultados de<br>Conversión y Velocidad</h1>
+        <div class="subtitle">Auditoría Google PageSpeed</div>
+    </div>
+
+    <div class="content">
+        <!-- ANTES -->
+        <div class="card">
+            <div class="card-header">
+                <div class="card-badge">Antes</div>
+                <div class="card-desc">Arquitectura Rendimiento Lento</div>
+            </div>
+            <div class="img-container">
+                <img src="file:///Users/mac/Downloads/beforersviajes.jpg" alt="Antes">
+            </div>
+        </div>
+
+        <!-- DESPUÉS -->
+        <div class="card after">
+            <div class="card-header">
+                <div class="card-badge">Después</div>
+                <div class="card-desc">Infraestructura SEO/AEO 2026</div>
+            </div>
+            <div class="img-container" style="padding: 10px;">
+                <img src="file:///Users/mac/Downloads/afterrsviajes.jpg" alt="Después" style="transform: scale(1.05);">
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="cta">Transforma Tu Sitio Web</div>
+        <div class="domain">jegodigital.com</div>
+    </div>
+</body>
+</html>

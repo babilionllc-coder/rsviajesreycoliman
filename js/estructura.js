@@ -146,7 +146,8 @@ function loadMenu() {
 
   if (mostrarNacionales) {
     html =
-      '<a href="viajes-nacionales.html" class="nav-item nav-link">' + i18n.t('nav.national') + '</a>';
+      '<a href="viajes-nacionales.html" class="nav-item nav-link">' + i18n.t('nav.national') + '</a>' +
+      '<a href="/mundial-2026" class="nav-item nav-link" style="color:#0d7c3c;font-weight:700;">⚽ Mundial 2026</a>';
 
     document.getElementById("nacionales").innerHTML = html;
   }

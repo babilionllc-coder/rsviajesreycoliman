@@ -21,6 +21,16 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://rsviajesreycoliman.com/mundial-2026</loc>
+    <lastmod>2026-04-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://rsviajesreycoliman.com/images/mundial/texas.jpg</image:loc>
+      <image:caption>Paquetes Mundial 2026 desde México — RS Viajes Rey Colimán</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://rsviajesreycoliman.com/viajes-nacionales</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
@@ -93,6 +103,17 @@
     <image:image>
       <image:loc>https://rsviajesreycoliman.com/blog/images/cuando-es-mejor-viajar-a-europa.webp</image:loc>
       <image:caption>Cuándo es Mejor Viajar a Europa — Temporadas y Precios 2026</image:caption>
+    </image:image>
+  </url>
+  <!-- Blog Post: cuanto-cuesta-ir-al-mundial-2026-desde-mexico -->
+  <url>
+    <loc>https://rsviajesreycoliman.com/blog/cuanto-cuesta-ir-al-mundial-2026-desde-mexico</loc>
+    <lastmod>2026-04-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://rsviajesreycoliman.com/blog/images/cuanto-cuesta-ir-al-mundial-2026.jpg</image:loc>
+      <image:caption>¿Cuánto Cuesta Ir al Mundial 2026 desde México? Guía Completa</image:caption>
     </image:image>
   </url>
   <!-- Blog Post: cuanto-cuesta-viajar-a-europa-desde-mexico -->

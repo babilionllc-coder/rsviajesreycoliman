@@ -4,7 +4,11 @@ Thumbs.db
 
 # Lead/outreach CSV files (never in repo root — go in /outreach/)
 *.csv
+
+# Ignore generic txt files but allow IndexNow verification
 *.txt
+!indexnow-key.txt
+!7a980d459cd042d5aaaf7306f9ddf288.txt
 
 # Internal tools and docs
 SEO antigravity/

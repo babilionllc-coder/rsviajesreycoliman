@@ -1,0 +1,59 @@
+name: Auto-Index to Google & Bing on Deploy
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '**.html'
+      - 'sitemap.xml'
+      - 'blog/**'
+      - 'pages/**'
+      - 'app/**'
+
+jobs:
+  index-urls:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Install dependencies
+        run: npm install googleapis xml2js
+
+      - name: Write Google Service Account key
+        run: echo '${{ secrets.GOOGLE_SERVICE_ACCOUNT_KEY }}' > /tmp/google-sa-key.json
+
+      - name: Submit URLs to Google Indexing API
+        env:
+          GOOGLE_SERVICE_ACCOUNT_KEY: /tmp/google-sa-key.json
+        run: node .agents/scripts/force_index.js
+
+      - name: Submit sitemap to IndexNow (Bing/Yandex)
+        run: |
+          URLS=$(grep -oP '(?<=<loc>)[^<]+' sitemap.xml)
+          KEY=$(cat indexnow-key.txt 2>/dev/null || echo "")
+
+          if [ -z "$KEY" ]; then
+            echo "⚠️ No IndexNow key found, skipping Bing/Yandex submission"
+            exit 0
+          fi
+
+          URL_ARRAY=$(echo "$URLS" | jq -R -s 'split("\n") | map(select(length > 0))')
+
+          curl -s -X POST "https://api.indexnow.org/indexnow" \
+            -H "Content-Type: application/json" \
+            -d "{
+              \"host\": \"YOURDOMAIN.com\",
+              \"key\": \"$KEY\",
+              \"keyLocation\": \"https://YOURDOMAIN.com/$KEY.txt\",
+              \"urlList\": $URL_ARRAY
+            }" && echo "✅ IndexNow submission complete" || echo "⚠️ IndexNow submission failed"
+
+      - name: Cleanup
+        if: always()
+        run: rm -f /tmp/google-sa-key.json

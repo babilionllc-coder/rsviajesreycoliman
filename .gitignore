@@ -8,7 +8,7 @@ Thumbs.db
 # Ignore generic txt files but allow IndexNow verification
 *.txt
 !indexnow-key.txt
-!7a980d459cd042d5aaaf7306f9ddf288.txt
+!9fed92b522db0758fcf399178a479963.txt
 
 # Internal tools and docs
 SEO antigravity/

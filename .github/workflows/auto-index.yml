@@ -7,13 +7,21 @@ on:
       - '**.html'
       - 'sitemap.xml'
       - 'blog/**'
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'Index mode: changed (default) or all'
+        required: false
+        default: 'changed'
 
 jobs:
   index-urls:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout (with history for diff)
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -26,33 +34,67 @@ jobs:
       - name: Write Google Service Account key
         run: echo '${{ secrets.GOOGLE_SERVICE_ACCOUNT_KEY }}' > /tmp/google-sa-key.json
 
-      - name: Submit URLs to Google Indexing API
+      - name: Submit changed URLs to Google Indexing API
         env:
           GOOGLE_SERVICE_ACCOUNT_KEY: /tmp/google-sa-key.json
+          INDEX_MODE: ${{ github.event.inputs.mode || 'changed' }}
         run: node .agents/scripts/force_index.js
 
-      - name: Submit sitemap to IndexNow (Bing/Yandex)
+      - name: Submit to IndexNow (Bing/Yandex)
         run: |
-          # Extract URLs from sitemap
-          URLS=$(grep -oP '(?<=<loc>)[^<]+' sitemap.xml)
           KEY=$(cat indexnow-key.txt 2>/dev/null || echo "")
-
           if [ -z "$KEY" ]; then
-            echo "⚠️ No IndexNow key found, skipping Bing/Yandex submission"
+            echo "⚠️ No IndexNow key found, skipping Bing/Yandex"
             exit 0
           fi
 
-          # Submit batch to IndexNow API
+          # Get only changed HTML URLs from git diff
+          CHANGED=$(git diff --name-only HEAD~1 HEAD 2>/dev/null | grep -E '\.html$|sitemap' || true)
+          if [ -z "$CHANGED" ]; then
+            echo "ℹ️ No HTML changes detected, skipping IndexNow"
+            exit 0
+          fi
+
+          # Build URL list from changed files
+          URLS=""
+          for f in $CHANGED; do
+            if [[ "$f" == "sitemap.xml" ]]; then
+              # Get URLs with today's lastmod from sitemap
+              TODAY=$(date +%Y-%m-%d)
+              NEW_URLS=$(grep -B1 "$TODAY" sitemap.xml | grep -oP '(?<=<loc>)[^<]+' || true)
+              URLS="$URLS $NEW_URLS"
+            elif [[ "$f" == *.html ]]; then
+              # Convert path to URL
+              URL_PATH=$(echo "$f" | sed 's|/index\.html$||; s|\.html$||')
+              URLS="$URLS https://rsviajesreycoliman.com/$URL_PATH"
+            fi
+          done
+
+          # Deduplicate
+          URLS=$(echo "$URLS" | tr ' ' '\n' | sort -u | grep -v '^$')
+          COUNT=$(echo "$URLS" | wc -l)
+          echo "📤 Submitting $COUNT URLs to IndexNow"
+          echo "$URLS"
+
           URL_ARRAY=$(echo "$URLS" | jq -R -s 'split("\n") | map(select(length > 0))')
 
-          curl -s -X POST "https://api.indexnow.org/indexnow" \
+          RESPONSE=$(curl -s -w "\n%{http_code}" -X POST "https://api.indexnow.org/indexnow" \
             -H "Content-Type: application/json" \
             -d "{
               \"host\": \"rsviajesreycoliman.com\",
               \"key\": \"$KEY\",
               \"keyLocation\": \"https://rsviajesreycoliman.com/$KEY.txt\",
               \"urlList\": $URL_ARRAY
-            }" && echo "✅ IndexNow submission complete" || echo "⚠️ IndexNow submission failed"
+            }")
+
+          HTTP_CODE=$(echo "$RESPONSE" | tail -1)
+          BODY=$(echo "$RESPONSE" | head -n -1)
+
+          if [ "$HTTP_CODE" = "200" ] || [ "$HTTP_CODE" = "202" ]; then
+            echo "✅ IndexNow accepted ($HTTP_CODE)"
+          else
+            echo "⚠️ IndexNow returned $HTTP_CODE: $BODY"
+          fi
 
       - name: Cleanup
         if: always()

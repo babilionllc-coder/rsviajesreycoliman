@@ -10,7 +10,7 @@
   </url>
   <url>
     <loc>https://rsviajesreycoliman.com/blog</loc>
-    <lastmod>2026-04-09</lastmod>
+    <lastmod>2026-04-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -368,6 +368,50 @@
     <image:image>
       <image:loc>https://rsviajesreycoliman.com/blog/images/viajes-luna-de-miel.webp</image:loc>
       <image:caption>Viajes de Luna de Miel desde Colima: Guía y Paquetes 2026</image:caption>
+    </image:image>
+  </url>
+  <!-- Blog Post: mejores-paquetes-viaje-desde-colima -->
+  <url>
+    <loc>https://rsviajesreycoliman.com/blog/mejores-paquetes-viaje-desde-colima</loc>
+    <lastmod>2026-04-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://rsviajesreycoliman.com/blog/images/paquetes-viaje-colima-hero.jpg</image:loc>
+      <image:caption>Los Mejores Paquetes de Viaje desde Colima: Guía Completa 2026</image:caption>
+    </image:image>
+  </url>
+  <!-- Blog Post: cuanto-cuesta-viaje-europa-desde-colima -->
+  <url>
+    <loc>https://rsviajesreycoliman.com/blog/cuanto-cuesta-viaje-europa-desde-colima</loc>
+    <lastmod>2026-04-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://rsviajesreycoliman.com/blog/images/viaje-europa-colima-hero.jpg</image:loc>
+      <image:caption>¿Cuánto Cuesta un Viaje a Europa desde Colima? Guía de Precios 2026</image:caption>
+    </image:image>
+  </url>
+  <!-- Blog Post: mejores-tours-colima-manzanillo -->
+  <url>
+    <loc>https://rsviajesreycoliman.com/blog/mejores-tours-colima-manzanillo</loc>
+    <lastmod>2026-04-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://rsviajesreycoliman.com/blog/images/tours-colima-volcan-hero.jpg</image:loc>
+      <image:caption>Los 10 Mejores Tours en Colima y Manzanillo 2026</image:caption>
+    </image:image>
+  </url>
+  <!-- Blog Post: cancun-desde-colima-guia-completa -->
+  <url>
+    <loc>https://rsviajesreycoliman.com/blog/cancun-desde-colima-guia-completa</loc>
+    <lastmod>2026-04-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://rsviajesreycoliman.com/blog/images/cancun-desde-colima-hero.jpg</image:loc>
+      <image:caption>Cancún desde Colima: Guía Completa de Vuelos, Paquetes y Tips 2026</image:caption>
     </image:image>
   </url>
 </urlset>

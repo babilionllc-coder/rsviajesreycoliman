@@ -56,6 +56,49 @@ curl -s -X POST "https://api.dataforseo.com/v3/on_page/task_post" \
 
 ---
 
+## 🤖 AUTO-INDEXING PROTOCOL (CRITICAL — DO NOT BREAK)
+
+**Every push to `main` automatically submits URLs to Google + Bing + Yandex. You NEVER ask the user to manually submit sitemaps or use Google Search Console.**
+
+### How it works
+A GitHub Action (`.github/workflows/auto-index.yml`) runs on every push to `main` that modifies `**.html`, `sitemap.xml`, or `blog/**`. It:
+1. Parses `sitemap.xml`
+2. Submits every URL to **Google Indexing API** via `force_index.js` (service account: `jegodigital@jegodigital-e02fb.iam.gserviceaccount.com` — already verified as Owner in Search Console)
+3. Submits the URL batch to **IndexNow** (Bing/Yandex) using key in `indexnow-key.txt`
+
+### Your job when making SEO changes
+1. Make the HTML/schema/sitemap edits
+2. Run `node .agents/scripts/auto_sitemap.js` to regenerate the sitemap
+3. Commit + push to `main` (or merge feature branch → main)
+4. **That's it.** The GitHub Action handles all search engine notifications automatically
+
+### Critical rules
+- ❌ **NEVER** instruct the user to manually submit sitemaps to Google Search Console
+- ❌ **NEVER** instruct the user to click anything in Search Console
+- ❌ **NEVER** ask the user to run `force_index.js` manually — the Action does it
+- ✅ **ALWAYS** regenerate `sitemap.xml` after adding/removing blog posts or pages (`node .agents/scripts/auto_sitemap.js`)
+- ✅ **ALWAYS** verify the workflow run succeeded at `github.com/babilionllc-coder/rsviajesreycoliman/actions` after pushing
+- ✅ If workflow fails, diagnose via logs — the service account is already set up, so 403 errors usually mean ownership propagation delay (wait 2 min and re-run)
+
+### Required GitHub Secret (already configured)
+- Name: `GOOGLE_SERVICE_ACCOUNT_KEY`
+- Value: JSON keyfile content for `jegodigital@jegodigital-e02fb.iam.gserviceaccount.com`
+- Location: `github.com/babilionllc-coder/rsviajesreycoliman/settings/secrets/actions`
+
+### Manual indexing (rare, emergency only)
+If auto-indexing fails and you need to force-reindex from local:
+```bash
+GOOGLE_SERVICE_ACCOUNT_KEY=/path/to/key.json node .agents/scripts/force_index.js
+```
+
+### When adding new pages
+After creating a new HTML page (blog post, service page, landing page):
+1. Run: `node .agents/scripts/auto_sitemap.js` (auto-detects new pages)
+2. Commit sitemap + new page
+3. Push to main → auto-indexed within 30 seconds
+
+---
+
 ## 🏗️ DOM & Metadata Injection Rules
 
 When applying AEO or SEO fixes to the `rsviajes` repository (usually `index.html`):

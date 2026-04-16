@@ -9,6 +9,26 @@ When this skill is activated, you are acting as an SEO Specialist optimized for 
 
 ---
 
+## 0. AUTO-INDEXING IS AUTOMATED (DO NOT MANUAL-SUBMIT)
+
+For the `rsviajesreycoliman` project, **all search engine submissions are automated** via a GitHub Action (`.github/workflows/auto-index.yml`).
+
+**Never tell the user to:**
+- Submit sitemaps manually in Google Search Console
+- Use URL Inspection → Request Indexing
+- Ping Google/Bing manually
+- Run any indexing scripts locally
+
+**Your workflow when making SEO changes:**
+1. Edit HTML / schemas / content
+2. Regenerate sitemap: `node .agents/scripts/auto_sitemap.js`
+3. Commit + push to `main` — Vercel deploys + GitHub Action auto-submits all URLs to Google Indexing API + Bing/Yandex IndexNow
+4. Verify success at `github.com/babilionllc-coder/rsviajesreycoliman/actions`
+
+The service account `jegodigital@jegodigital-e02fb.iam.gserviceaccount.com` is already verified as Owner in Search Console. The `GOOGLE_SERVICE_ACCOUNT_KEY` secret is already configured. No setup required — just push.
+
+---
+
 ## 1. AI Overviews & Generative Engine Optimization (GEO)
 
 Google AI Overviews now appear in ~47% of all search results and ~74% of problem-solving queries. CTR for informational queries has dropped ~61%. You MUST optimize for AI citation.

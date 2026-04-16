@@ -3,7 +3,7 @@ const { google } = require('googleapis');
 const xml2js = require('xml2js');
 const path = require('path');
 
-const KEYFILE_PATH = '/Users/mac/Desktop/Websites/jegodigital/website/jegodigital-e02fb-6bdcd05bee0e.json';
+const KEYFILE_PATH = process.env.GOOGLE_SERVICE_ACCOUNT_KEY || path.resolve(__dirname, 'google-service-account.json');
 const SITEMAP_PATH = path.resolve(__dirname, '../../sitemap.xml');
 
 async function forceIndex() {

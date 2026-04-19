@@ -87,7 +87,7 @@ function loadCarrusel(){
         htmlSnippet += '<div class="carousel-caption d-flex flex-column align-items-center justify-content-center">'
         htmlSnippet +=    '<div class="p-3" style="max-width: 900px;">'
         htmlSnippet +=        '<h4 class="text-white text-uppercase mb-md-3 animate__animated animate__fadeInDown" style="letter-spacing: 3px;">' + (i18n.t('carousel.tag') === 'carousel.tag' ? 'Tu próximo destino' : i18n.t('carousel.tag')) + '</h4>'
-        htmlSnippet +=        '<h1 class="display-3 text-white mb-md-4 animate__animated animate__fadeInDown">' + item.titulo + '</h1>'
+        htmlSnippet +=        '<h2 class="display-3 text-white mb-md-4 animate__animated animate__fadeInDown">' + item.titulo + '</h2>'
         htmlSnippet +=        '<p class="mx-md-5 px-5 animate__animated animate__fadeInUp">' + (item.desc || '') + '</p>'
         if(item.viaje.startsWith('http')){
             htmlSnippet +=        '<a class="btn btn-outline-light py-3 px-4 mt-3 animate__animated animate__fadeInUp" href="'+item.viaje+'">' + i18n.t('carousel.btn') + '</a>'

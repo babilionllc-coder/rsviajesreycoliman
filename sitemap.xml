@@ -420,4 +420,26 @@
       <image:caption>Mejores Tours en Colima y Manzanillo 2026</image:caption>
     </image:image>
   </url>
+  <!-- Blog Post: visa-schengen-mexicanos-europa -->
+  <url>
+    <loc>https://rsviajesreycoliman.com/blog/visa-schengen-mexicanos-europa</loc>
+    <lastmod>2026-04-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://rsviajesreycoliman.com/blog/images/requisitos-viajar-extranjero-mexico.webp</image:loc>
+      <image:caption>Visa Schengen y ETIAS para Mexicanos 2026 — Requisitos Europa</image:caption>
+    </image:image>
+  </url>
+  <!-- Blog Post: mejores-destinos-viajar-diciembre-mexico -->
+  <url>
+    <loc>https://rsviajesreycoliman.com/blog/mejores-destinos-viajar-diciembre-mexico</loc>
+    <lastmod>2026-04-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://rsviajesreycoliman.com/blog/images/mejores-destinos-viajar-marzo.webp</image:loc>
+      <image:caption>Mejores Destinos para Viajar en Diciembre 2026 desde México</image:caption>
+    </image:image>
+  </url>
 </urlset>

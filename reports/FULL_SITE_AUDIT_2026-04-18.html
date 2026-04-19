@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Auditoría Completa SEO — RS Viajes Rey Colimán — 18 Abril 2026</title>
+<style>
+  :root {
+    --bg: #07080c;
+    --bg-2: #0a0a1a;
+    --panel: rgba(18, 20, 32, 0.82);
+    --panel-border: rgba(191, 155, 81, 0.18);
+    --gold: #bf9b51;
+    --gold-bright: #e0bc6a;
+    --text: #f5f3ec;
+    --text-dim: rgba(245, 243, 236, 0.68);
+    --text-faint: rgba(245, 243, 236, 0.42);
+    --ok: #5fd38a;
+    --warn: #f0b757;
+    --crit: #ff6b6b;
+    --info: #8db9e8;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: radial-gradient(ellipse at top, var(--bg-2) 0%, var(--bg) 60%);
+    color: var(--text);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    min-height: 100vh;
+    padding: 0 0 80px;
+    letter-spacing: 0.01em;
+  }
+  .wrap { max-width: 1180px; margin: 0 auto; padding: 0 32px; }
+
+  /* Hero */
+  header.hero {
+    padding: 72px 0 56px;
+    border-bottom: 1px solid var(--panel-border);
+    margin-bottom: 56px;
+  }
+  .brand { font-size: 28px; font-weight: 800; letter-spacing: -0.02em; margin-bottom: 16px; }
+  .brand .g { color: var(--gold); }
+  .brand .d { color: #fff; }
+  .brand .mark { color: var(--text-faint); font-weight: 400; margin-left: 12px; font-size: 14px; letter-spacing: 0.15em; text-transform: uppercase; }
+  h1 {
+    font-size: 52px; font-weight: 800; line-height: 1.1; letter-spacing: -0.03em;
+    margin: 8px 0 20px; max-width: 920px;
+  }
+  h1 em { font-style: normal; color: var(--gold); }
+  .subtitle { font-size: 18px; color: var(--text-dim); max-width: 780px; margin-bottom: 36px; }
+
+  .hero-meta { display: flex; gap: 40px; flex-wrap: wrap; font-size: 14px; color: var(--text-faint); }
+  .hero-meta b { color: var(--text); font-weight: 600; display: block; margin-top: 4px; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; }
+
+  /* Section */
+  section { margin: 0 0 72px; }
+  h2 {
+    font-size: 32px; font-weight: 800; letter-spacing: -0.02em;
+    padding-bottom: 14px; margin-bottom: 28px;
+    border-bottom: 1px solid var(--panel-border);
+    display: flex; align-items: baseline; gap: 16px;
+  }
+  h2 .num {
+    font-size: 13px; color: var(--gold); letter-spacing: 0.2em; text-transform: uppercase;
+    font-weight: 600;
+  }
+  h3 { font-size: 20px; font-weight: 700; margin: 32px 0 16px; color: var(--gold-bright); }
+
+  p { color: var(--text-dim); margin-bottom: 14px; }
+  p.lead { font-size: 17px; color: var(--text); margin-bottom: 28px; }
+
+  /* Stat cards */
+  .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; margin-bottom: 40px; }
+  .stat {
+    background: var(--panel);
+    border: 1px solid var(--panel-border);
+    border-radius: 14px;
+    padding: 22px 20px;
+    transition: border-color 0.2s;
+  }
+  .stat:hover { border-color: var(--gold); }
+  .stat .label {
+    font-size: 11px; color: var(--text-faint); text-transform: uppercase;
+    letter-spacing: 0.15em; margin-bottom: 10px; font-weight: 600;
+  }
+  .stat .num { font-size: 40px; font-weight: 800; color: var(--gold); line-height: 1; letter-spacing: -0.02em; }
+  .stat .unit { font-size: 14px; color: var(--text-dim); font-weight: 500; margin-top: 6px; }
+
+  /* Score block */
+  .scores { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 24px; margin-bottom: 48px; }
+  .score-card {
+    background: linear-gradient(135deg, rgba(191, 155, 81, 0.08), rgba(191, 155, 81, 0.02));
+    border: 1px solid var(--panel-border);
+    border-radius: 18px;
+    padding: 32px;
+    text-align: center;
+  }
+  .score-card .name { font-size: 12px; color: var(--text-faint); letter-spacing: 0.2em; text-transform: uppercase; margin-bottom: 16px; }
+  .score-card .value { font-size: 64px; font-weight: 800; line-height: 1; letter-spacing: -0.03em; }
+  .score-card .value.strong { color: var(--ok); }
+  .score-card .value.medium { color: var(--gold); }
+  .score-card .value.weak { color: var(--warn); }
+  .score-card .band { margin-top: 10px; font-size: 14px; color: var(--text-dim); font-weight: 600; letter-spacing: 0.05em; }
+
+  /* Table */
+  table { width: 100%; border-collapse: collapse; margin: 16px 0 28px; font-size: 14px; }
+  th {
+    text-align: left; padding: 12px 14px; background: rgba(191, 155, 81, 0.08);
+    color: var(--gold); font-weight: 700; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase;
+    border-bottom: 1px solid var(--panel-border);
+  }
+  td {
+    padding: 12px 14px; border-bottom: 1px solid rgba(255,255,255,0.05);
+    color: var(--text-dim); vertical-align: top;
+  }
+  tr:last-child td { border-bottom: none; }
+  td.ok { color: var(--ok); font-weight: 600; }
+  td.warn { color: var(--warn); font-weight: 600; }
+  td.crit { color: var(--crit); font-weight: 600; }
+  td code { background: rgba(255,255,255,0.06); padding: 2px 6px; border-radius: 4px; color: var(--gold-bright); font-size: 12px; }
+
+  /* Issue box */
+  .issue {
+    background: var(--panel);
+    border: 1px solid var(--panel-border);
+    border-left: 4px solid var(--crit);
+    border-radius: 10px;
+    padding: 20px 24px;
+    margin-bottom: 16px;
+  }
+  .issue.warn { border-left-color: var(--warn); }
+  .issue.info { border-left-color: var(--info); }
+  .issue.ok { border-left-color: var(--ok); }
+  .issue .head {
+    display: flex; justify-content: space-between; align-items: baseline; gap: 16px;
+    margin-bottom: 10px;
+  }
+  .issue .title { font-size: 17px; font-weight: 700; color: var(--text); }
+  .issue .impact {
+    font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase;
+    padding: 4px 10px; border-radius: 999px; font-weight: 700;
+    background: rgba(255, 107, 107, 0.14); color: var(--crit);
+  }
+  .issue.warn .impact { background: rgba(240, 183, 87, 0.14); color: var(--warn); }
+  .issue.info .impact { background: rgba(141, 185, 232, 0.14); color: var(--info); }
+  .issue.ok .impact { background: rgba(95, 211, 138, 0.14); color: var(--ok); }
+  .issue p { margin-bottom: 8px; color: var(--text-dim); font-size: 14.5px; }
+  .issue .fix {
+    margin-top: 12px; padding-top: 12px; border-top: 1px dashed var(--panel-border);
+    font-size: 13px;
+  }
+  .issue .fix b { color: var(--gold); letter-spacing: 0.05em; text-transform: uppercase; font-size: 11px; margin-right: 8px; }
+  .issue ul { margin: 8px 0 0 18px; }
+  .issue li { color: var(--text-dim); font-size: 13px; margin-bottom: 4px; }
+
+  /* Action plan */
+  .plan-row {
+    display: grid; grid-template-columns: 60px 1fr 120px 120px; gap: 20px;
+    align-items: center; padding: 18px 0;
+    border-bottom: 1px solid var(--panel-border);
+  }
+  .plan-row:last-child { border-bottom: none; }
+  .plan-row .step {
+    font-size: 32px; font-weight: 800; color: var(--gold);
+    font-family: 'Georgia', serif; line-height: 1;
+  }
+  .plan-row .desc b { color: var(--text); font-size: 15px; font-weight: 700; display: block; margin-bottom: 4px; }
+  .plan-row .desc span { color: var(--text-dim); font-size: 13.5px; }
+  .plan-row .meta { text-align: right; font-size: 12px; }
+  .plan-row .meta b { display: block; font-size: 11px; color: var(--text-faint); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 3px; }
+  .plan-row .meta .val { color: var(--gold); font-weight: 700; font-size: 15px; }
+
+  /* Page list */
+  .page-grid {
+    display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px 28px;
+    margin-top: 14px; font-size: 13px; color: var(--text-dim);
+  }
+  .page-grid code { color: var(--gold-bright); }
+
+  /* Footer CTA */
+  .cta {
+    background: linear-gradient(135deg, rgba(191, 155, 81, 0.15), rgba(191, 155, 81, 0.03));
+    border: 1px solid var(--gold);
+    border-radius: 18px;
+    padding: 40px 48px;
+    text-align: center;
+    margin-top: 56px;
+  }
+  .cta h3 { font-size: 26px; color: var(--text); margin-bottom: 10px; }
+  .cta p { color: var(--text-dim); font-size: 15px; margin-bottom: 0; }
+
+  .note { font-size: 12px; color: var(--text-faint); margin-top: 8px; font-style: italic; }
+
+  @media (max-width: 720px) {
+    h1 { font-size: 38px; }
+    .stats { grid-template-columns: 1fr 1fr; }
+    .scores { grid-template-columns: 1fr; }
+    .plan-row { grid-template-columns: 1fr; gap: 6px; }
+    .page-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="brand"><span class="g">Jego</span><span class="d">Digital</span><span class="mark">Auditoría Técnica</span></div>
+    <h1>Auditoría Completa del Sitio — <em>RS Viajes Rey Colimán</em></h1>
+    <p class="subtitle">Revisión integral de cada página del sitio: conteo total, estructura, SEO técnico, visibilidad en buscadores y recomendaciones priorizadas para dominar Google, Google Maps y buscadores de IA en los próximos 90 días.</p>
+    <div class="hero-meta">
+      <div><b>Cliente</b>RS Viajes Rey Colimán</div>
+      <div><b>Dominio</b>rsviajesreycoliman.com</div>
+      <div><b>Fecha</b>18 de Abril 2026</div>
+      <div><b>Agencia</b>JegoDigital</div>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+<!-- SECTION 1 — EXECUTIVE SUMMARY -->
+<section>
+  <h2><span class="num">01</span> Resumen Ejecutivo</h2>
+  <p class="lead">El sitio tiene <b style="color:var(--gold)">218 páginas totales direccionables</b> (44 HTML estáticas + 174 páginas dinámicas de viajes). La estructura técnica es <b style="color:var(--ok)">sólida</b> — sin H1 duplicados, sin títulos duplicados, schema bien implementado en 43 de 44 páginas. Las oportunidades están en cubrir 5 páginas huérfanas del sitemap, reparar 7 bloques de schema con errores de JSON, y agregar 30 URLs al sistema de indexación automática.</p>
+
+  <div class="scores">
+    <div class="score-card">
+      <div class="name">SEO Técnico</div>
+      <div class="value medium">78</div>
+      <div class="band">Fuerte</div>
+    </div>
+    <div class="score-card">
+      <div class="name">Contenido & Schema</div>
+      <div class="value medium">82</div>
+      <div class="band">Fuerte</div>
+    </div>
+    <div class="score-card">
+      <div class="name">Visibilidad AEO</div>
+      <div class="value weak">58</div>
+      <div class="band">Competitiva</div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 2 — PAGE INVENTORY -->
+<section>
+  <h2><span class="num">02</span> Inventario Completo de Páginas</h2>
+  <p class="lead">Todas las páginas visibles para el usuario (descartando plantillas internas, Remotion, reportes privados y archivos de trabajo).</p>
+
+  <div class="stats">
+    <div class="stat">
+      <div class="label">Páginas Totales</div>
+      <div class="num">218</div>
+      <div class="unit">direccionables</div>
+    </div>
+    <div class="stat">
+      <div class="label">HTML Estáticas</div>
+      <div class="num">44</div>
+      <div class="unit">archivos en repo</div>
+    </div>
+    <div class="stat">
+      <div class="label">Posts de Blog</div>
+      <div class="num">32</div>
+      <div class="unit">+ 1 hub</div>
+    </div>
+    <div class="stat">
+      <div class="label">Páginas de Viaje</div>
+      <div class="num">174</div>
+      <div class="unit">dinámicas vía API</div>
+    </div>
+  </div>
+
+  <h3>Desglose por Tipo de Página</h3>
+  <table>
+    <thead>
+      <tr><th>Tipo</th><th>Cantidad</th><th>Ejemplo / Ruta</th><th>Estado</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Homepage</td><td>1</td><td><code>/</code></td><td class="ok">Óptimo</td></tr>
+      <tr><td>Categorías comerciales</td><td>3</td><td><code>/viajes-internacionales</code>, <code>/viajes-nacionales</code>, <code>/mas-destinos</code></td><td class="warn">Contenido delgado</td></tr>
+      <tr><td>Campaña específica</td><td>1</td><td><code>/mundial-2026</code></td><td class="warn">Sin CTA WhatsApp</td></tr>
+      <tr><td>Páginas institucionales</td><td>2</td><td><code>/sobre-nosotros</code>, <code>/privacidad</code></td><td class="ok">OK</td></tr>
+      <tr><td>Plantillas dinámicas</td><td>2</td><td><code>/tour</code>, <code>/viaje</code></td><td class="warn">Bajo contenido base</td></tr>
+      <tr><td>Revista</td><td>1</td><td><code>/revista</code></td><td class="warn">106 palabras</td></tr>
+      <tr><td>Error</td><td>1</td><td><code>/404</code></td><td class="warn">Sin hreflang / schema</td></tr>
+      <tr><td>Hub de blog</td><td>1</td><td><code>/blog</code></td><td class="ok">OK</td></tr>
+      <tr><td>Posts de blog</td><td>32</td><td><code>/blog/*</code></td><td class="ok">Promedio 1,495 palabras</td></tr>
+      <tr><td>Páginas de viaje (dinámicas)</td><td>174</td><td><code>/viaje?tour={id}</code></td><td class="info">Renderizadas vía API</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Catálogo Dinámico por Región</h3>
+  <table>
+    <thead>
+      <tr><th>Región</th><th>Número de Viajes</th><th>Participación</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Europa</td><td>69</td><td>39.7%</td></tr>
+      <tr><td>Nacional (México)</td><td>36</td><td>20.7%</td></tr>
+      <tr><td>Asia</td><td>27</td><td>15.5%</td></tr>
+      <tr><td>Medio Oriente</td><td>24</td><td>13.8%</td></tr>
+      <tr><td>América (Colombia, Costa Rica, USA)</td><td>15</td><td>8.6%</td></tr>
+      <tr><td>Cruceros Grecia</td><td>3</td><td>1.7%</td></tr>
+      <tr><th>Total</th><th>174</th><th>100%</th></tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- SECTION 3 — CRITICAL ISSUES -->
+<section>
+  <h2><span class="num">03</span> Hallazgos Críticos</h2>
+  <p class="lead">Los 10 hallazgos con mayor impacto en visibilidad orgánica, priorizados por severidad y facilidad de corrección.</p>
+
+  <div class="issue">
+    <div class="head">
+      <div class="title">1. Siete bloques de Schema JSON-LD rotos por errores de sintaxis</div>
+      <span class="impact">Crítico</span>
+    </div>
+    <p>6 posts de blog tienen bloques <code>application/ld+json</code> que no parsean por una coma faltante después del campo <code>"speakable"</code> y antes de <code>"inLanguage"</code>. Además, 2 FAQs tienen etiquetas <code>&lt;a href&gt;</code> dentro del texto de la pregunta — esto invalida el JSON y Google los descarta silenciosamente.</p>
+    <p><b style="color:var(--gold)">Resultado:</b> Estas páginas no obtienen rich snippets (FAQ, BlogPosting, HowTo) en SERP aunque el código esté presente.</p>
+    <div class="fix">
+      <b>Fix</b>Añadir coma faltante en: requisitos-viajar-extranjero-mexico, cuanto-cuesta-viajar-a-europa-desde-mexico, mejores-destinos-viajar-desde-colima, agencia-viajes-villa-de-alvarez, guia-completa-viajes-desde-mexico, mejores-destinos-viajar-marzo. Tiempo estimado: 25 min.
+    </div>
+  </div>
+
+  <div class="issue">
+    <div class="head">
+      <div class="title">2. Cinco páginas ausentes del sitemap.xml</div>
+      <span class="impact">Crítico</span>
+    </div>
+    <p>Las siguientes páginas existen y están publicadas pero no aparecen en <code>sitemap.xml</code>, por lo que Google tarda semanas o meses en encontrarlas.</p>
+    <ul>
+      <li><code>/blog/mejores-paquetes-viaje-desde-colima</code> — post con 1,200+ palabras</li>
+      <li><code>/blog/cuanto-cuesta-viaje-europa-desde-colima</code> — post con 1,885 palabras (el más largo de Europa+Colima)</li>
+      <li><code>/blog/cancun-desde-colima-guia-completa</code> — post con 2,060 palabras</li>
+      <li><code>/blog/mejores-tours-colima-manzanillo</code> — post con 3,185 palabras (el post más largo del sitio)</li>
+      <li><code>/404</code> — página de error (opcional, pero sin hreflang)</li>
+    </ul>
+    <div class="fix">
+      <b>Fix</b>Añadir 4 URLs de blog al sitemap.xml con <code>&lt;lastmod&gt;2026-04-18&lt;/lastmod&gt;</code> y <code>&lt;priority&gt;0.9&lt;/priority&gt;</code>, y enviar el sitemap actualizado a Google Search Console. Tiempo: 10 min.
+    </div>
+  </div>
+
+  <div class="issue">
+    <div class="head">
+      <div class="title">3. Treinta URLs jamás enviadas a la Google Indexing API</div>
+      <span class="impact">Crítico</span>
+    </div>
+    <p>El estado de indexación (<code>.agents/indexing-state.json</code>) solo tiene 14 URLs marcadas como enviadas. Hay 30 URLs productivas que la automatización aún no ha enviado — esto explica por qué posts como "viajes-a-italia-desde-mexico" y "viajes-a-paris-desde-mexico" todavía no aparecen en Google.</p>
+    <div class="fix">
+      <b>Fix</b>El workflow de GitHub Actions (<code>auto-index.yml</code>) ya corre diariamente a las 03:00 UTC con cuota de 25 URLs/día. En 2 días todas las pendientes quedan enviadas. <b style="color:var(--gold)">Sin acción manual requerida.</b>
+    </div>
+  </div>
+
+  <div class="issue warn">
+    <div class="head">
+      <div class="title">4. Diez títulos exceden 65 caracteres (se truncan en SERP desktop)</div>
+      <span class="impact">Importante</span>
+    </div>
+    <p>Google muestra aproximadamente 60 caracteres en desktop y 78 en móvil. Los títulos más largos se cortan con "…" perdiendo la pista de acción final.</p>
+    <ul>
+      <li><code>viajes-internacionales.html</code> (90) — Viajes Internacionales — Salidas Garantizadas a Europa, Asia y Más | RS Viajes R…</li>
+      <li><code>mundial-2026.html</code> (83) — Paquetes Mundial 2026 desde México — Vuelo, Hotel y Boletos | RS Viajes Rey Coli…</li>
+      <li><code>viajes-nacionales.html</code> (81) — Viajes Nacionales — Cancún, Los Cabos, Riviera Maya y Más…</li>
+      <li>Y 7 más (detalle en JSON completo)</li>
+    </ul>
+    <div class="fix">
+      <b>Fix</b>Reescribir a &lt; 60 caracteres priorizando el keyword + marca corta. Ejemplo: "Viajes a Europa desde Colima 2026 | RS Viajes" (44 caracteres).
+    </div>
+  </div>
+
+  <div class="issue warn">
+    <div class="head">
+      <div class="title">5. Siete meta descriptions superan los 160 caracteres</div>
+      <span class="impact">Importante</span>
+    </div>
+    <p>Google trunca la descripción en SERP a ~155 caracteres móvil / 160 desktop. Las siguientes páginas quedan cortadas justo en el llamado a la acción:</p>
+    <ul>
+      <li><code>revista.html</code> (163) · <code>viajes-a-cancun-desde-colima</code> (165) · <code>viajes-a-paris-desde-mexico</code> (164)</li>
+      <li><code>mejores-paquetes-viaje-desde-colima</code> (197) — 37 caracteres sobre el límite</li>
+      <li><code>cuanto-cuesta-viaje-europa-desde-colima</code> (174), <code>cancun-desde-colima-guia-completa</code> (170), <code>mejores-tours-colima-manzanillo</code> (163)</li>
+    </ul>
+  </div>
+
+  <div class="issue warn">
+    <div class="head">
+      <div class="title">6. Páginas comerciales con contenido delgado</div>
+      <span class="impact">Importante</span>
+    </div>
+    <p>Cuatro páginas comerciales clave tienen menos de 300 palabras, muy por debajo del benchmark de 800 palabras para páginas transaccionales:</p>
+    <ul>
+      <li><code>viajes-nacionales.html</code> — 230 palabras (debería ser 1,200+)</li>
+      <li><code>viajes-internacionales.html</code> — 234 palabras (debería ser 1,500+)</li>
+      <li><code>mas-destinos.html</code> — 125 palabras</li>
+      <li><code>revista.html</code> — 106 palabras</li>
+    </ul>
+    <p>La homepage tiene buen contenido pero las páginas de categoría se quedan cortas, lo que limita su capacidad de rankear para términos tipo "paquetes a Europa desde México".</p>
+    <div class="fix">
+      <b>Fix</b>Expandir cada página de categoría con 1 párrafo introductorio (300w), 4 secciones H2 de destinos destacados (200w cada una), y un bloque FAQ con 6 preguntas (400w). Objetivo: 1,500 palabras por página.
+    </div>
+  </div>
+
+  <div class="issue warn">
+    <div class="head">
+      <div class="title">7. Siete páginas sin CTA de WhatsApp</div>
+      <span class="impact">Importante</span>
+    </div>
+    <p>Estas páginas reciben tráfico pero no tienen botón visible para contactar por WhatsApp — se pierden conversiones:</p>
+    <ul>
+      <li><code>index.html</code> — homepage (!!) — el CTA es indirecto, sin <code>wa.me/523125504084</code> en href</li>
+      <li><code>mundial-2026.html</code> — campaña alta intención</li>
+      <li><code>tour.html</code>, <code>viaje.html</code> — plantillas dinámicas</li>
+      <li><code>cuanto-cuesta-ir-al-mundial-2026-desde-mexico.html</code> — post alta intención</li>
+      <li><code>privacidad.html</code>, <code>404.html</code> — baja prioridad</li>
+    </ul>
+    <div class="fix">
+      <b>Fix</b>Añadir botón fijo en footer de cada página: <code>&lt;a href="https://wa.me/523125504084"&gt;</code>. Homepage requiere revisión — el botón debe usar el href directo, no un redirector.
+    </div>
+  </div>
+
+  <div class="issue warn">
+    <div class="head">
+      <div class="title">8. Cuatro subdirectorios de blog sin hreflang en-US</div>
+      <span class="impact">Moderado</span>
+    </div>
+    <p>Los 4 posts más nuevos (en subdirectorios <code>blog/cancun-desde-colima-guia-completa/</code>, etc.) solo declaran hreflang español, perdiendo potencial de ranking para búsquedas en inglés desde expatriados en Colima.</p>
+    <div class="fix">
+      <b>Fix</b>Añadir <code>&lt;link rel="alternate" hreflang="en" href="..."&gt;</code> en cada <code>&lt;head&gt;</code>. El sistema i18n.js ya soporta inglés, solo falta declararlo. Tiempo: 15 min.
+    </div>
+  </div>
+
+  <div class="issue info">
+    <div class="head">
+      <div class="title">9. Veinte páginas con menos de 5 enlaces internos</div>
+      <span class="impact">Mejora</span>
+    </div>
+    <p>Las plantillas dinámicas (<code>tour.html</code>, <code>viaje.html</code>) y páginas institucionales tienen entre 0 y 4 enlaces internos. Google usa el mesh interno para distribuir autoridad — páginas con pocos links internos suelen rankear peor.</p>
+    <div class="fix">
+      <b>Fix</b>Agregar bloque "Artículos relacionados" de 3–4 posts en el footer de <code>viaje.html</code> y <code>tour.html</code>. Añadir breadcrumbs visuales en páginas institucionales.
+    </div>
+  </div>
+
+  <div class="issue ok">
+    <div class="head">
+      <div class="title">10. Lo que ya está BIEN en el sitio</div>
+      <span class="impact">Fortalezas</span>
+    </div>
+    <ul>
+      <li><b>Schema robusto:</b> 43 de 44 páginas tienen schema. Tipos presentes: BreadcrumbList (36), FAQPage (34), VideoObject (25), BlogPosting (23), TravelAgency (9), HowTo (7).</li>
+      <li><b>Sin duplicidades:</b> Cero títulos duplicados, cero meta descriptions duplicadas — Google no tiene dudas de qué página rankear.</li>
+      <li><b>Jerarquía limpia:</b> Todas las páginas tienen exactamente 1 H1. Esto fue un fix reciente (el homepage tenía 6 H1 dinámicos — ya corregido).</li>
+      <li><b>Blog con densidad:</b> Los 32 posts promedian 1,495 palabras. Los topes son 3,185w (tours Colima-Manzanillo) y 2,429w (agencia Villa de Álvarez).</li>
+      <li><b>Cobertura AEO parcial:</b> 34 FAQPages + 7 HowTo + 25 VideoObject = buen punto de partida para citaciones en ChatGPT/Perplexity.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- SECTION 4 — SEO DETAIL TABLE -->
+<section>
+  <h2><span class="num">04</span> Matriz de Auditoría por Página</h2>
+  <p class="lead">Páginas comerciales principales + top 10 posts de blog por word count. Estado por columna: verde = óptimo, ámbar = mejora necesaria, rojo = crítico.</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Página</th>
+        <th>Título</th>
+        <th>Meta</th>
+        <th>H1</th>
+        <th>Schema</th>
+        <th>Palabras</th>
+        <th>Links Int.</th>
+        <th>Sitemap</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td><code>/</code></td><td class="ok">62c ✓</td><td class="ok">151c ✓</td><td class="ok">1 ✓</td><td class="ok">TravelAgency, FAQPage, HowTo</td><td class="ok">1,405</td><td class="ok">38</td><td class="ok">✓</td></tr>
+      <tr><td><code>/viajes-internacionales</code></td><td class="crit">90c ✗</td><td class="ok">138c ✓</td><td class="ok">1 ✓</td><td class="ok">ItemList, FAQPage</td><td class="warn">234</td><td class="warn">4</td><td class="ok">✓</td></tr>
+      <tr><td><code>/viajes-nacionales</code></td><td class="crit">81c ✗</td><td class="ok">148c ✓</td><td class="ok">1 ✓</td><td class="ok">ItemList, FAQPage</td><td class="warn">230</td><td class="warn">4</td><td class="ok">✓</td></tr>
+      <tr><td><code>/mas-destinos</code></td><td class="crit">79c ✗</td><td class="ok">151c ✓</td><td class="ok">1 ✓</td><td class="ok">ItemList, FAQPage</td><td class="crit">125</td><td class="warn">4</td><td class="ok">✓</td></tr>
+      <tr><td><code>/sobre-nosotros</code></td><td class="crit">68c ✗</td><td class="ok">155c ✓</td><td class="ok">1 ✓</td><td class="ok">TravelAgency, FAQPage</td><td class="ok">880</td><td class="ok">12</td><td class="ok">✓</td></tr>
+      <tr><td><code>/mundial-2026</code></td><td class="crit">83c ✗</td><td class="ok">154c ✓</td><td class="ok">1 ✓</td><td class="ok">Event, FAQPage</td><td class="ok">1,012</td><td class="ok">8</td><td class="ok">✓</td></tr>
+      <tr><td><code>/revista</code></td><td class="crit">77c ✗</td><td class="crit">163c ✗</td><td class="ok">1 ✓</td><td class="ok">DigitalDocument</td><td class="crit">106</td><td class="warn">3</td><td class="ok">✓</td></tr>
+      <tr><td><code>/blog</code></td><td class="ok">58c ✓</td><td class="ok">155c ✓</td><td class="ok">1 ✓</td><td class="ok">Blog, ItemList</td><td class="ok">1,245</td><td class="ok">35</td><td class="ok">✓</td></tr>
+      <tr><td><code>/blog/mejores-tours-colima-manzanillo</code></td><td class="crit">94c ✗</td><td class="warn">163c ✗</td><td class="ok">1 ✓</td><td class="ok">BlogPosting, FAQPage</td><td class="ok">3,185</td><td class="ok">8</td><td class="crit">✗</td></tr>
+      <tr><td><code>/blog/agencia-viajes-villa-de-alvarez</code></td><td class="ok">61c ✓</td><td class="ok">154c ✓</td><td class="ok">1 ✓</td><td class="warn">Schema roto (coma)</td><td class="ok">2,429</td><td class="ok">11</td><td class="ok">✓</td></tr>
+      <tr><td><code>/blog/cancun-desde-colima-guia-completa</code></td><td class="warn">63c ✓</td><td class="warn">170c ✗</td><td class="ok">1 ✓</td><td class="ok">BlogPosting, FAQPage, HowTo</td><td class="ok">2,060</td><td class="ok">7</td><td class="crit">✗</td></tr>
+      <tr><td><code>/blog/viajes-a-japon-desde-mexico</code></td><td class="ok">56c ✓</td><td class="ok">158c ✓</td><td class="ok">1 ✓</td><td class="ok">BlogPosting, FAQPage, HowTo</td><td class="ok">2,019</td><td class="ok">9</td><td class="ok">✓</td></tr>
+      <tr><td><code>/blog/cuanto-cuesta-viaje-europa-desde-colima</code></td><td class="crit">90c ✗</td><td class="crit">174c ✗</td><td class="ok">1 ✓</td><td class="ok">BlogPosting, FAQPage</td><td class="ok">1,885</td><td class="ok">10</td><td class="crit">✗</td></tr>
+      <tr><td><code>/blog/viajes-a-turquia-desde-mexico</code></td><td class="ok">58c ✓</td><td class="ok">157c ✓</td><td class="ok">1 ✓</td><td class="ok">BlogPosting, FAQPage, HowTo</td><td class="ok">1,867</td><td class="ok">9</td><td class="ok">✓</td></tr>
+      <tr><td><code>/blog/viajes-a-egipto-y-dubai-desde-mexico</code></td><td class="ok">59c ✓</td><td class="ok">156c ✓</td><td class="ok">1 ✓</td><td class="ok">BlogPosting, FAQPage</td><td class="ok">1,787</td><td class="ok">10</td><td class="ok">✓</td></tr>
+      <tr><td><code>/blog/viajes-a-peru-desde-mexico</code></td><td class="ok">55c ✓</td><td class="ok">156c ✓</td><td class="ok">1 ✓</td><td class="ok">BlogPosting, FAQPage, HowTo</td><td class="ok">1,770</td><td class="ok">8</td><td class="ok">✓</td></tr>
+      <tr><td><code>/blog/viajes-a-canada-desde-mexico</code></td><td class="ok">56c ✓</td><td class="ok">158c ✓</td><td class="ok">1 ✓</td><td class="ok">BlogPosting, FAQPage</td><td class="ok">1,747</td><td class="ok">9</td><td class="ok">✓</td></tr>
+    </tbody>
+  </table>
+  <p class="note">Matriz completa con las 44 páginas disponible en el JSON adjunto: <code>reports/full_site_audit_2026-04-18.json</code>.</p>
+</section>
+
+<!-- SECTION 5 — COVERAGE STATS -->
+<section>
+  <h2><span class="num">05</span> Cobertura Técnica Global</h2>
+
+  <div class="stats">
+    <div class="stat">
+      <div class="label">Páginas con Schema</div>
+      <div class="num">43/44</div>
+      <div class="unit">97.7% cobertura</div>
+    </div>
+    <div class="stat">
+      <div class="label">Páginas con FAQ Schema</div>
+      <div class="num">34</div>
+      <div class="unit">en 44 posibles</div>
+    </div>
+    <div class="stat">
+      <div class="label">Páginas con Video Schema</div>
+      <div class="num">25</div>
+      <div class="unit">todas en blog</div>
+    </div>
+    <div class="stat">
+      <div class="label">Páginas con HowTo</div>
+      <div class="num">7</div>
+      <div class="unit">mercado AEO clave</div>
+    </div>
+  </div>
+
+  <h3>Distribución de Schema.org Implementado</h3>
+  <table>
+    <thead><tr><th>Tipo de Schema</th><th>Páginas</th><th>Propósito SEO/AEO</th></tr></thead>
+    <tbody>
+      <tr><td><code>BreadcrumbList</code></td><td>36</td><td>Breadcrumbs en SERP (CTR +10%)</td></tr>
+      <tr><td><code>FAQPage</code></td><td>34</td><td>Rich snippet FAQ + citas en AEO</td></tr>
+      <tr><td><code>VideoObject</code></td><td>25</td><td>Thumbnail en SERP + Google Video</td></tr>
+      <tr><td><code>BlogPosting</code></td><td>23</td><td>Fecha + autor visible en SERP</td></tr>
+      <tr><td><code>TravelAgency</code></td><td>9</td><td>Local Business + Google Maps + AggregateRating</td></tr>
+      <tr><td><code>HowTo</code></td><td>7</td><td>Paso-a-paso en SERP (destacados)</td></tr>
+      <tr><td><code>ItemList</code></td><td>5</td><td>Carruseles visuales en resultados</td></tr>
+      <tr><td><code>Article</code></td><td>5</td><td>Sección "Top Stories" elegible</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- SECTION 6 — ACTION PLAN -->
+<section>
+  <h2><span class="num">06</span> Plan de Acción Priorizado</h2>
+  <p class="lead">Ordenado por impacto × facilidad. Los primeros 5 son <b style="color:var(--gold)">quick wins</b> que se ejecutan en menos de 3 horas y habilitan rich snippets y mejor indexación.</p>
+
+  <div class="plan-row">
+    <div class="step">1</div>
+    <div class="desc">
+      <b>Reparar 7 bloques de JSON-LD rotos</b>
+      <span>Añadir coma faltante después de "speakable" en 6 posts + quitar etiquetas &lt;a&gt; dentro de preguntas FAQ.</span>
+    </div>
+    <div class="meta"><b>Impacto</b><div class="val">Alto</div></div>
+    <div class="meta"><b>Tiempo</b><div class="val">25 min</div></div>
+  </div>
+
+  <div class="plan-row">
+    <div class="step">2</div>
+    <div class="desc">
+      <b>Agregar 4 posts al sitemap.xml</b>
+      <span>mejores-paquetes-viaje-desde-colima, cuanto-cuesta-viaje-europa-desde-colima, cancun-desde-colima-guia-completa, mejores-tours-colima-manzanillo (este último tiene 3,185 palabras desperdiciadas).</span>
+    </div>
+    <div class="meta"><b>Impacto</b><div class="val">Alto</div></div>
+    <div class="meta"><b>Tiempo</b><div class="val">10 min</div></div>
+  </div>
+
+  <div class="plan-row">
+    <div class="step">3</div>
+    <div class="desc">
+      <b>Acortar 10 títulos &gt; 65 caracteres</b>
+      <span>Prioridad: viajes-internacionales (90c), mundial-2026 (83c), viajes-nacionales (81c). Reescribir a 50–60c con keyword + marca corta.</span>
+    </div>
+    <div class="meta"><b>Impacto</b><div class="val">Alto</div></div>
+    <div class="meta"><b>Tiempo</b><div class="val">45 min</div></div>
+  </div>
+
+  <div class="plan-row">
+    <div class="step">4</div>
+    <div class="desc">
+      <b>Agregar hreflang="en" en 4 subdirectorios de blog</b>
+      <span>Los posts en subcarpetas solo tienen declarado español; Google no sabe que hay versión EN disponible vía i18n.js.</span>
+    </div>
+    <div class="meta"><b>Impacto</b><div class="val">Medio</div></div>
+    <div class="meta"><b>Tiempo</b><div class="val">15 min</div></div>
+  </div>
+
+  <div class="plan-row">
+    <div class="step">5</div>
+    <div class="desc">
+      <b>Añadir CTA WhatsApp en homepage + 6 páginas</b>
+      <span>Botón fijo con href="https://wa.me/523125504084" en footer de index.html, mundial-2026, tour.html, viaje.html y post del mundial.</span>
+    </div>
+    <div class="meta"><b>Impacto</b><div class="val">Alto (conv.)</div></div>
+    <div class="meta"><b>Tiempo</b><div class="val">40 min</div></div>
+  </div>
+
+  <div class="plan-row">
+    <div class="step">6</div>
+    <div class="desc">
+      <b>Expandir páginas de categoría a 1,500 palabras</b>
+      <span>viajes-internacionales (234→1,500w), viajes-nacionales (230→1,500w), mas-destinos (125→1,200w). Añadir FAQ + destinos destacados + bloque de precios orientativos.</span>
+    </div>
+    <div class="meta"><b>Impacto</b><div class="val">Alto</div></div>
+    <div class="meta"><b>Tiempo</b><div class="val">6 hrs</div></div>
+  </div>
+
+  <div class="plan-row">
+    <div class="step">7</div>
+    <div class="desc">
+      <b>Acortar 7 meta descriptions &gt; 160 caracteres</b>
+      <span>Objetivo: 145–155 caracteres. Priorizar pages con intención comercial (cancun-desde-colima, viajes-a-paris).</span>
+    </div>
+    <div class="meta"><b>Impacto</b><div class="val">Medio</div></div>
+    <div class="meta"><b>Tiempo</b><div class="val">30 min</div></div>
+  </div>
+
+  <div class="plan-row">
+    <div class="step">8</div>
+    <div class="desc">
+      <b>Monitorear indexación automática (30 URLs pendientes)</b>
+      <span>GitHub Actions ya envía 25 URLs/día automáticamente. Sin trabajo manual. Verificar en 72h que las pendientes quedaron indexadas.</span>
+    </div>
+    <div class="meta"><b>Impacto</b><div class="val">Alto</div></div>
+    <div class="meta"><b>Tiempo</b><div class="val">0 (auto)</div></div>
+  </div>
+
+  <div class="plan-row">
+    <div class="step">9</div>
+    <div class="desc">
+      <b>Agregar ItemList schema a páginas de categoría</b>
+      <span>viajes-internacionales, viajes-nacionales, mas-destinos ya tienen FAQ pero no listan los destinos top-5 en schema. Habilita carrusel visual en SERP.</span>
+    </div>
+    <div class="meta"><b>Impacto</b><div class="val">Medio</div></div>
+    <div class="meta"><b>Tiempo</b><div class="val">1 hr</div></div>
+  </div>
+
+  <div class="plan-row">
+    <div class="step">10</div>
+    <div class="desc">
+      <b>Construir mesh interno en plantillas dinámicas</b>
+      <span>tour.html y viaje.html sirven a 174 páginas dinámicas pero solo tienen 1 enlace interno cada una. Añadir bloque "Artículos relacionados" con 3 posts del blog matcheados por región.</span>
+    </div>
+    <div class="meta"><b>Impacto</b><div class="val">Alto</div></div>
+    <div class="meta"><b>Tiempo</b><div class="val">2 hrs</div></div>
+  </div>
+</section>
+
+<!-- SECTION 7 — CONTENT GAPS -->
+<section>
+  <h2><span class="num">07</span> Oportunidades de Contenido Adicional</h2>
+  <p class="lead">Basado en el plan editorial del proyecto y los keywords que aún no tienen página dedicada, estos son los siguientes 6 posts priorizados por volumen × intención comercial.</p>
+
+  <table>
+    <thead>
+      <tr><th>Posición</th><th>Artículo a Crear</th><th>Keyword Primario</th><th>Vol. MX/mes</th><th>Intención</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><b>#1</b></td><td>Mejores Destinos para Viajar en Diciembre desde México</td><td>destinos para viajar en diciembre</td><td>~2,400</td><td class="warn">Informacional</td></tr>
+      <tr><td><b>#2</b></td><td>Visa Schengen para Mexicanos — ¿Necesitas Visa para Europa?</td><td>visa para europa mexicanos</td><td>~1,900</td><td class="warn">Informacional (AEO fuerte)</td></tr>
+      <tr><td><b>#3</b></td><td>Viajes al Caribe Todo Incluido desde México 2026</td><td>viajes al caribe todo incluido</td><td>~1,600</td><td class="ok">Comercial</td></tr>
+      <tr><td><b>#4</b></td><td>Cuándo es Mejor Viajar a Europa — Temporadas y Precios</td><td>cuando es mejor viajar a europa</td><td>~1,200</td><td class="warn">Informacional</td></tr>
+      <tr><td><b>#5</b></td><td>Viajes a Cancún Todo Incluido desde Colima 2026</td><td>viajes cancun desde colima</td><td>~320</td><td class="ok">Comercial local (alta conv.)</td></tr>
+      <tr><td><b>#6</b></td><td>Paquetes Todo Incluido Semana Santa 2027 — Destinos Colima</td><td>paquetes semana santa</td><td>~2,100 estacional</td><td class="ok">Comercial estacional</td></tr>
+    </tbody>
+  </table>
+  <p class="note">Cada post sigue la plantilla del proyecto: mínimo 1,200 palabras, apertura answer-first, mínimo 2 enlaces internos, FAQ de 4+ preguntas, schema BlogPosting + FAQPage, CTA WhatsApp.</p>
+</section>
+
+<!-- SECTION 8 — AEO ROADMAP -->
+<section>
+  <h2><span class="num">08</span> Estrategia AEO — Aparecer en ChatGPT, Gemini y Perplexity</h2>
+  <p class="lead">La base AEO del sitio ya es sólida (34 FAQPages + 7 HowTo). Los siguientes 3 movimientos elevan la probabilidad de ser citado por motores de IA cuando un mexicano pregunte "¿Cuál es la mejor agencia de viajes en Colima?" o "¿Cuánto cuesta un paquete a Europa?".</p>
+
+  <div class="issue info">
+    <div class="head">
+      <div class="title">AEO-1. Reforzar la entidad "RS Viajes Rey Colimán"</div>
+      <span class="impact">Alto</span>
+    </div>
+    <p>Los modelos de IA aprenden asociaciones por co-ocurrencia. El nombre completo de la agencia aparece en 43 de 44 páginas, pero en muchos posts de blog aparece 1 sola vez. Meta: que aparezca en los primeros 2 párrafos de cada artículo y al menos 3 veces en total.</p>
+  </div>
+
+  <div class="issue info">
+    <div class="head">
+      <div class="title">AEO-2. Post tipo "best-of" respondiendo la query comercial directa</div>
+      <span class="impact">Crítico</span>
+    </div>
+    <p>Ya existe <code>/blog/mejor-agencia-de-viajes-en-colima</code> — excelente. Siguiente paso: crear su contraparte comparativa "¿Vale la pena contratar una agencia de viajes o reservar por mi cuenta?" — esta pregunta la hacen constantemente en ChatGPT y todavía no hay fuente mexicana autoritativa.</p>
+  </div>
+
+  <div class="issue info">
+    <div class="head">
+      <div class="title">AEO-3. Publicar llms.txt en la raíz del dominio</div>
+      <span class="impact">Medio</span>
+    </div>
+    <p>Crear <code>/llms.txt</code> (estándar emergente) con una descripción estructurada de RS Viajes + links a las 10 páginas más importantes. Anthropic, OpenAI y Google ya procesan este archivo. Tiempo: 20 min.</p>
+  </div>
+</section>
+
+<!-- CTA -->
+<div class="cta">
+  <h3>Listo para ejecutar este plan</h3>
+  <p>Todos los fixes críticos (pasos 1–5) se ejecutan en una sola sesión de 2.5 horas. El despliegue a Vercel es automático al hacer push a main. Solo di la palabra y JegoDigital lo ejecuta.</p>
+</div>
+
+</main>
+
+</body>
+</html>

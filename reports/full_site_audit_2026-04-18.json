@@ -1,0 +1,1743 @@
+{
+  "summary": {
+    "generated_at": "2026-04-18",
+    "total_html_pages": 44,
+    "blog_posts": 0,
+    "main_static_pages": 43,
+    "dynamic_trip_pages": 174,
+    "trip_categories": {
+      "nacionales": 36,
+      "america": 15,
+      "asia": 27,
+      "cruceros-en-grecia": 3,
+      "medio-oriente": 24,
+      "europa": 69
+    },
+    "sitemap_url_count": 39,
+    "indexing_state_count": 14,
+    "duplicate_titles": [],
+    "duplicate_meta_descs_count": 0,
+    "pages_missing_from_sitemap": [
+      "https://rsviajesreycoliman.com/404",
+      "https://rsviajesreycoliman.com/blog/mejores-paquetes-viaje-desde-colima",
+      "https://rsviajesreycoliman.com/blog/cuanto-cuesta-viaje-europa-desde-colima",
+      "https://rsviajesreycoliman.com/blog/cancun-desde-colima-guia-completa",
+      "https://rsviajesreycoliman.com/blog/mejores-tours-colima-manzanillo"
+    ],
+    "pages_with_multiple_h1": [],
+    "pages_with_no_h1": [],
+    "pages_title_too_long": [
+      "mas-destinos.html",
+      "mundial-2026.html",
+      "viaje.html",
+      "viajes-internacionales.html",
+      "sobre-nosotros.html",
+      "tour.html",
+      "revista.html",
+      "viajes-nacionales.html",
+      "blog/mejores-paquetes-viaje-desde-colima/index.html",
+      "blog/cuanto-cuesta-viaje-europa-desde-colima/index.html",
+      "blog/cancun-desde-colima-guia-completa/index.html",
+      "blog/mejores-tours-colima-manzanillo/index.html"
+    ],
+    "pages_title_too_short": [],
+    "pages_missing_title": [],
+    "pages_missing_meta_desc": [],
+    "pages_desc_too_long": [
+      "revista.html",
+      "blog/viajes-a-cancun-desde-colima.html",
+      "blog/viajes-a-paris-desde-mexico.html",
+      "blog/mejores-paquetes-viaje-desde-colima/index.html",
+      "blog/cuanto-cuesta-viaje-europa-desde-colima/index.html",
+      "blog/cancun-desde-colima-guia-completa/index.html",
+      "blog/mejores-tours-colima-manzanillo/index.html"
+    ],
+    "pages_desc_too_short": [
+      "privacidad.html",
+      "viaje.html",
+      "404.html",
+      "sobre-nosotros.html",
+      "blog/viajes-a-italia-desde-mexico.html",
+      "blog/viajes-de-graduacion-colima.html",
+      "blog/mejor-agencia-de-viajes-en-colima.html",
+      "blog/mejores-destinos-viajar-desde-colima.html",
+      "blog/es-seguro-comprar-paquetes-viaje-internet.html",
+      "blog/paquetes-de-viaje-colima.html",
+      "blog/paquetes-viajes-todo-incluido.html"
+    ],
+    "pages_no_canonical": [
+      "404.html"
+    ],
+    "pages_no_hreflang": [
+      "404.html",
+      "blog/mejores-paquetes-viaje-desde-colima/index.html",
+      "blog/cuanto-cuesta-viaje-europa-desde-colima/index.html",
+      "blog/cancun-desde-colima-guia-completa/index.html",
+      "blog/mejores-tours-colima-manzanillo/index.html"
+    ],
+    "pages_thin_content": [
+      "mas-destinos.html",
+      "viaje.html",
+      "viajes-internacionales.html",
+      "404.html",
+      "tour.html",
+      "revista.html",
+      "viajes-nacionales.html"
+    ],
+    "pages_low_internal_links": [
+      "privacidad.html",
+      "viaje.html",
+      "404.html",
+      "tour.html",
+      "revista.html",
+      "blog/cruceros-desde-mexico-todo-incluido.html",
+      "blog/viajes-a-cancun-desde-colima.html",
+      "blog/viajes-a-peru-desde-mexico.html",
+      "blog/viajes-a-italia-desde-mexico.html",
+      "blog/viajes-a-canada-desde-mexico.html",
+      "blog/viajes-a-espana-desde-mexico.html",
+      "blog/viajes-a-grecia-desde-mexico.html",
+      "blog/viajes-a-egipto-y-dubai-desde-mexico.html",
+      "blog/viajes-costa-rica-todo-incluido-desde-mexico.html",
+      "blog/viajes-colombia-todo-incluido-desde-mexico.html",
+      "blog/cuando-es-mejor-viajar-a-europa.html",
+      "blog/mejores-paquetes-viaje-desde-colima/index.html",
+      "blog/cuanto-cuesta-viaje-europa-desde-colima/index.html",
+      "blog/cancun-desde-colima-guia-completa/index.html",
+      "blog/mejores-tours-colima-manzanillo/index.html"
+    ],
+    "pages_no_schema": [
+      "404.html"
+    ],
+    "pages_no_whatsapp_cta": [
+      "privacidad.html",
+      "mundial-2026.html",
+      "index.html",
+      "viaje.html",
+      "404.html",
+      "tour.html",
+      "blog/cuanto-cuesta-ir-al-mundial-2026-desde-mexico.html"
+    ],
+    "pages_missing_og": [
+      "privacidad.html",
+      "404.html"
+    ],
+    "pages_with_alt_gaps": [],
+    "not_in_indexing_state": [
+      "https://rsviajesreycoliman.com/privacidad",
+      "https://rsviajesreycoliman.com/mas-destinos",
+      "https://rsviajesreycoliman.com/mundial-2026",
+      "https://rsviajesreycoliman.com/404",
+      "https://rsviajesreycoliman.com/tour",
+      "https://rsviajesreycoliman.com/blog/cruceros-desde-mexico-todo-incluido",
+      "https://rsviajesreycoliman.com/blog/requisitos-viajar-extranjero-mexico",
+      "https://rsviajesreycoliman.com/blog/viajes-a-peru-desde-mexico",
+      "https://rsviajesreycoliman.com/blog/viajes-a-italia-desde-mexico",
+      "https://rsviajesreycoliman.com/blog/cuanto-cuesta-viajar-a-europa-desde-mexico",
+      "https://rsviajesreycoliman.com/blog/viajes-de-graduacion-colima",
+      "https://rsviajesreycoliman.com/blog/mejor-agencia-de-viajes-en-colima",
+      "https://rsviajesreycoliman.com/blog/viajes-a-paris-desde-mexico",
+      "https://rsviajesreycoliman.com/blog/mejores-destinos-viajar-desde-colima",
+      "https://rsviajesreycoliman.com/blog/es-seguro-comprar-paquetes-viaje-internet",
+      "https://rsviajesreycoliman.com/blog/viajes-luna-de-miel-colima",
+      "https://rsviajesreycoliman.com/blog/viajes-a-grecia-desde-mexico",
+      "https://rsviajesreycoliman.com/blog/agencia-viajes-villa-de-alvarez",
+      "https://rsviajesreycoliman.com/blog/cuanto-cuesta-ir-al-mundial-2026-desde-mexico",
+      "https://rsviajesreycoliman.com/blog/viajes-costa-rica-todo-incluido-desde-mexico",
+      "https://rsviajesreycoliman.com/blog/paquetes-de-viaje-colima",
+      "https://rsviajesreycoliman.com/blog/guia-completa-viajes-desde-mexico",
+      "https://rsviajesreycoliman.com/blog/paquetes-viajes-todo-incluido",
+      "https://rsviajesreycoliman.com/blog/destinos-baratos-viajar-mexico",
+      "https://rsviajesreycoliman.com/blog/mejores-destinos-viajar-marzo",
+      "https://rsviajesreycoliman.com/blog/viajes-colombia-todo-incluido-desde-mexico",
+      "https://rsviajesreycoliman.com/blog/mejores-paquetes-viaje-desde-colima",
+      "https://rsviajesreycoliman.com/blog/cuanto-cuesta-viaje-europa-desde-colima",
+      "https://rsviajesreycoliman.com/blog/cancun-desde-colima-guia-completa",
+      "https://rsviajesreycoliman.com/blog/mejores-tours-colima-manzanillo"
+    ],
+    "orphans_candidates": [
+      "https://rsviajesreycoliman.com/privacidad",
+      "https://rsviajesreycoliman.com/mas-destinos",
+      "https://rsviajesreycoliman.com/mundial-2026",
+      "https://rsviajesreycoliman.com/viaje",
+      "https://rsviajesreycoliman.com/viajes-internacionales",
+      "https://rsviajesreycoliman.com/404",
+      "https://rsviajesreycoliman.com/sobre-nosotros",
+      "https://rsviajesreycoliman.com/tour",
+      "https://rsviajesreycoliman.com/revista",
+      "https://rsviajesreycoliman.com/viajes-nacionales",
+      "https://rsviajesreycoliman.com/blog/cruceros-desde-mexico-todo-incluido",
+      "https://rsviajesreycoliman.com/blog/requisitos-viajar-extranjero-mexico",
+      "https://rsviajesreycoliman.com/blog/viajes-a-cancun-desde-colima",
+      "https://rsviajesreycoliman.com/blog/viajes-a-peru-desde-mexico",
+      "https://rsviajesreycoliman.com/blog/viajes-a-italia-desde-mexico",
+      "https://rsviajesreycoliman.com/blog/cuanto-cuesta-viajar-a-europa-desde-mexico",
+      "https://rsviajesreycoliman.com/blog/viajes-a-canada-desde-mexico",
+      "https://rsviajesreycoliman.com/blog/viajes-de-graduacion-colima",
+      "https://rsviajesreycoliman.com/blog/mejor-agencia-de-viajes-en-colima",
+      "https://rsviajesreycoliman.com/blog/viajes-a-paris-desde-mexico",
+      "https://rsviajesreycoliman.com/blog/viajes-a-espana-desde-mexico",
+      "https://rsviajesreycoliman.com/blog/es-seguro-comprar-paquetes-viaje-internet",
+      "https://rsviajesreycoliman.com/blog/viajes-luna-de-miel-colima",
+      "https://rsviajesreycoliman.com/blog/viajes-a-grecia-desde-mexico",
+      "https://rsviajesreycoliman.com/blog/agencia-viajes-villa-de-alvarez",
+      "https://rsviajesreycoliman.com/blog/viajes-a-japon-desde-mexico",
+      "https://rsviajesreycoliman.com/blog/viajes-a-turquia-desde-mexico",
+      "https://rsviajesreycoliman.com/blog/viajes-a-egipto-y-dubai-desde-mexico",
+      "https://rsviajesreycoliman.com/blog/cuanto-cuesta-ir-al-mundial-2026-desde-mexico",
+      "https://rsviajesreycoliman.com/blog/viajes-costa-rica-todo-incluido-desde-mexico",
+      "https://rsviajesreycoliman.com/blog/paquetes-de-viaje-colima",
+      "https://rsviajesreycoliman.com/blog/guia-completa-viajes-desde-mexico",
+      "https://rsviajesreycoliman.com/blog/paquetes-viajes-todo-incluido",
+      "https://rsviajesreycoliman.com/blog/destinos-baratos-viajar-mexico",
+      "https://rsviajesreycoliman.com/blog/mejores-destinos-viajar-marzo",
+      "https://rsviajesreycoliman.com/blog/viajes-colombia-todo-incluido-desde-mexico",
+      "https://rsviajesreycoliman.com/blog/cuando-es-mejor-viajar-a-europa",
+      "https://rsviajesreycoliman.com/blog/mejores-paquetes-viaje-desde-colima",
+      "https://rsviajesreycoliman.com/blog/cuanto-cuesta-viaje-europa-desde-colima",
+      "https://rsviajesreycoliman.com/blog/cancun-desde-colima-guia-completa",
+      "https://rsviajesreycoliman.com/blog/mejores-tours-colima-manzanillo"
+    ]
+  },
+  "pages": [
+    {
+      "file": "privacidad.html",
+      "url": "https://rsviajesreycoliman.com/privacidad",
+      "in_sitemap": true,
+      "in_index_state": false,
+      "title": "Aviso de Privacidad | RS Viajes Rey Colimán",
+      "title_len": 43,
+      "meta_desc": "Aviso de privacidad y política de datos personales de RS Viajes Rey Colimán, agencia de viajes en Colima, México.",
+      "meta_desc_len": 113,
+      "canonical": "https://rsviajesreycoliman.com/privacidad",
+      "hreflang": [
+        "en",
+        "x-default"
+      ],
+      "h1_count": 1,
+      "h1_texts": [
+        "Aviso de Privacidad"
+      ],
+      "h2_count": 9,
+      "h3_count": 0,
+      "schema_types": [
+        "WebPage"
+      ],
+      "word_count": 350,
+      "internal_links": 1,
+      "external_links": 0,
+      "img_count": 1,
+      "img_missing_alt": 0,
+      "has_whatsapp_cta": false,
+      "has_og": false,
+      "has_twitter": false
+    },
+    {
+      "file": "mas-destinos.html",
+      "url": "https://rsviajesreycoliman.com/mas-destinos",
+      "in_sitemap": true,
+      "in_index_state": false,
+      "title": "Más Destinos — Cruceros, Luna de Miel y Viajes en Grupo | RS Viajes Rey Colimán",
+      "title_len": 79,
+      "meta_desc": "Descubre más destinos: cruceros, luna de miel, viajes de graduación y tours en grupo. Paquetes todo incluido desde Colima, México. RS Viajes Rey Colimán.",
+      "meta_desc_len": 153,
+      "canonical": "https://rsviajesreycoliman.com/mas-destinos",
+      "hreflang": [
+        "es",
+        "en",
+        "x-default"
+      ],
+      "h1_count": 1,
+      "h1_texts": [
+        "Más Destinos de Viaje desde México 2026 — Europa, Asia, América y Cruceros"
+      ],
+      "h2_count": 1,
+      "h3_count": 0,
+      "schema_types": [
+        "ItemList",
+        "BreadcrumbList",
+        "TravelAgency",
+        "FAQPage"
+      ],
+      "word_count": 125,
+      "internal_links": 8,
+      "external_links": 1,
+      "img_count": 0,
+      "img_missing_alt": 0,
+      "has_whatsapp_cta": true,
+      "has_og": true,
+      "has_twitter": true
+    },
+    {
+      "file": "mundial-2026.html",
+      "url": "https://rsviajesreycoliman.com/mundial-2026",
+      "in_sitemap": true,
+      "in_index_state": false,
+      "title": "Paquetes Mundial 2026 desde México — Vuelo, Hotel y Boletos | RS Viajes Rey Colimán",
+      "title_len": 83,
+      "meta_desc": "Paquetes oficiales al Mundial 2026 desde México: Texas, dieciseisavos, semifinales y gran final en Nueva York. Vuelo, hotel y boletos incluidos.",
+      "meta_desc_len": 144,
+      "canonical": "https://rsviajesreycoliman.com/mundial-2026",
+      "hreflang": [
+        "es",
+        "en",
+        "x-default"
+      ],
+      "h1_count": 1,
+      "h1_texts": [
+        "Vive elMundial 2026desde México"
+      ],
+      "h2_count": 3,
+      "h3_count": 6,
+      "schema_types": [
+        "ItemList",
+        "BreadcrumbList",
+        "TravelAgency",
+        "FAQPage"
+      ],
+      "word_count": 1112,
+      "internal_links": 6,
+      "external_links": 6,
+      "img_count": 4,
+      "img_missing_alt": 0,
+      "has_whatsapp_cta": false,
+      "has_og": true,
+      "has_twitter": true
+    },
+    {
+      "file": "index.html",
+      "url": "https://rsviajesreycoliman.com/",
+      "in_sitemap": true,
+      "in_index_state": true,
+      "title": "Viajes a Europa y Agencia de Viajes | RS Viajes Rey Colimán",
+      "title_len": 59,
+      "meta_desc": "Reserva con la mejor agencia de viajes Colima. Especialistas en viajes internacionales y paquetes de viajes a Europa desde México.",
+      "meta_desc_len": 130,
+      "canonical": "https://rsviajesreycoliman.com/",
+      "hreflang": [
+        "es",
+        "en",
+        "x-default"
+      ],
+      "h1_count": 1,
+      "h1_texts": [
+        "RS Viajes Rey Colimán - Agencia de Viajes y Vuelos Internacionales desde Colima"
+      ],
+      "h2_count": 10,
+      "h3_count": 8,
+      "schema_types": [
+        "HowTo",
+        "ItemList",
+        "WebPage",
+        "TravelAgency",
+        "WebSite",
+        "FAQPage"
+      ],
+      "word_count": 1165,
+      "internal_links": 38,
+      "external_links": 0,
+      "img_count": 5,
+      "img_missing_alt": 0,
+      "has_whatsapp_cta": false,
+      "has_og": true,
+      "has_twitter": true
+    },
+    {
+      "file": "viaje.html",
+      "url": "https://rsviajesreycoliman.com/viaje",
+      "in_sitemap": true,
+      "in_index_state": true,
+      "title": "Detalles del Viaje — Itinerario, Precios y Fechas | RS Viajes Rey Colimán",
+      "title_len": 73,
+      "meta_desc": "Conoce todos los detalles de tu viaje: itinerario, precios, fechas de salida y qué incluye.",
+      "meta_desc_len": 91,
+      "canonical": "https://rsviajesreycoliman.com/viaje",
+      "hreflang": [
+        "es",
+        "en",
+        "x-default"
+      ],
+      "h1_count": 1,
+      "h1_texts": [
+        "Detalle de Viaje — RS Viajes Rey Colimán"
+      ],
+      "h2_count": 1,
+      "h3_count": 1,
+      "schema_types": [
+        "BreadcrumbList"
+      ],
+      "word_count": 91,
+      "internal_links": 1,
+      "external_links": 1,
+      "img_count": 0,
+      "img_missing_alt": 0,
+      "has_whatsapp_cta": false,
+      "has_og": true,
+      "has_twitter": true
+    },
+    {
+      "file": "viajes-internacionales.html",
+      "url": "https://rsviajesreycoliman.com/viajes-internacionales",
+      "in_sitemap": true,
+      "in_index_state": true,
+      "title": "Viajes Internacionales — Salidas Garantizadas a Europa, Asia y Más | RS Viajes Rey Colimán",
+      "title_len": 90,
+      "meta_desc": "Salidas garantizadas a Europa, Asia, Medio Oriente y más desde Colima, México. Paquetes todo incluido con vuelo, hospedaje y guía.",
+      "meta_desc_len": 130,
+      "canonical": "https://rsviajesreycoliman.com/viajes-internacionales",
+      "hreflang": [
+        "es",
+        "en",
+        "x-default"
+      ],
+      "h1_count": 1,
+      "h1_texts": [
+        "Viajes Internacionales desde México 2026 con Salidas Garantizadas"
+      ],
+      "h2_count": 2,
+      "h3_count": 1,
+      "schema_types": [
+        "ItemList",
+        "BreadcrumbList",
+        "TravelAgency",
+        "FAQPage"
+      ],
+      "word_count": 234,
+      "internal_links": 15,
+      "external_links": 2,
+      "img_count": 0,
+      "img_missing_alt": 0,
+      "has_whatsapp_cta": true,
+      "has_og": true,
+      "has_twitter": true
+    },
+    {
+      "file": "404.html",
+      "url": "https://rsviajesreycoliman.com/404",
+      "in_sitemap": false,
+      "in_index_state": false,
+      "title": "Página no encontrada — RS Viajes Rey Colimán",
+      "title_len": 44,
+      "meta_desc": "La página que buscas no existe. Regresa al inicio de RS Viajes Rey Colimán para explorar nuestros tours y destinos.",
+      "meta_desc_len": 115,
+      "canonical": "",
+      "hreflang": [],
+      "h1_count": 1,
+      "h1_texts": [
+        "Página no encontrada"
+      ],
+      "h2_count": 0,
+      "h3_count": 0,
+      "schema_types": [],
+      "word_count": 36,
+      "internal_links": 2,
+      "external_links": 3,
+      "img_count": 2,
+      "img_missing_alt": 0,
+      "has_whatsapp_cta": false,
+      "has_og": false,
+      "has_twitter": false
+    },
+    {
+      "file": "sobre-nosotros.html",
+      "url": "https://rsviajesreycoliman.com/sobre-nosotros",
+      "in_sitemap": true,
+      "in_index_state": true,
+      "title": "Sobre Nosotros — RS Viajes Rey Colimán | Agencia de Viajes en Colima",
+      "title_len": 68,
+      "meta_desc": "Conoce a RS Viajes Rey Colimán: agencia de viajes con Registro Nacional de Turismo en Villa de Álvarez, Colima.",
+      "meta_desc_len": 111,
+      "canonical": "https://rsviajesreycoliman.com/sobre-nosotros",
+      "hreflang": [
+        "es",
+        "en",
+        "x-default"
+      ],
+      "h1_count": 1,
+      "h1_texts": [
+        "Sobre Nosotros — RS Viajes Rey Colimán"
+      ],
+      "h2_count": 8,
+      "h3_count": 6,
+      "schema_types": [
+        "BreadcrumbList",
+        "TravelAgency",
+        "FAQPage"
+      ],
+      "word_count": 880,
+      "internal_links": 7,
+      "external_links": 2,
+      "img_count": 2,
+      "img_missing_alt": 0,
+      "has_whatsapp_cta": true,
+      "has_og": true,
+      "has_twitter": false
+    },
+    {
+      "file": "tour.html",
+      "url": "https://rsviajesreycoliman.com/tour",
+      "in_sitemap": true,
+      "in_index_state": false,
+      "title": "Itinerario, Fechas y Precios de Tour | RS Viajes Rey Colimán — Reserva Ahora",
+      "title_len": 76,
+      "meta_desc": "Consulta itinerario completo, fechas de salida, precios y qué incluye este tour. Reserva con RS Viajes Rey Colimán, tu agencia de viajes en Colima, México.",
+      "meta_desc_len": 155,
+      "canonical": "https://rsviajesreycoliman.com/tour",
+      "hreflang": [
+        "es",
+        "en",
+        "x-default"
+      ],
+      "h1_count": 1,
+      "h1_texts": [
+        "Detalle de Tour — RS Viajes Rey Colimán"
+      ],
+      "h2_count": 1,
+      "h3_count": 0,
+      "schema_types": [
+        "BreadcrumbList"
+      ],
+      "word_count": 71,
+      "internal_links": 1,
+      "external_links": 1,
+      "img_count": 0,
+      "img_missing_alt": 0,
+      "has_whatsapp_cta": false,
+      "has_og": true,
+      "has_twitter": true
+    },
+    {
+      "file": "revista.html",
+      "url": "https://rsviajesreycoliman.com/revista",
+      "in_sitemap": true,
+      "in_index_state": true,
+      "title": "Revista Digital de Viajes — Destinos, Ofertas y Guías | RS Viajes Rey Colimán",
+      "title_len": 77,
+      "meta_desc": "Explora nuestra revista digital con destinos populares, ofertas exclusivas y guías de viaje actualizadas. Descárgala gratis. RS Viajes Rey Colimán, Colima, México.",
+      "meta_desc_len": 163,
+      "canonical": "https://rsviajesreycoliman.com/revista",
+      "hreflang": [
+        "es",
+        "en",
+        "x-default"
+      ],
+      "h1_count": 1,
+      "h1_texts": [
+        "Revista de Viajes RS Viajes Rey Colimán — Destinos Destacados 2026"
+      ],
+      "h2_count": 1,
+      "h3_count": 0,
+      "schema_types": [
+        "DigitalDocument",
+        "BreadcrumbList"
+      ],
+      "word_count": 106,
+      "internal_links": 3,
+      "external_links": 2,
+      "img_count": 0,
+      "img_missing_alt": 0,
+      "has_whatsapp_cta": true,
+      "has_og": true,
+      "has_twitter": true
+    },
+    {
+      "file": "viajes-nacionales.html",
+      "url": "https://rsviajesreycoliman.com/viajes-nacionales",
+      "in_sitemap": true,
+      "in_index_state": true,
+      "title": "Viajes Nacionales — Cancún, Los Cabos, Riviera Maya y Más | RS Viajes Rey Colimán",
+      "title_len": 81,
+      "meta_desc": "Paquetes de viaje nacionales a Cancún, Los Cabos, Riviera Maya, Puerto Vallarta, Huatulco y más. Vuelo, hospedaje y actividades incluidos.",
+      "meta_desc_len": 138,
+      "canonical": "https://rsviajesreycoliman.com/viajes-nacionales",
+      "hreflang": [
+        "es",
+        "en",
+        "x-default"
+      ],
+      "h1_count": 1,
+      "h1_texts": [
+        "Viajes Nacionales desde Colima 2026 — Paquetes Todo Incluido en México"
+      ],
+      "h2_count": 2,
+      "h3_count": 1,
+      "schema_types": [
+        "ItemList",
+        "BreadcrumbList",
+        "TravelAgency",
+        "FAQPage"
+      ],
+      "word_count": 230,
+      "internal_links": 12,
+      "external_links": 2,
+      "img_count": 0,
+      "img_missing_alt": 0,
+      "has_whatsapp_cta": true,
+      "has_og": true,
+      "has_twitter": true
+    },
+    {
+      "file": "blog/cruceros-desde-mexico-todo-incluido.html",
+      "url": "https://rsviajesreycoliman.com/blog/cruceros-desde-mexico-todo-incluido",
+      "in_sitemap": true,
+      "in_index_state": false,
+      "title": "Cruceros desde México Todo Incluido 2026 | RS Viajes",
+      "title_len": 52,
+      "meta_desc": "Guía completa de cruceros desde México todo incluido 2026. Rutas por el Caribe, precios desde $15,000 MXN, qué incluyen y cómo reservar al mejor precio.",
+      "meta_desc_len": 152,
+      "canonical": "https://rsviajesreycoliman.com/blog/cruceros-desde-mexico-todo-incluido",
+      "hreflang": [
+        "es",
+        "en",
+        "x-default"
+      ],
+      "h1_count": 1,
+      "h1_texts": [
+        "Cruceros desde México Todo Incluido 2026: Precios, Rutas y Guía Completa"
+      ],
+      "h2_count": 10,
+      "h3_count": 5,
+      "schema_types": [
+        "BreadcrumbList",
+        "BlogPosting",
+        "FAQPage",
+        "VideoObject"
+      ],
+      "word_count": 1085,
+      "internal_links": 4,
+      "external_links": 3,
+      "img_count": 2,
+      "img_missing_alt": 0,
+      "has_whatsapp_cta": true,
+      "has_og": true,
+      "has_twitter": true
+    },
+    {
+      "file": "blog/requisitos-viajar-extranjero-mexico.html",
+      "url": "https://rsviajesreycoliman.com/blog/requisitos-viajar-extranjero-mexico",
+      "in_sitemap": true,
+      "in_index_state": false,
+      "title": "Requisitos para Viajar al Extranjero desde México 2026",
+      "title_len": 54,
+      "meta_desc": "Guía completa de requisitos para viajar al extranjero desde México en 2026: pasaporte, visa, vacunas y documentos por destino. Asesoría gratuita.",
+      "meta_desc_len": 145,
+      "canonical": "https://rsviajesreycoliman.com/blog/requisitos-viajar-extranjero-mexico",
+      "hreflang": [
+        "es",
+        "en",
+        "x-default"
+      ],
+      "h1_count": 1,
+      "h1_texts": [
+        "Requisitos para Viajar al Extranjero desde México en 2026 — Guía Completa"
+      ],
+      "h2_count": 11,
+      "h3_count": 4,
+      "schema_types": [
+        "(parse_error)",
+        "BreadcrumbList",
+        "VideoObject"
+      ],
+      "word_count": 1112,
+      "internal_links": 6,
+      "external_links": 2,
+      "img_count": 2,
+      "img_missing_alt": 0,
+      "has_whatsapp_cta": true,
+      "has_og": true,
+      "has_twitter": true
+    },
+    {
+      "file": "blog/viajes-a-cancun-desde-colima.html",
+      "url": "https://rsviajesreycoliman.com/blog/viajes-a-cancun-desde-colima",
+      "in_sitemap": true,
+      "in_index_state": true,
+      "title": "Viajes a Cancún desde Colima 2026 Todo Incluido | RS Viajes",
+      "title_len": 59,
+      "meta_desc": "¿Buscas paquetes de viajes a Cancún desde Colima o Guadalajara? Conoce los mejores resorts todo incluido, precios, y consejos con RS Viajes Rey Colimán para el 2026.",
+      "meta_desc_len": 165,
+      "canonical": "https://rsviajesreycoliman.com/blog/viajes-a-cancun-desde-colima",
+      "hreflang": [
+        "es",
+        "en",
+        "x-default"
+      ],
+      "h1_count": 1,
+      "h1_texts": [
+        "Viajes a Cancún Todo Incluido desde Colima 2026 — Paquetes Completos"
+      ],
+      "h2_count": 9,
+      "h3_count": 2,
+      "schema_types": [
+        "BreadcrumbList",
+        "BlogPosting",
+        "FAQPage",
+        "VideoObject"
+      ],
+      "word_count": 1392,
+      "internal_links": 2,
+      "external_links": 1,
+      "img_count": 3,
+      "img_missing_alt": 0,
+      "has_whatsapp_cta": true,
+      "has_og": true,
+      "has_twitter": false
+    },
+    {
+      "file": "blog/viajes-a-peru-desde-mexico.html",
+      "url": "https://rsviajesreycoliman.com/blog/viajes-a-peru-desde-mexico",
+      "in_sitemap": true,
+      "in_index_state": false,
+      "title": "Viajes a Perú y Machu Picchu desde México 2026",
+      "title_len": 46,
+      "meta_desc": "Descubre el misticismo del Valle Sagrado. Paquetes completos a Perú desde México. Asesoría experta, itinerarios a Cusco y Machu Picchu garantizados.",
+      "meta_desc_len": 148,
+      "canonical": "https://rsviajesreycoliman.com/blog/viajes-a-peru-desde-mexico",
+      "hreflang": [
+        "es",
+        "en",
+        "x-default"
+      ],
+      "h1_count": 1,
+      "h1_texts": [
+        "Viajes a Perú desde México: Descubre Los Andes y el Místico Valle  (2026)"
+      ],
+      "h2_count": 9,
+      "h3_count": 0,
+      "schema_types": [
+        "HowTo",
+        "WebPage",
+        "BreadcrumbList",
+        "FAQPage",
+        "VideoObject"
+      ],
+      "word_count": 1770,
+      "internal_links": 1,
+      "external_links": 1,
+      "img_count": 4,
+      "img_missing_alt": 0,
+      "has_whatsapp_cta": true,
+      "has_og": true,
+      "has_twitter": true
+    },
+    {
+      "file": "blog/viajes-a-italia-desde-mexico.html",
+      "url": "https://rsviajesreycoliman.com/blog/viajes-a-italia-desde-mexico",
+      "in_sitemap": true,
+      "in_index_state": false,
+      "title": "Viajes a Italia desde México 2026 — Precios | RS Viajes",
+      "title_len": 55,
+      "meta_desc": "Viajes a Italia desde México 2026. Paquetes desde $42,000 MXN con vuelo + hotel + tours a Roma, Venecia y Florencia.",
+      "meta_desc_len": 116,
+      "canonical": "https://rsviajesreycoliman.com/blog/viajes-a-italia-desde-mexico",
+      "hreflang": [
+        "es",
+        "en",
+        "x-default"
+      ],
+      "h1_count": 1,
+      "h1_texts": [
+        "Viajes a Italia desde México 2026 — Precios, Paquetes y Tips para Roma, Venecia y Florencia"
+      ],
+      "h2_count": 9,
+      "h3_count": 16,
+      "schema_types": [
+        "HowTo",
+        "BreadcrumbList",
+        "BlogPosting",
+        "FAQPage",
+        "VideoObject"
+      ],
+      "word_count": 1523,
+      "internal_links": 3,
+      "external_links": 2,
+      "img_count": 2,
+      "img_missing_alt": 0,
+      "has_whatsapp_cta": true,
+      "has_og": true,
+      "has_twitter": true
+    },
+    {
+      "file": "blog/cuanto-cuesta-viajar-a-europa-desde-mexico.html",
+      "url": "https://rsviajesreycoliman.com/blog/cuanto-cuesta-viajar-a-europa-desde-mexico",
+      "in_sitemap": true,
+      "in_index_state": false,
+      "title": "Cuánto Cuesta Viajar a Europa desde México 2026 | RS Viajes",
+      "title_len": 59,
+      "meta_desc": "Descubre cuánto cuesta un viaje a Europa desde México en 2026. Desglose de precios: vuelos desde $12,000 MXN, hoteles, tours y presupuesto total. Cotiza gratis.",
+      "meta_desc_len": 160,
+      "canonical": "https://rsviajesreycoliman.com/blog/cuanto-cuesta-viajar-a-europa-desde-mexico",
+      "hreflang": [
+        "es",
+        "en",
+        "x-default"
+      ],
+      "h1_count": 1,
+      "h1_texts": [
+        "¿Cuánto Cuesta un Viaje a Europa desde México en 2026?"
+      ],
+      "h2_count": 11,
+      "h3_count": 4,
+      "schema_types": [
+        "(parse_error)",
+        "BreadcrumbList",
+        "BlogPosting",
+        "FAQPage",
+        "VideoObject"
+      ],
+      "word_count": 1425,
+      "internal_links": 5,
+      "external_links": 3,
+      "img_count": 2,
+      "img_missing_alt": 0,
+      "has_whatsapp_cta": true,
+      "has_og": true,
+      "has_twitter": true
+    },
+    {
+      "file": "blog/index.html",
+      "url": "https://rsviajesreycoliman.com/blog",
+      "in_sitemap": true,
+      "in_index_state": true,
+      "title": "Blog de Viajes — Guías y Destinos | RS Viajes Rey Colimán",
+      "title_len": 57,
+      "meta_desc": "Blog de RS Viajes Rey Colimán: guías de viaje, mejores destinos, requisitos para viajar y consejos para ahorrar. Tu agencia de viajes en Colima.",
+      "meta_desc_len": 144,
+      "canonical": "https://rsviajesreycoliman.com/blog/",
+      "hreflang": [
+        "en",
+        "x-default"
+      ],
+      "h1_count": 1,
+      "h1_texts": [
+        "Blog de Viajes"
+      ],
+      "h2_count": 28,
+      "h3_count": 0,
+      "schema_types": [
+        "Blog"
+      ],
+      "word_count": 1111,
+      "internal_links": 28,
+      "external_links": 1,
+      "img_count": 28,
+      "img_missing_alt": 0,
+      "has_whatsapp_cta": true,
+      "has_og": true,
+      "has_twitter": false
+    },
+    {
+      "file": "blog/viajes-a-canada-desde-mexico.html",
+      "url": "https://rsviajesreycoliman.com/blog/viajes-a-canada-desde-mexico",
+      "in_sitemap": true,
+      "in_index_state": true,
+      "title": "Viajes a Canadá desde México 2026 — Auroras y Rocosas",
+      "title_len": 53,
+      "meta_desc": "Guía completa para viajar a Canadá desde México en 2026. Auroras boreales en Yukón, esquí en Whistler, Montañas Rocosas en Banff y requisitos de eTA/visa.",
+      "meta_desc_len": 154,
+      "canonical": "https://rsviajesreycoliman.com/blog/viajes-a-canada-desde-mexico",
+      "hreflang": [
+        "es",
+        "en",
+        "x-default"
+      ],
+      "h1_count": 1,
+      "h1_texts": [
+        "Viajes a Canadá desde México 2026 — Auroras Boreales, Rocosas y Nieve"
+      ],
+      "h2_count": 10,
+      "h3_count": 6,
+      "schema_types": [
+        "BreadcrumbList",
+        "BlogPosting",
+        "FAQPage",
+        "VideoObject"
+      ],
+      "word_count": 1747,
+      "internal_links": 2,
+      "external_links": 1,
+      "img_count": 3,
+      "img_missing_alt": 0,
+      "has_whatsapp_cta": true,
+      "has_og": true,
+      "has_twitter": false
+    },
+    {
+      "file": "blog/viajes-de-graduacion-colima.html",
+      "url": "https://rsviajesreycoliman.com/blog/viajes-de-graduacion-colima",
+      "in_sitemap": true,
+      "in_index_state": false,
+      "title": "Viajes de Graduación Colima 2026 — Paquetes | RS Viajes",
+      "title_len": 55,
+      "meta_desc": "Organizamos y planificamos los mejores viajes de graduación desde Colima en 2026. <a href=",
+      "meta_desc_len": 90,
+      "canonical": "https://rsviajesreycoliman.com/blog/viajes-de-graduacion-colima",
+      "hreflang": [
+        "es",
+        "en",
+        "x-default"
+      ],
+      "h1_count": 1,
+      "h1_texts": [
+        "Agencia para Viajes de Graduación de Estudiantes en Colima"
+      ],
+      "h2_count": 9,
+      "h3_count": 0,
+      "schema_types": [
+        "HowTo",
+        "BreadcrumbList",
+        "BlogPosting",
+        "FAQPage",
+        "VideoObject"
+      ],
+      "word_count": 1258,
+      "internal_links": 5,
+      "external_links": 1,
+      "img_count": 3,
+      "img_missing_alt": 0,
+      "has_whatsapp_cta": true,
+      "has_og": true,
+      "has_twitter": true
+    },
+    {
+      "file": "blog/mejor-agencia-de-viajes-en-colima.html",
+      "url": "https://rsviajesreycoliman.com/blog/mejor-agencia-de-viajes-en-colima",
+      "in_sitemap": true,
+      "in_index_state": false,
+      "title": "Mejor Agencia de Viajes en Colima 2026 | RS Viajes",
+      "title_len": 50,
+      "meta_desc": "RS Viajes Rey Colimán es considerada la mejor agencia de viajes en Colima por su especialización en <a href=",
+      "meta_desc_len": 108,
+      "canonical": "https://rsviajesreycoliman.com/blog/mejor-agencia-de-viajes-en-colima",
+      "hreflang": [
+        "es",
+        "en",
+        "x-default"
+      ],
+      "h1_count": 1,
+      "h1_texts": [
+        "¿Cuál es la Mejor Agencia de Viajes en Colima? Guía 2026"
+      ],
+      "h2_count": 8,
+      "h3_count": 15,
+      "schema_types": [
+        "BreadcrumbList",
+        "TravelAgency",
+        "BlogPosting",
+        "FAQPage",
+        "VideoObject"
+      ],
+      "word_count": 1227,
+      "internal_links": 7,
+      "external_links": 1,
+      "img_count": 2,
+      "img_missing_alt": 0,
+      "has_whatsapp_cta": true,
+      "has_og": true,
+      "has_twitter": true
+    },
+    {
+      "file": "blog/viajes-a-paris-desde-mexico.html",
+      "url": "https://rsviajesreycoliman.com/blog/viajes-a-paris-desde-mexico",
+      "in_sitemap": true,
+      "in_index_state": false,
+      "title": "Viajes a París desde México 2026 — Precio Real | RS Viajes",
+      "title_len": 58,
+      "meta_desc": "Viajes a París desde México en 2026. Paquetes desde $38,000 MXN: vuelo + hotel + tours. Qué ver, cuánto cuesta y cómo reservar con agencia en Colima. Cotiza gratis.",
+      "meta_desc_len": 164,
+      "canonical": "https://rsviajesreycoliman.com/blog/viajes-a-paris-desde-mexico",
+      "hreflang": [
+        "es",
+        "en",
+        "x-default"
+      ],
+      "h1_count": 1,
+      "h1_texts": [
+        "Viajes a París desde México 2026 — Precios, Paquetes y Qué Ver"
+      ],
+      "h2_count": 9,
+      "h3_count": 14,
+      "schema_types": [
+        "BreadcrumbList",
+        "BlogPosting",
+        "FAQPage",
+        "VideoObject"
+      ],
+      "word_count": 1595,
+      "internal_links": 6,
+      "external_links": 2,
+      "img_count": 2,
+      "img_missing_alt": 0,
+      "has_whatsapp_cta": true,
+      "has_og": true,
+      "has_twitter": true
+    },
+    {
+      "file": "blog/mejores-destinos-viajar-desde-colima.html",
+      "url": "https://rsviajesreycoliman.com/blog/mejores-destinos-viajar-desde-colima",
+      "in_sitemap": true,
+      "in_index_state": false,
+      "title": "Mejores Destinos para Viajar desde Colima 2026 | RS Viajes",
+      "title_len": 58,
+      "meta_desc": "Descubre los 10 mejores destinos nacionales e internacionales para viajar desde Colima. <a href=",
+      "meta_desc_len": 96,
+      "canonical": "https://rsviajesreycoliman.com/blog/mejores-destinos-viajar-desde-colima",
+      "hreflang": [
+        "es",
+        "en",
+        "x-default"
+      ],
+      "h1_count": 1,
+      "h1_texts": [
+        "Los 10 Mejores Destinos para Viajar desde Colima en 2026"
+      ],
+      "h2_count": 9,
+      "h3_count": 10,
+      "schema_types": [
+        "(parse_error)",
+        "BreadcrumbList",
+        "FAQPage",
+        "VideoObject"
+      ],
+      "word_count": 1375,
+      "internal_links": 6,
+      "external_links": 3,
+      "img_count": 2,
+      "img_missing_alt": 0,
+      "has_whatsapp_cta": true,
+      "has_og": true,
+      "has_twitter": true
+    },
+    {
+      "file": "blog/viajes-a-espana-desde-mexico.html",
+      "url": "https://rsviajesreycoliman.com/blog/viajes-a-espana-desde-mexico",
+      "in_sitemap": true,
+      "in_index_state": true,
+      "title": "Viajes a España desde México 2026 — Precios | RS Viajes",
+      "title_len": 55,
+      "meta_desc": "Guía Definitiva 2026 para mexicanos: Cuánto cuesta, cómo viajar a España, clima, AVE, y paquetes a Europa desde Guadalajara y CDMX operados por RS Viajes.",
+      "meta_desc_len": 154,
+      "canonical": "https://rsviajesreycoliman.com/blog/viajes-a-espana-desde-mexico",
+      "hreflang": [
+        "es",
+        "en",
+        "x-default"
+      ],
+      "h1_count": 1,
+      "h1_texts": [
+        "Viajes a España desde México 2026: Tu Guía Absoluta"
+      ],
+      "h2_count": 9,
+      "h3_count": 1,
+      "schema_types": [
+        "BreadcrumbList",
+        "BlogPosting",
+        "FAQPage",
+        "VideoObject"
+      ],
+      "word_count": 1135,
+      "internal_links": 4,
+      "external_links": 1,
+      "img_count": 2,
+      "img_missing_alt": 0,
+      "has_whatsapp_cta": true,
+      "has_og": true,
+      "has_twitter": false
+    },
+    {
+      "file": "blog/es-seguro-comprar-paquetes-viaje-internet.html",
+      "url": "https://rsviajesreycoliman.com/blog/es-seguro-comprar-paquetes-viaje-internet",
+      "in_sitemap": true,
+      "in_index_state": false,
+      "title": "¿Es Seguro Comprar Paquetes de Viaje por Internet? | RS Viajes",
+      "title_len": 62,
+      "meta_desc": "Descubre los riesgos y ventajas de comprar paquetes de viaje por internet vs una agencia de viajes física en Colima.",
+      "meta_desc_len": 116,
+      "canonical": "https://rsviajesreycoliman.com/blog/es-seguro-comprar-paquetes-viaje-internet",
+      "hreflang": [
+        "es",
+        "en",
+        "x-default"
+      ],
+      "h1_count": 1,
+      "h1_texts": [
+        "Guía 2026: ¿Es Seguro Comprar Paquetes de Viaje por Internet?"
+      ],
+      "h2_count": 6,
+      "h3_count": 3,
+      "schema_types": [
+        "BreadcrumbList",
+        "BlogPosting",
+        "FAQPage"
+      ],
+      "word_count": 1058,
+      "internal_links": 5,
+      "external_links": 1,
+      "img_count": 1,
+      "img_missing_alt": 0,
+      "has_whatsapp_cta": true,
+      "has_og": true,
+      "has_twitter": true
+    },
+    {
+      "file": "blog/viajes-luna-de-miel-colima.html",
+      "url": "https://rsviajesreycoliman.com/blog/viajes-luna-de-miel-colima",
+      "in_sitemap": true,
+      "in_index_state": false,
+      "title": "Viajes de Luna de Miel desde Colima 2026 | RS Viajes",
+      "title_len": 52,
+      "meta_desc": "Descubre los mejores destinos y paquetes para viajes de luna de miel desde Colima. Maldivas, Europa, Punta Cana y Cancún con RS Viajes Rey Colimán. 4.9★",
+      "meta_desc_len": 152,
+      "canonical": "https://rsviajesreycoliman.com/blog/viajes-luna-de-miel-colima",
+      "hreflang": [
+        "es",
+        "en",
+        "x-default"
+      ],
+      "h1_count": 1,
+      "h1_texts": [
+        "Viajes de Luna de Miel desde Colima: Destinos y Paquetes 2026"
+      ],
+      "h2_count": 6,
+      "h3_count": 7,
+      "schema_types": [
+        "BreadcrumbList",
+        "BlogPosting",
+        "FAQPage"
+      ],
+      "word_count": 968,
+      "internal_links": 6,
+      "external_links": 1,
+      "img_count": 2,
+      "img_missing_alt": 0,
+      "has_whatsapp_cta": true,
+      "has_og": true,
+      "has_twitter": true
+    },
+    {
+      "file": "blog/viajes-a-grecia-desde-mexico.html",
+      "url": "https://rsviajesreycoliman.com/blog/viajes-a-grecia-desde-mexico",
+      "in_sitemap": true,
+      "in_index_state": false,
+      "title": "Viajes a Grecia desde México 2026 — Islas y Cruceros",
+      "title_len": 52,
+      "meta_desc": "Santorini, Mykonos y el Acrópolis: descubre cómo estructurar un viaje mágico hacia Grecia saliendo desde Colima, GDL o México y subiéndote a cruceros por las…",
+      "meta_desc_len": 158,
+      "canonical": "https://rsviajesreycoliman.com/blog/viajes-a-grecia-desde-mexico",
+      "hreflang": [
+        "es",
+        "en",
+        "x-default"
+      ],
+      "h1_count": 1,
+      "h1_texts": [
+        "Viajes a Grecia y el Egeo desde México — Cruceros y Hoteles 2026"
+      ],
+      "h2_count": 8,
+      "h3_count": 1,
+      "schema_types": [
+        "BreadcrumbList",
+        "BlogPosting",
+        "FAQPage",
+        "VideoObject"
+      ],
+      "word_count": 1067,
+      "internal_links": 2,
+      "external_links": 1,
+      "img_count": 2,
+      "img_missing_alt": 0,
+      "has_whatsapp_cta": true,
+      "has_og": true,
+      "has_twitter": false
+    },
+    {
+      "file": "blog/agencia-viajes-villa-de-alvarez.html",
+      "url": "https://rsviajesreycoliman.com/blog/agencia-viajes-villa-de-alvarez",
+      "in_sitemap": true,
+      "in_index_state": false,
+      "title": "Agencia de Viajes en Villa de Álvarez, Colima | RS Viajes",
+      "title_len": 57,
+      "meta_desc": "¿Buscas una agencia de viajes confiable en Villa de Álvarez, Colima? RS Viajes es tu mejor opción certificada para vuelos, <a href=",
+      "meta_desc_len": 131,
+      "canonical": "https://rsviajesreycoliman.com/blog/agencia-viajes-villa-de-alvarez",
+      "hreflang": [
+        "es",
+        "en",
+        "x-default"
+      ],
+      "h1_count": 1,
+      "h1_texts": [
+        "Agencia de Viajes en Villa de Álvarez: Tu Boleto Seguro Contra Fraudes en 2026"
+      ],
+      "h2_count": 9,
+      "h3_count": 3,
+      "schema_types": [
+        "(parse_error)",
+        "BreadcrumbList",
+        "TravelAgency",
+        "VideoObject"
+      ],
+      "word_count": 2429,
+      "internal_links": 6,
+      "external_links": 1,
+      "img_count": 4,
+      "img_missing_alt": 0,
+      "has_whatsapp_cta": true,
+      "has_og": true,
+      "has_twitter": true
+    },
+    {
+      "file": "blog/viajes-a-japon-desde-mexico.html",
+      "url": "https://rsviajesreycoliman.com/blog/viajes-a-japon-desde-mexico",
+      "in_sitemap": true,
+      "in_index_state": true,
+      "title": "Viajes a Japón desde México 2026 — Guía | RS Viajes",
+      "title_len": 51,
+      "meta_desc": "Guía definitiva para viajes a Japón desde México: paquetes de viaje, requisitos de entrada en 2026, temporada de sakura y presupuesto realista.",
+      "meta_desc_len": 143,
+      "canonical": "https://rsviajesreycoliman.com/blog/viajes-a-japon-desde-mexico",
+      "hreflang": [
+        "es",
+        "en",
+        "x-default"
+      ],
+      "h1_count": 1,
+      "h1_texts": [
+        "Paquetes de viaje a Japón desde México y Mejores Rutas Asiáticas para Mexicanos"
+      ],
+      "h2_count": 11,
+      "h3_count": 0,
+      "schema_types": [
+        "HowTo",
+        "BreadcrumbList",
+        "BlogPosting",
+        "FAQPage",
+        "VideoObject"
+      ],
+      "word_count": 2019,
+      "internal_links": 5,
+      "external_links": 1,
+      "img_count": 3,
+      "img_missing_alt": 0,
+      "has_whatsapp_cta": true,
+      "has_og": true,
+      "has_twitter": true
+    },
+    {
+      "file": "blog/viajes-a-turquia-desde-mexico.html",
+      "url": "https://rsviajesreycoliman.com/blog/viajes-a-turquia-desde-mexico",
+      "in_sitemap": true,
+      "in_index_state": true,
+      "title": "Viajes a Turquía desde México 2026 — Guía | RS Viajes",
+      "title_len": 53,
+      "meta_desc": "Descubre cómo organizar tu viaje a Turquía y Capadocia desde México en 2026. Precios de paquetes todo incluido, vuelos, requisitos y la mejor temporada.",
+      "meta_desc_len": 152,
+      "canonical": "https://rsviajesreycoliman.com/blog/viajes-a-turquia-desde-mexico",
+      "hreflang": [
+        "es",
+        "en",
+        "x-default"
+      ],
+      "h1_count": 1,
+      "h1_texts": [
+        "Viajes a Turquía y Capadocia desde México: Paquetes y Vuelos 2026"
+      ],
+      "h2_count": 11,
+      "h3_count": 5,
+      "schema_types": [
+        "HowTo",
+        "BreadcrumbList",
+        "BlogPosting",
+        "FAQPage",
+        "VideoObject"
+      ],
+      "word_count": 1867,
+      "internal_links": 5,
+      "external_links": 1,
+      "img_count": 3,
+      "img_missing_alt": 0,
+      "has_whatsapp_cta": true,
+      "has_og": true,
+      "has_twitter": true
+    },
+    {
+      "file": "blog/viajes-a-egipto-y-dubai-desde-mexico.html",
+      "url": "https://rsviajesreycoliman.com/blog/viajes-a-egipto-y-dubai-desde-mexico",
+      "in_sitemap": true,
+      "in_index_state": true,
+      "title": "Viajes a Egipto y Dubái desde México 2026 | RS Viajes",
+      "title_len": 53,
+      "meta_desc": "Circuito todo incluido a Egipto y Dubái desde México 2026. Pirámides de Giza, crucero por el Nilo, Burj Khalifa y safari en dunas. Visados, costos y paquetes.",
+      "meta_desc_len": 158,
+      "canonical": "https://rsviajesreycoliman.com/blog/viajes-a-egipto-y-dubai-desde-mexico",
+      "hreflang": [
+        "es",
+        "en",
+        "x-default"
+      ],
+      "h1_count": 1,
+      "h1_texts": [
+        "Viajes a Egipto y Dubái desde México 2026 — El Circuito Premium Definitivo"
+      ],
+      "h2_count": 11,
+      "h3_count": 2,
+      "schema_types": [
+        "BreadcrumbList",
+        "BlogPosting",
+        "FAQPage",
+        "VideoObject"
+      ],
+      "word_count": 1787,
+      "internal_links": 0,
+      "external_links": 1,
+      "img_count": 3,
+      "img_missing_alt": 0,
+      "has_whatsapp_cta": true,
+      "has_og": true,
+      "has_twitter": false
+    },
+    {
+      "file": "blog/cuanto-cuesta-ir-al-mundial-2026-desde-mexico.html",
+      "url": "https://rsviajesreycoliman.com/blog/cuanto-cuesta-ir-al-mundial-2026-desde-mexico",
+      "in_sitemap": true,
+      "in_index_state": false,
+      "title": "Cuánto Cuesta Ir al Mundial 2026 desde México | RS Viajes",
+      "title_len": 57,
+      "meta_desc": "Ir al Mundial 2026 desde México cuesta desde $6,899 USD por persona con paquetes todo incluido. Precios reales por fase: dieciseisavos, semifinales y final.",
+      "meta_desc_len": 156,
+      "canonical": "https://rsviajesreycoliman.com/blog/cuanto-cuesta-ir-al-mundial-2026-desde-mexico",
+      "hreflang": [
+        "es",
+        "en",
+        "x-default"
+      ],
+      "h1_count": 1,
+      "h1_texts": [
+        "¿Cuánto Cuesta Ir al Mundial 2026 desde México? Precios Reales 2026"
+      ],
+      "h2_count": 9,
+      "h3_count": 10,
+      "schema_types": [
+        "BreadcrumbList",
+        "BlogPosting",
+        "FAQPage"
+      ],
+      "word_count": 1591,
+      "internal_links": 6,
+      "external_links": 3,
+      "img_count": 1,
+      "img_missing_alt": 0,
+      "has_whatsapp_cta": false,
+      "has_og": true,
+      "has_twitter": true
+    },
+    {
+      "file": "blog/viajes-costa-rica-todo-incluido-desde-mexico.html",
+      "url": "https://rsviajesreycoliman.com/blog/viajes-costa-rica-todo-incluido-desde-mexico",
+      "in_sitemap": true,
+      "in_index_state": false,
+      "title": "Viajes a Costa Rica Todo Incluido desde México 2026",
+      "title_len": 51,
+      "meta_desc": "Guía completa de viajes a Costa Rica todo incluido desde México. Volcán Arenal, Monteverde, playas desde $22,000 MXN. Precios, itinerarios y requisitos.",
+      "meta_desc_len": 152,
+      "canonical": "https://rsviajesreycoliman.com/blog/viajes-costa-rica-todo-incluido-desde-mexico",
+      "hreflang": [
+        "en",
+        "x-default"
+      ],
+      "h1_count": 1,
+      "h1_texts": [
+        "Viajes a Costa Rica Todo Incluido desde México 2026: Precios, Rutas y Guía Completa"
+      ],
+      "h2_count": 8,
+      "h3_count": 6,
+      "schema_types": [
+        "BreadcrumbList",
+        "BlogPosting",
+        "FAQPage",
+        "VideoObject"
+      ],
+      "word_count": 1008,
+      "internal_links": 1,
+      "external_links": 1,
+      "img_count": 2,
+      "img_missing_alt": 0,
+      "has_whatsapp_cta": true,
+      "has_og": true,
+      "has_twitter": true
+    },
+    {
+      "file": "blog/paquetes-de-viaje-colima.html",
+      "url": "https://rsviajesreycoliman.com/blog/paquetes-de-viaje-colima",
+      "in_sitemap": true,
+      "in_index_state": false,
+      "title": "Paquetes de Viaje Colima 2026 — Vuelos y Hoteles | RS Viajes",
+      "title_len": 60,
+      "meta_desc": "Encuentra los mejores paquetes de viaje desde Colima. Vuelos económicos, hoteles todo incluido a <a href=",
+      "meta_desc_len": 105,
+      "canonical": "https://rsviajesreycoliman.com/blog/paquetes-de-viaje-colima",
+      "hreflang": [
+        "es",
+        "en",
+        "x-default"
+      ],
+      "h1_count": 1,
+      "h1_texts": [
+        "Paquetes Vacacionales, Vuelos y Agencias Todo Incluido en Colima México"
+      ],
+      "h2_count": 9,
+      "h3_count": 0,
+      "schema_types": [
+        "HowTo",
+        "BreadcrumbList",
+        "BlogPosting",
+        "FAQPage",
+        "VideoObject"
+      ],
+      "word_count": 1173,
+      "internal_links": 5,
+      "external_links": 1,
+      "img_count": 3,
+      "img_missing_alt": 0,
+      "has_whatsapp_cta": true,
+      "has_og": true,
+      "has_twitter": true
+    },
+    {
+      "file": "blog/guia-completa-viajes-desde-mexico.html",
+      "url": "https://rsviajesreycoliman.com/blog/guia-completa-viajes-desde-mexico",
+      "in_sitemap": true,
+      "in_index_state": false,
+      "title": "Guía Completa de Viajes desde México 2026 | RS Viajes",
+      "title_len": 53,
+      "meta_desc": "La guía definitiva para viajar desde México en 2026. Compara destinos nacionales, internacionales, cruceros, paquetes todo incluido, presupuestos y tips de…",
+      "meta_desc_len": 156,
+      "canonical": "https://rsviajesreycoliman.com/blog/guia-completa-viajes-desde-mexico",
+      "hreflang": [
+        "es",
+        "en",
+        "x-default"
+      ],
+      "h1_count": 1,
+      "h1_texts": [
+        "Guía Completa de Viajes desde México 2026 — Destinos, Precios y Tips de Experto"
+      ],
+      "h2_count": 14,
+      "h3_count": 12,
+      "schema_types": [
+        "(parse_error)",
+        "BreadcrumbList",
+        "VideoObject",
+        "Article"
+      ],
+      "word_count": 1666,
+      "internal_links": 21,
+      "external_links": 1,
+      "img_count": 2,
+      "img_missing_alt": 0,
+      "has_whatsapp_cta": true,
+      "has_og": true,
+      "has_twitter": true
+    },
+    {
+      "file": "blog/paquetes-viajes-todo-incluido.html",
+      "url": "https://rsviajesreycoliman.com/blog/paquetes-viajes-todo-incluido",
+      "in_sitemap": true,
+      "in_index_state": false,
+      "title": "Paquetes de Viaje Todo Incluido 2026 | RS Viajes",
+      "title_len": 48,
+      "meta_desc": "Guía de paquetes de viajes todo incluido 2026: <a href=",
+      "meta_desc_len": 55,
+      "canonical": "https://rsviajesreycoliman.com/blog/paquetes-viajes-todo-incluido",
+      "hreflang": [
+        "es",
+        "en",
+        "x-default"
+      ],
+      "h1_count": 1,
+      "h1_texts": [
+        "Paquetes de Viajes Todo Incluido 2026: Guía Completa de Precios y Destinos"
+      ],
+      "h2_count": 10,
+      "h3_count": 0,
+      "schema_types": [
+        "BreadcrumbList",
+        "BlogPosting",
+        "FAQPage",
+        "VideoObject"
+      ],
+      "word_count": 1088,
+      "internal_links": 7,
+      "external_links": 2,
+      "img_count": 2,
+      "img_missing_alt": 0,
+      "has_whatsapp_cta": true,
+      "has_og": true,
+      "has_twitter": true
+    },
+    {
+      "file": "blog/destinos-baratos-viajar-mexico.html",
+      "url": "https://rsviajesreycoliman.com/blog/destinos-baratos-viajar-mexico",
+      "in_sitemap": true,
+      "in_index_state": false,
+      "title": "Destinos Baratos para Viajar desde México 2026 | RS Viajes",
+      "title_len": 58,
+      "meta_desc": "Descubre los 15 destinos más baratos para viajar desde México en 2026. Opciones nacionales e internacionales con vuelos desde $1,500 MXN y hospedaje económico.",
+      "meta_desc_len": 159,
+      "canonical": "https://rsviajesreycoliman.com/blog/destinos-baratos-viajar-mexico",
+      "hreflang": [
+        "es",
+        "en",
+        "x-default"
+      ],
+      "h1_count": 1,
+      "h1_texts": [
+        "15 Destinos Baratos para Viajar desde México en 2026"
+      ],
+      "h2_count": 8,
+      "h3_count": 15,
+      "schema_types": [
+        "BreadcrumbList",
+        "BlogPosting",
+        "FAQPage",
+        "VideoObject"
+      ],
+      "word_count": 1106,
+      "internal_links": 6,
+      "external_links": 1,
+      "img_count": 2,
+      "img_missing_alt": 0,
+      "has_whatsapp_cta": true,
+      "has_og": true,
+      "has_twitter": true
+    },
+    {
+      "file": "blog/mejores-destinos-viajar-marzo.html",
+      "url": "https://rsviajesreycoliman.com/blog/mejores-destinos-viajar-marzo",
+      "in_sitemap": true,
+      "in_index_state": false,
+      "title": "Mejores Destinos para Viajar en Marzo 2026 | RS Viajes",
+      "title_len": 54,
+      "meta_desc": "Los 12 mejores destinos para viajar en marzo y Semana Santa 2026. Clima ideal, precios, qué hacer y consejos para aprovechar las vacaciones de primavera.",
+      "meta_desc_len": 153,
+      "canonical": "https://rsviajesreycoliman.com/blog/mejores-destinos-viajar-marzo",
+      "hreflang": [
+        "es",
+        "en",
+        "x-default"
+      ],
+      "h1_count": 1,
+      "h1_texts": [
+        "12 Mejores Destinos para Viajar en Marzo y Semana Santa 2026"
+      ],
+      "h2_count": 9,
+      "h3_count": 12,
+      "schema_types": [
+        "(parse_error)",
+        "BreadcrumbList",
+        "BlogPosting",
+        "VideoObject"
+      ],
+      "word_count": 1083,
+      "internal_links": 6,
+      "external_links": 1,
+      "img_count": 2,
+      "img_missing_alt": 0,
+      "has_whatsapp_cta": true,
+      "has_og": true,
+      "has_twitter": true
+    },
+    {
+      "file": "blog/viajes-colombia-todo-incluido-desde-mexico.html",
+      "url": "https://rsviajesreycoliman.com/blog/viajes-colombia-todo-incluido-desde-mexico",
+      "in_sitemap": true,
+      "in_index_state": false,
+      "title": "Viajes a Colombia Todo Incluido desde México 2026",
+      "title_len": 49,
+      "meta_desc": "Guía completa de viajes a Colombia todo incluido desde México. Cartagena, Medellín, San Andrés desde $18,000 MXN. Precios, itinerarios, requisitos y qué hacer.",
+      "meta_desc_len": 159,
+      "canonical": "https://rsviajesreycoliman.com/blog/viajes-colombia-todo-incluido-desde-mexico",
+      "hreflang": [
+        "en",
+        "x-default"
+      ],
+      "h1_count": 1,
+      "h1_texts": [
+        "Viajes a Colombia Todo Incluido desde México 2026: Precios, Itinerarios y Guía Completa"
+      ],
+      "h2_count": 9,
+      "h3_count": 5,
+      "schema_types": [
+        "BreadcrumbList",
+        "BlogPosting",
+        "FAQPage",
+        "VideoObject"
+      ],
+      "word_count": 1137,
+      "internal_links": 3,
+      "external_links": 1,
+      "img_count": 2,
+      "img_missing_alt": 0,
+      "has_whatsapp_cta": true,
+      "has_og": true,
+      "has_twitter": true
+    },
+    {
+      "file": "blog/cuando-es-mejor-viajar-a-europa.html",
+      "url": "https://rsviajesreycoliman.com/blog/cuando-es-mejor-viajar-a-europa",
+      "in_sitemap": true,
+      "in_index_state": true,
+      "title": "Cuándo es Mejor Viajar a Europa 2026 | RS Viajes",
+      "title_len": 48,
+      "meta_desc": "¿No sabes cuál es la mejor época o temporada para viajar a Europa? Comparamos clima, precios y temporada alta/baja de vuelos desde México 2026.",
+      "meta_desc_len": 143,
+      "canonical": "https://rsviajesreycoliman.com/blog/cuando-es-mejor-viajar-a-europa",
+      "hreflang": [
+        "es",
+        "en",
+        "x-default"
+      ],
+      "h1_count": 1,
+      "h1_texts": [
+        "Cuándo es Mejor Viajar a Europa — Guía de Temporadas y Precios 2026"
+      ],
+      "h2_count": 9,
+      "h3_count": 2,
+      "schema_types": [
+        "BreadcrumbList",
+        "BlogPosting",
+        "FAQPage",
+        "VideoObject"
+      ],
+      "word_count": 1344,
+      "internal_links": 3,
+      "external_links": 1,
+      "img_count": 3,
+      "img_missing_alt": 0,
+      "has_whatsapp_cta": true,
+      "has_og": true,
+      "has_twitter": false
+    },
+    {
+      "file": "blog/mejores-paquetes-viaje-desde-colima/index.html",
+      "url": "https://rsviajesreycoliman.com/blog/mejores-paquetes-viaje-desde-colima",
+      "in_sitemap": false,
+      "in_index_state": false,
+      "title": "Agencia de Viajes en Colima: Los Mejores Paquetes de Viaje 2026 | RS Viajes Rey Coliman",
+      "title_len": 87,
+      "meta_desc": "Descubre los mejores paquetes de viaje desde Colima en 2026. Destinos nacionales e internacionales, precios reales, y por que reservar con una agencia de viajes en Colima te ahorra tiempo y dinero.",
+      "meta_desc_len": 197,
+      "canonical": "https://rsviajesreycoliman.com/blog/mejores-paquetes-viaje-desde-colima",
+      "hreflang": [],
+      "h1_count": 1,
+      "h1_texts": [
+        "Agencia de Viajes en Colima: Los Mejores Paquetes de Viaje en 2026"
+      ],
+      "h2_count": 7,
+      "h3_count": 7,
+      "schema_types": [
+        "TravelAgency",
+        "FAQPage",
+        "Article"
+      ],
+      "word_count": 1665,
+      "internal_links": 1,
+      "external_links": 3,
+      "img_count": 4,
+      "img_missing_alt": 0,
+      "has_whatsapp_cta": true,
+      "has_og": true,
+      "has_twitter": true
+    },
+    {
+      "file": "blog/cuanto-cuesta-viaje-europa-desde-colima/index.html",
+      "url": "https://rsviajesreycoliman.com/blog/cuanto-cuesta-viaje-europa-desde-colima",
+      "in_sitemap": false,
+      "in_index_state": false,
+      "title": "¿Cuánto Cuesta un Viaje a Europa desde Colima? Precios Reales 2026 | RS Viajes Rey Colimán",
+      "title_len": 90,
+      "meta_desc": "Descubre cuánto cuesta viajar a Europa desde Colima y México en 2026. Precios reales de vuelos, hoteles, tours y paquetes todo incluido. Guía completa con costos por destino.",
+      "meta_desc_len": 174,
+      "canonical": "https://rsviajesreycoliman.com/blog/cuanto-cuesta-viaje-europa-desde-colima",
+      "hreflang": [],
+      "h1_count": 1,
+      "h1_texts": [
+        "¿Cuánto Cuesta un Viaje a Europa desde Colima? Precios Reales 2026"
+      ],
+      "h2_count": 8,
+      "h3_count": 11,
+      "schema_types": [
+        "FAQPage",
+        "Article"
+      ],
+      "word_count": 1885,
+      "internal_links": 0,
+      "external_links": 2,
+      "img_count": 4,
+      "img_missing_alt": 0,
+      "has_whatsapp_cta": true,
+      "has_og": true,
+      "has_twitter": true
+    },
+    {
+      "file": "blog/cancun-desde-colima-guia-completa/index.html",
+      "url": "https://rsviajesreycoliman.com/blog/cancun-desde-colima-guia-completa",
+      "in_sitemap": false,
+      "in_index_state": false,
+      "title": "Cancún desde Colima: Vuelos, Paquetes y Todo Lo Que Necesitas Saber | RS Viajes Rey Colimán",
+      "title_len": 91,
+      "meta_desc": "Guía completa para viajar a Cancún desde Colima. Paquetes todo incluido desde $8,500 MXN, vuelos, mejores hoteles, actividades y consejos. RS Viajes Rey Colimán te lleva.",
+      "meta_desc_len": 170,
+      "canonical": "https://rsviajesreycoliman.com/blog/cancun-desde-colima-guia-completa",
+      "hreflang": [],
+      "h1_count": 1,
+      "h1_texts": [
+        "Cancún desde Colima: Vuelos, Paquetes y Todo Lo Que Necesitas Saber"
+      ],
+      "h2_count": 8,
+      "h3_count": 8,
+      "schema_types": [
+        "FAQPage",
+        "Article"
+      ],
+      "word_count": 2060,
+      "internal_links": 2,
+      "external_links": 1,
+      "img_count": 4,
+      "img_missing_alt": 0,
+      "has_whatsapp_cta": true,
+      "has_og": true,
+      "has_twitter": false
+    },
+    {
+      "file": "blog/mejores-tours-colima-manzanillo/index.html",
+      "url": "https://rsviajesreycoliman.com/blog/mejores-tours-colima-manzanillo",
+      "in_sitemap": false,
+      "in_index_state": false,
+      "title": "Qué Hacer en Colima: Los 10 Mejores Tours en Colima y Manzanillo 2026 | RS Viajes",
+      "title_len": 81,
+      "meta_desc": "Descubre que hacer en Colima: los 10 mejores tours en Colima y Manzanillo con precios, horarios, y consejos locales. Volcan de Fuego, Nevado, Comala, playas y mas.",
+      "meta_desc_len": 163,
+      "canonical": "https://rsviajesreycoliman.com/blog/mejores-tours-colima-manzanillo",
+      "hreflang": [],
+      "h1_count": 1,
+      "h1_texts": [
+        "Qué Hacer en Colima: Los 10 Mejores Tours en Colima y Manzanillo"
+      ],
+      "h2_count": 14,
+      "h3_count": 2,
+      "schema_types": [
+        "FAQPage",
+        "Article"
+      ],
+      "word_count": 3185,
+      "internal_links": 3,
+      "external_links": 1,
+      "img_count": 4,
+      "img_missing_alt": 0,
+      "has_whatsapp_cta": true,
+      "has_og": true,
+      "has_twitter": true
+    }
+  ]
+}

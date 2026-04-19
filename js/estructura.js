@@ -61,7 +61,7 @@ async function getInfo() {
 
 function loadFooter() {
   let html = '<a href="/" class="navbar-brand" style="margin-bottom: 40px;">';
-  html += '<img src="images/logo-optimized.png" height="90" alt="RS Viajes Rey Colimán" loading="lazy">';
+  html += '<img src="images/logo-optimized.webp" height="90" alt="RS Viajes Rey Colimán" loading="lazy">';
   html += "</a>";
   html +=
     '<p><i class="fa fa-map-marker-alt mr-2"></i>' +
@@ -122,7 +122,7 @@ function loadValorCambio() {
 
 function loadMenu() {
   let html =
-    '<img src="images/logo-optimized.png" height="70" class="d-inline-block align-text-top" alt="RS Viajes Rey Colimán">';
+    '<img src="images/logo-optimized.webp" height="70" class="d-inline-block align-text-top" alt="RS Viajes Rey Colimán">';
 
   document.getElementById("logo").innerHTML = html;
 

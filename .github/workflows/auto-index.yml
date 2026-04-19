@@ -7,108 +7,80 @@ on:
       - '**.html'
       - 'sitemap.xml'
       - 'blog/**'
+  # Daily cron at 03:00 UTC (≈ 21:00 Colima) — drains the quota budget every day
+  # so the state-based rotating queue clears the backlog automatically.
+  schedule:
+    - cron: '0 3 * * *'
+  # Allow manual trigger from GitHub UI (Actions tab → Run workflow)
   workflow_dispatch:
-    inputs:
-      mode:
-        description: 'Index mode: changed (default) or all'
-        required: false
-        default: 'changed'
+
+# Prevent overlapping runs from wasting quota
+concurrency:
+  group: auto-index
+  cancel-in-progress: false
 
 jobs:
   index-urls:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write  # needed to commit updated indexing-state.json back
     steps:
-      - name: Checkout (with history for diff)
+      - name: Checkout
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '24'
+          node-version: '22'
 
       - name: Install dependencies
         run: npm install googleapis xml2js
 
-      - name: Regenerate sitemap.xml from filesystem
-        run: node .agents/scripts/auto_sitemap.js
-
       - name: Write Google Service Account key
         run: echo '${{ secrets.GOOGLE_SERVICE_ACCOUNT_KEY }}' > /tmp/google-sa-key.json
 
-      - name: Submit changed URLs to Google Indexing API
+      - name: Submit URLs to Google Indexing API
         env:
           GOOGLE_SERVICE_ACCOUNT_KEY: /tmp/google-sa-key.json
-          INDEX_MODE: ${{ github.event.inputs.mode || 'changed' }}
         run: node .agents/scripts/force_index.js
 
-      - name: Submit to IndexNow (Bing/Yandex)
+      - name: Commit updated indexing state
         run: |
-          KEY=$(cat indexnow-key.txt 2>/dev/null || echo "")
-          if [ -z "$KEY" ]; then
-            echo "⚠️ No IndexNow key found, skipping Bing/Yandex"
-            exit 0
-          fi
-
-          # Get changed HTML URLs — try git diff first, fall back to lastmod
-          CHANGED_FILES=$(git diff --name-only HEAD~1 HEAD 2>/dev/null || true)
-          URLS=""
-
-          if [ -n "$CHANGED_FILES" ]; then
-            for f in $CHANGED_FILES; do
-              if [[ "$f" == "sitemap.xml" ]]; then
-                TODAY=$(date +%Y-%m-%d)
-                DATES="$TODAY"
-                # Also get the most recent lastmod if today has none
-                LATEST=$(grep -oP '(?<=<lastmod>)[^<]+' sitemap.xml | sort -r | head -1)
-                DATES="$DATES $LATEST"
-                for D in $DATES; do
-                  NEW_URLS=$(grep -B1 "$D" sitemap.xml | grep -oP '(?<=<loc>)[^<]+' || true)
-                  URLS="$URLS $NEW_URLS"
-                done
-              elif [[ "$f" == *.html ]]; then
-                URL_PATH=$(echo "$f" | sed 's|/index\.html$||; s|\.html$||')
-                URLS="$URLS https://rsviajesreycoliman.com/$URL_PATH"
-              fi
-            done
+          if [ -n "$(git status --porcelain .agents/indexing-state.json)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add .agents/indexing-state.json
+            git commit -m "chore(index): update indexing state [skip ci]"
+            git push
+            echo "💾 Indexing state committed"
           else
-            # Fallback: submit URLs with most recent lastmod
-            LATEST=$(grep -oP '(?<=<lastmod>)[^<]+' sitemap.xml | sort -r | head -1)
-            URLS=$(grep -B1 "$LATEST" sitemap.xml | grep -oP '(?<=<loc>)[^<]+' || true)
+            echo "ℹ️ No state changes to commit"
           fi
 
-          # Deduplicate
-          URLS=$(echo "$URLS" | tr ' ' '\n' | sort -u | grep -v '^$')
-          COUNT=$(echo "$URLS" | wc -l)
+      - name: Submit sitemap to IndexNow (Bing/Yandex)
+        run: |
+          # Extract URLs from sitemap
+          URLS=$(grep -oP '(?<=<loc>)[^<]+' sitemap.xml)
+          KEY=$(cat indexnow-key.txt 2>/dev/null || echo "")
 
-          if [ "$COUNT" -eq 0 ] || [ -z "$URLS" ]; then
-            echo "ℹ️ No URLs to submit to IndexNow"
+          if [ -z "$KEY" ]; then
+            echo "⚠️ No IndexNow key found, skipping Bing/Yandex submission"
             exit 0
           fi
 
-          echo "📤 Submitting $COUNT URLs to IndexNow"
-          echo "$URLS"
-
+          # Submit batch to IndexNow API
           URL_ARRAY=$(echo "$URLS" | jq -R -s 'split("\n") | map(select(length > 0))')
 
-          RESPONSE=$(curl -s -w "\n%{http_code}" -X POST "https://api.indexnow.org/indexnow" \
+          curl -s -X POST "https://api.indexnow.org/indexnow" \
             -H "Content-Type: application/json" \
             -d "{
               \"host\": \"rsviajesreycoliman.com\",
               \"key\": \"$KEY\",
               \"keyLocation\": \"https://rsviajesreycoliman.com/$KEY.txt\",
               \"urlList\": $URL_ARRAY
-            }")
-
-          HTTP_CODE=$(echo "$RESPONSE" | tail -1)
-          BODY=$(echo "$RESPONSE" | head -n -1)
-
-          if [ "$HTTP_CODE" = "200" ] || [ "$HTTP_CODE" = "202" ]; then
-            echo "✅ IndexNow accepted ($HTTP_CODE)"
-          else
-            echo "⚠️ IndexNow returned $HTTP_CODE: $BODY"
-          fi
+            }" && echo "✅ IndexNow submission complete" || echo "⚠️ IndexNow submission failed"
 
       - name: Cleanup
         if: always()

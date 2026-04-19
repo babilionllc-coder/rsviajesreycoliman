@@ -1,0 +1,18 @@
+{
+  "_comment": "Tracks last submission date per URL. Seeded 2026-04-18 with URLs already indexed by Google (verified via site: query). Prevents quota waste on already-indexed pages.",
+  "submitted": {
+    "https://rsviajesreycoliman.com/": "2026-04-18T00:00:00.000Z",
+    "https://rsviajesreycoliman.com/viajes-internacionales": "2026-04-18T00:00:00.000Z",
+    "https://rsviajesreycoliman.com/viajes-nacionales": "2026-04-18T00:00:00.000Z",
+    "https://rsviajesreycoliman.com/revista": "2026-04-18T00:00:00.000Z",
+    "https://rsviajesreycoliman.com/sobre-nosotros": "2026-04-18T00:00:00.000Z",
+    "https://rsviajesreycoliman.com/viaje": "2026-04-18T00:00:00.000Z",
+    "https://rsviajesreycoliman.com/blog/viajes-a-canada-desde-mexico": "2026-04-18T00:00:00.000Z",
+    "https://rsviajesreycoliman.com/blog/viajes-a-cancun-desde-colima": "2026-04-18T00:00:00.000Z",
+    "https://rsviajesreycoliman.com/blog/viajes-a-egipto-y-dubai-desde-mexico": "2026-04-18T00:00:00.000Z",
+    "https://rsviajesreycoliman.com/blog/viajes-a-espana-desde-mexico": "2026-04-18T00:00:00.000Z",
+    "https://rsviajesreycoliman.com/blog/viajes-a-japon-desde-mexico": "2026-04-18T00:00:00.000Z",
+    "https://rsviajesreycoliman.com/blog/viajes-a-turquia-desde-mexico": "2026-04-18T00:00:00.000Z",
+    "https://rsviajesreycoliman.com/blog/cuando-es-mejor-viajar-a-europa": "2026-04-18T00:00:00.000Z"
+  }
+}

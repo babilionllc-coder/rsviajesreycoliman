@@ -1,0 +1,78 @@
+name: Daily Blog Post — Full Auto
+
+on:
+  # 13:00 MX Central (UTC-6) = 19:00 UTC
+  schedule:
+    - cron: '0 19 * * *'
+  # Manual trigger from Actions tab
+  workflow_dispatch:
+    inputs:
+      topic_id:
+        description: 'Force a specific topic ID (e.g. T005). Leave blank for auto-pick.'
+        required: false
+        type: string
+
+concurrency:
+  group: daily-blog
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+          cache-dependency-path: automation/requirements.txt
+
+      - name: Install dependencies
+        run: pip install -r automation/requirements.txt
+
+      - name: Run daily pipeline
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          PERPLEXITY_API_KEY: ${{ secrets.PERPLEXITY_API_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          if [ -n "${{ inputs.topic_id }}" ]; then
+            python3 automation/daily_pipeline.py --topic "${{ inputs.topic_id }}"
+          else
+            python3 automation/daily_pipeline.py
+          fi
+
+      - name: Commit and push
+        run: |
+          git config user.name "rs-viajes-blog-bot"
+          git config user.email "blog-bot@rsviajesreycoliman.com"
+          if [ -n "$(git status --porcelain)" ]; then
+            git add blog/ sitemap.xml automation/content-backlog.json
+            git commit -m "feat(blog): daily post via auto-pipeline (triggers auto-index)"
+            git push
+            echo "New post pushed — auto-index.yml will submit to Google + IndexNow"
+          else
+            echo "No changes to commit"
+          fi
+
+      - name: Summary
+        if: always()
+        run: |
+          echo "## Daily Blog Pipeline — $(date -u)" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          if [ -f automation/content-backlog.json ]; then
+            PENDING=$(jq '[.topics[] | select(.status=="pending")] | length' automation/content-backlog.json)
+            PUBLISHED=$(jq '[.topics[] | select(.status=="published")] | length' automation/content-backlog.json)
+            echo "- **Pending topics:** $PENDING" >> $GITHUB_STEP_SUMMARY
+            echo "- **Published total:** $PUBLISHED" >> $GITHUB_STEP_SUMMARY
+            echo "- **Days until backlog empty:** $PENDING days at 1/day" >> $GITHUB_STEP_SUMMARY
+          fi

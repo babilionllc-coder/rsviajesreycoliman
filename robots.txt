@@ -1,8 +1,59 @@
+# robots.txt — rsviajesreycoliman.com
+# Last updated: 2026-04-25
+
 User-agent: *
 Allow: /
 Disallow: /*.csv$
 Disallow: /*.zip$
 Disallow: /SEO antigravity/
 Disallow: /report/
+Disallow: /reports/
+Disallow: /content/
+
+# AI / Answer Engines (AEO) — explicitly allowed
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: GoogleOther
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
 
 Sitemap: https://rsviajesreycoliman.com/sitemap.xml

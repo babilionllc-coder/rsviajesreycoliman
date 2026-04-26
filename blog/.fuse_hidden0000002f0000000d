@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog de Viajes — Guías y Destinos | RS Viajes Rey Colimán</title>
+    <meta name="description" content="Blog de RS Viajes Rey Colimán: guías de viaje, mejores destinos, requisitos para viajar y consejos para ahorrar. Tu agencia de viajes en Colima.">
+    <meta name="keywords" content="blog viajes Colima, guías de viaje, mejores destinos México, consejos viajeros, travel blog Mexico">
+    <link rel="canonical" href="https://rsviajesreycoliman.com/blog/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Blog de Viajes — Guías y Destinos | RS Viajes Rey Colimán">
+    <meta property="og:description" content="Guías de viaje, destinos y consejos para viajeros desde Colima.">
+    <meta property="og:url" content="https://rsviajesreycoliman.com/blog/">
+    <meta property="og:image" content="https://rsviajesreycoliman.com/images/logo-optimized.webp">
+    <meta property="og:site_name" content="RS Viajes Rey Colimán">
+    <meta name="robots" content="index, follow">
+    <link href="/favicon.ico" type="image/x-icon" rel="icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Blog",
+      "name": "Blog de Viajes — RS Viajes Rey Colimán",
+      "description": "Guías de viaje, mejores destinos y consejos para viajeros desde Colima, México.",
+      "url": "https://rsviajesreycoliman.com/blog/",
+      "publisher": {
+        "@type": "TravelAgency",
+        "name": "RS Viajes Rey Colimán",
+        "url": "https://rsviajesreycoliman.com"
+      }
+    }
+    </script>
+
+    <style>
+        :root { --primary: #1a73e8; --primary-dark: #0d47a1; --accent: #ff6b35; --bg: #f8f9fa; --bg-card: #fff; --text: #1a1a2e; --text-muted: #6c757d; --border: #e9ecef; }
+        * { margin:0; padding:0; box-sizing:border-box; }
+        body { font-family:'Roboto',sans-serif; color:var(--text); background:var(--bg); line-height:1.7; }
+        .container { max-width:900px; margin:0 auto; padding:0 20px; }
+        .blog-nav { background:#fff; border-bottom:1px solid var(--border); padding:16px 0; position:sticky; top:0; z-index:100; }
+        .blog-nav .container { display:flex; align-items:center; justify-content:space-between; }
+        .blog-nav a { color:var(--primary); text-decoration:none; font-weight:500; }
+        .blog-nav .logo-text { font-family:'Playfair Display',serif; font-weight:700; font-size:18px; color:var(--text); }
+        .blog-header { text-align:center; padding:60px 20px; }
+        .blog-header h1 { font-family:'Playfair Display',serif; font-size:clamp(32px,5vw,48px); font-weight:800; margin-bottom:12px; }
+        .blog-header p { font-size:18px; color:var(--text-muted); max-width:600px; margin:0 auto; }
+        .posts-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(380px,1fr)); gap:28px; padding:20px 0 60px; }
+        .post-card { background:var(--bg-card); border-radius:16px; overflow:hidden; border:1px solid var(--border); transition:transform 0.2s,box-shadow 0.2s; text-decoration:none; color:var(--text); display:flex; flex-direction:column; }
+        .post-card:hover { transform:translateY(-4px); box-shadow:0 8px 30px rgba(0,0,0,0.1); }
+        .post-card img { width:100%; height:220px; object-fit:cover; }
+        .post-card-body { padding:24px; flex:1; display:flex; flex-direction:column; }
+        .post-card-body h2 { font-family:'Playfair Display',serif; font-size:22px; font-weight:700; margin-bottom:8px; line-height:1.3; }
+        .post-card-body p { color:var(--text-muted); font-size:15px; flex:1; margin-bottom:12px; }
+        .post-card-meta { font-size:13px; color:var(--text-muted); display:flex; gap:16px; }
+        .read-more { color:var(--primary); font-weight:600; font-size:14px; text-decoration:none; margin-top:8px; }
+        .blog-footer { text-align:center; padding:40px 0; color:var(--text-muted); font-size:13px; border-top:1px solid var(--border); }
+        .blog-footer a { color:var(--primary); text-decoration:none; }
+        @media (max-width:480px) { .posts-grid { grid-template-columns:1fr; } }
+    </style>
+
+    <link rel="alternate" hreflang="en" href="https://rsviajesreycoliman.com/blog/">
+    <link rel="alternate" hreflang="x-default" href="https://rsviajesreycoliman.com/blog/">
+    </head>
+<body>
+
+    <nav class="blog-nav" aria-label="Navegación del blog">
+        <div class="container">
+            <span class="logo-text">RS Viajes Rey Colimán</span>
+            <a href="/">← Volver al Inicio</a>
+        </div>
+    </nav>
+
+    <header class="blog-header">
+        <h1>Blog de Viajes</h1>
+        <p>Guías, destinos, consejos y todo lo que necesitas saber para planificar tu próximo viaje desde Colima.</p>
+    </header>
+
+    <!-- WhatsApp CTA -->
+    <section style="background:linear-gradient(135deg,#25d366 0%,#128c7e 100%);padding:32px 20px;text-align:center;margin-bottom:0;">
+        <div style="max-width:680px;margin:0 auto;">
+            <p style="color:#fff;font-size:18px;font-weight:600;margin-bottom:8px;">¿Ya sabes a dónde quieres ir?</p>
+            <p style="color:rgba(255,255,255,0.9);font-size:15px;margin-bottom:20px;">Cotiza tu viaje gratis con RS Viajes Rey Colimán, agencia de viajes en Villa de Álvarez, Colima.</p>
+            <a href="https://wa.me/523125504084?text=Hola%2C%20me%20interesa%20cotizar%20un%20viaje" target="_blank" rel="noopener noreferrer"
+               style="display:inline-flex;align-items:center;gap:10px;background:#fff;color:#128c7e;font-weight:700;font-size:16px;padding:14px 28px;border-radius:50px;text-decoration:none;box-shadow:0 4px 15px rgba(0,0,0,0.15);">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="#25d366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                Cotizar viaje por WhatsApp →
+            </a>
+        </div>
+    </section>
+
+    <main class="container">
+        <div class="posts-grid">
+
+            <a href="/blog/seguro-de-viaje-internacional-mexico" class="post-card">
+                <img src="/blog/images/seguro-de-viaje-internacional-hero.webp"
+                     alt="Seguro de viaje internacional para mexicanos — comparativa 2026 Assist Card, Chubb, AXA, Allianz"
+                     loading="eager" width="400" height="220">
+                <div class="post-card-body">
+                    <span style="display:inline-block;background:linear-gradient(135deg,#1a73e8,#0d47a1);color:#fff;padding:3px 12px;border-radius:12px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;">🛡️ Seguros 2026</span>
+                    <h2>Seguro de Viaje Internacional 2026 — Guía Completa para Mexicanos</h2>
+                    <p>Comparativa 2026 de Assist Card, Chubb, AXA, Allianz, MAPFRE e IATI. Precios reales, cobertura Schengen €30,000 y cómo elegir según tu destino.</p>
+                    <div class="post-card-meta">
+                        <span>📅 21 abril 2026</span>
+                        <span>⏱️ 13 min</span>
+                        <span>🇪🇸 ES · <a href="/blog/en/international-travel-insurance-mexico" style="color:inherit;text-decoration:underline;">🇬🇧 EN</a></span>
+                    </div>
+                    <span class="read-more">Leer artículo →</span>
+                </div>
+            </a>
+
+            <a href="/blog/mejores-destinos-viajar-diciembre-mexico" class="post-card">
+                <img src="/blog/images/mejores-destinos-viajar-marzo.webp"
+                     alt="Mejores destinos para viajar en diciembre 2026 desde México — Europa, Caribe, Japón, Dubái"
+                     loading="eager" width="400" height="220">
+                <div class="post-card-body">
+                    <span style="display:inline-block;background:linear-gradient(135deg,#c41e3a,#ff4458);color:#fff;padding:3px 12px;border-radius:12px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;">🎄 Diciembre 2026</span>
+                    <h2>Mejores Destinos para Viajar en Diciembre 2026 — 10 Ideas</h2>
+                    <p>Mercados navideños en Europa, Caribe, Japón, Dubái y más. Precios reales por destino y cuándo reservar con RS Viajes Rey Colimán.</p>
+                    <div class="post-card-meta">
+                        <span>📅 18 abril 2026</span>
+                        <span>⏱️ 12 min</span>
+                    </div>
+                    <span class="read-more">Leer artículo →</span>
+                </div>
+            </a>
+
+            <a href="/blog/visa-schengen-mexicanos-europa" class="post-card">
+                <img src="/blog/images/requisitos-viajar-extranjero-mexico.webp"
+                     alt="Visa Schengen y ETIAS para mexicanos — requisitos para viajar a Europa 2026"
+                     loading="eager" width="400" height="220">
+                <div class="post-card-body">
+                    <span style="display:inline-block;background:linear-gradient(135deg,#003399,#0055cc);color:#fff;padding:3px 12px;border-radius:12px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;">🇪🇺 ETIAS 2026</span>
+                    <h2>Visa Schengen y ETIAS para Mexicanos 2026 — Requisitos</h2>
+                    <p>¿Necesitas visa para Europa? Guía completa de ETIAS, pasaporte, documentos y cómo tramitarlo desde México.</p>
+                    <div class="post-card-meta">
+                        <span>📅 18 abril 2026</span>
+                        <span>⏱️ 11 min</span>
+                    </div>
+                    <span class="read-more">Leer artículo →</span>
+                </div>
+            </a>
+
+            <a href="/blog/cuanto-cuesta-ir-al-mundial-2026-desde-mexico" class="post-card">
+                <img src="/blog/images/cuanto-cuesta-ir-al-mundial-2026.jpg"
+                     onerror="this.onerror=null;this.src='/images/mundial/texas.jpg';"
+                     alt="Estadio del Mundial FIFA 2026 lleno de aficionados mexicanos"
+                     loading="eager" width="400" height="220">
+                <div class="post-card-body">
+                    <span style="display:inline-block;background:linear-gradient(135deg,#0d7c3c,#1a9e4f);color:#fff;padding:3px 12px;border-radius:12px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;">⚽ Mundial 2026</span>
+                    <h2>¿Cuánto Cuesta Ir al Mundial 2026 desde México? Guía 2026</h2>
+                    <p>Precios reales por fase del torneo, qué incluye cada paquete y cómo ahorrar. Desde $6,899 USD hasta la Final en Nueva York.</p>
+                    <div class="post-card-meta">
+                        <span>📅 13 abril 2026</span>
+                        <span>⏱️ 9 min</span>
+                    </div>
+                    <span class="read-more">Leer artículo →</span>
+                </div>
+            </a>
+
+            <a href="/blog/es-seguro-comprar-paquetes-viaje-internet" class="post-card">
+                <img src="/blog/images/comprar-viajes-internet-vs-agencia-colima.webp"
+                     alt="Comparativa de compra de viajes"
+                     loading="eager" width="400" height="220">
+                <div class="post-card-body">
+                    <span style="display:inline-block;background:linear-gradient(135deg,#e85d04,#ffba08);color:#1a1a2e;padding:3px 12px;border-radius:12px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;">🔐 Ciberseguridad</span>
+                    <h2>¿Es Seguro Comprar Paquetes de Viaje por Internet en 2026?</h2>
+                    <p>Mitos y realidades de comprar tus vacaciones online vs consultar con una agencia de viajes en Colima.</p>
+                    <div class="post-card-meta">
+                        <span>📅 12 abril 2026</span>
+                        <span>⏱️ 5 min</span>
+                    </div>
+                    <span class="read-more">Leer artículo →</span>
+                </div>
+            </a>
+
+            <a href="/blog/viajes-luna-de-miel-colima" class="post-card">
+                <img src="/blog/images/viajes-luna-de-miel.webp"
+                     alt="Resort de lujo overwater en Maldivas al atardecer, destino ideal para luna de miel desde Colima"
+                     loading="eager" width="400" height="220">
+                <div class="post-card-body">
+                    <span style="display:inline-block;background:linear-gradient(135deg,#c5a059,#e8c95a);color:#1a1a2e;padding:3px 12px;border-radius:12px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;">💍 Bodas y Romance</span>
+                    <h2>Viajes de Luna de Miel desde Colima: Destinos y Paquetes 2026</h2>
+                    <p>Los mejores destinos internacionales para lunamieleros: Maldivas, Europa, Bali y playas Todo Incluido.</p>
+                    <div class="post-card-meta">
+                        <span>📅 12 abril 2026</span>
+                        <span>⏱️ 6 min</span>
+                    </div>
+                    <span class="read-more">Leer artículo →</span>
+                </div>
+            </a>
+
+            <a href="/blog/cuando-es-mejor-viajar-a-europa" class="post-card">
+                <img src="/blog/images/cuando-es-mejor-viajar-a-europa.webp"
+                     alt="París en temporada de primavera al lado de Roma nevando en invierno, contraste de viaje europeo"
+                     loading="lazy" width="400" height="220">
+                <div class="post-card-body">
+                    <span style="display:inline-block;background:linear-gradient(135deg,#c5a059,#e8c95a);color:#1a1a2e;padding:3px 12px;border-radius:12px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;">🌍 Europa Guía</span>
+                    <h2>Cuándo es Mejor Viajar a Europa — Temporadas y Precios 2026</h2>
+                    <p>Comparamos climas, saturación turística y las fechas más económicas para volar al viejo continente.</p>
+                    <div class="post-card-meta">
+                        <span>📅 11 abril 2026</span>
+                        <span>⏱️ 7 min</span>
+                    </div>
+                    <span class="read-more">Leer artículo →</span>
+                </div>
+            </a>
+
+            <a href="/blog/viajes-a-cancun-desde-colima" class="post-card">
+                <img src="/blog/images/viajes-a-cancun-desde-colima.webp"
+                     alt="Resort All Inclusive en Cancún, México frente a playa"
+                     loading="lazy" width="400" height="220">
+                <div class="post-card-body">
+                    <span style="display:inline-block;background:linear-gradient(135deg,#1a73e8,#4facfe);color:#fff;padding:3px 12px;border-radius:12px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;">🏖️ Todo Incluido</span>
+                    <h2>Viajes a Cancún Todo Incluido desde Colima 2026 — Paquetes</h2>
+                    <p>Conoce los mejores resorts, precios y transportación desde Jalisco y Colima hacia el Caribe.</p>
+                    <div class="post-card-meta">
+                        <span>📅 11 abril 2026</span>
+                        <span>⏱️ 6 min</span>
+                    </div>
+                    <span class="read-more">Leer artículo →</span>
+                </div>
+            </a>
+
+            <a href="/blog/viajes-a-espana-desde-mexico" class="post-card">
+                <img src="/blog/images/viajes-a-espana-desde-mexico.webp"
+                     alt="Vistas de Madrid España — viajes a España desde México 2026"
+                     loading="lazy" width="400" height="220">
+                <div class="post-card-body">
+                    <span style="display:inline-block;background:linear-gradient(135deg,#c5a059,#e8c95a);color:#1a1a2e;padding:3px 12px;border-radius:12px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;">🇪🇸 Nuevo Destino</span>
+                    <h2>Viajes a España desde México 2026 — Qué Incluye y Cuánto Cuesta</h2>
+                    <p>Todo sobre precios, ciudades y paquetes para viajar a España. Desde $38,000 MXN con vuelo.</p>
+                    <div class="post-card-meta">
+                        <span>📅 11 abril 2026</span>
+                        <span>⏱️ 9 min</span>
+                    </div>
+                    <span class="read-more">Leer artículo →</span>
+                </div>
+            </a>
+
+            <a href="/blog/viajes-a-grecia-desde-mexico" class="post-card">
+                <img src="/blog/images/viajes-a-grecia-desde-mexico.webp"
+                     alt="Vistas espléndidas desde los edificios de Santorini, viajes a grecia desde mexico"
+                     loading="lazy" width="400" height="220">
+                <div class="post-card-body">
+                    <span style="display:inline-block;background:linear-gradient(135deg,#1a73e8,#4facfe);color:#fff;padding:3px 12px;border-radius:12px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;">🚢 Cruceros</span>
+                    <h2>Viajes a Grecia desde México 2026 — Cruceros e Islas</h2>
+                    <p>Conoce los fabulosos cruceros por las Islas Griegas, Atenas y planes adaptados para México.</p>
+                    <div class="post-card-meta">
+                        <span>📅 11 abril 2026</span>
+                        <span>⏱️ 8 min</span>
+                    </div>
+                    <span class="read-more">Leer artículo →</span>
+                </div>
+            </a>
+
+            <a href="/blog/agencia-viajes-villa-de-alvarez" class="post-card">
+                <img src="/blog/images/agencia-villa-alvarez-colima.webp"
+                     alt="Interior de una moderna oficina de agencia de viajes en Villa de Álvarez"
+                     loading="eager" width="400" height="220">
+                <div class="post-card-body">
+                    <span style="display:inline-block;background:linear-gradient(135deg,#c5a059,#e8c95a);color:#1a1a2e;padding:3px 12px;border-radius:12px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;">⭐ Confianza Local</span>
+                    <h2>Mejor Agencia de Viajes en Villa de Álvarez | RS Viajes (2026)</h2>
+                    <p>RS Viajes Rey Colimán es tu mejor opción certificada para cotizar vuelos y paquetes vacacionales cara a cara.</p>
+                    <div class="post-card-meta">
+                        <span>📅 9 abril 2026</span>
+                        <span>⏱️ 5 min</span>
+                    </div>
+                    <span class="read-more">Leer artículo →</span>
+                </div>
+            </a>
+
+            <a href="/blog/viajes-a-peru-desde-mexico" class="post-card">
+                <img src="/blog/images/viajes-a-peru-mexico.webp"
+                     alt="Turistas contemplando las ruinas andinas de machu picchu doradas por el sol"
+                     loading="eager" width="400" height="220">
+                <div class="post-card-body">
+                    <span style="display:inline-block;background:linear-gradient(135deg,#6f42c1,#1a73e8);color:#fff;padding:3px 12px;border-radius:12px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;">🌎 Extra-Continental</span>
+                    <h2>Viajes a Perú y Machu Picchu desde México (2026)</h2>
+                    <p>La expedición de tu vida explorando el misticismo del Valle Sagrado. Paquetes completos y guiados a Perú saliendo de México.</p>
+                    <div class="post-card-meta">
+                        <span>📅 9 abril 2026</span>
+                        <span>⏱️ 5 min</span>
+                    </div>
+                    <span class="read-more">Leer artículo →</span>
+                </div>
+            </a>
+
+            <a href="/blog/paquetes-de-viaje-colima" class="post-card">
+                <img src="/blog/images/paquetes-de-viaje-colima.webp"
+                     alt="Elegante equipaje de viaje con implementos tropicales al lado de un aeropuerto"
+                     loading="eager" width="400" height="220">
+                <div class="post-card-body">
+                    <span style="display:inline-block;background:linear-gradient(135deg,#28a745,#85d050);color:#fff;padding:3px 12px;border-radius:12px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;">🌴 Salidas Seguras</span>
+                    <h2>Paquetes de Viaje desde Colima: Los Mejores Vuelos, Hoteles y Tours (2026)</h2>
+                    <p>Encuentra los mejores paquetes de viaje Todo Incluido saliendo comodamente de Colima o GDL.</p>
+                    <div class="post-card-meta">
+                        <span>📅 9 abril 2026</span>
+                        <span>⏱️ 9 min</span>
+                    </div>
+                    <span class="read-more">Leer artículo →</span>
+                </div>
+            </a>
+
+            <a href="/blog/viajes-de-graduacion-colima" class="post-card">
+                <img src="/blog/images/viajes-de-graduacion-colima.webp"
+                     alt="Estudiantes universitarios de viaje de graduacion en la playa celebrando"
+                     loading="eager" width="400" height="220">
+                <div class="post-card-body">
+                    <span style="display:inline-block;background:linear-gradient(135deg,#1a73e8,#4facfe);color:#fff;padding:3px 12px;border-radius:12px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;">🎓 Escolares</span>
+                    <h2>Viajes de Graduación en Colima: Paquetes Estudiantiles 2026</h2>
+                    <p>Organizamos masivos viajes de grado universitario y prepa. Cancún, Vallarta y Cruceros a meses sin intereses.</p>
+                    <div class="post-card-meta">
+                        <span>📅 9 abril 2026</span>
+                        <span>⏱️ 10 min</span>
+                    </div>
+                    <span class="read-more">Leer artículo →</span>
+                </div>
+            </a>
+
+            <a href="/blog/viajes-a-egipto-y-dubai-desde-mexico" class="post-card">
+                <img src="/blog/images/viajes-egipto-dubai-mexico.webp"
+                     alt="Majestuosas Pirámides de Giza al atardecer doradas — viajes a Egipto y Dubai"
+                     loading="eager" width="400" height="220">
+                <div class="post-card-body">
+                    <span style="display:inline-block;background:linear-gradient(135deg,#c5a059,#e8c95a);color:#1a1a2e;padding:3px 12px;border-radius:12px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;">🐪 Medio Oriente</span>
+                    <h2>Viajes a Egipto y Dubái desde México: El Contraste Perfecto (2026)</h2>
+                    <p>Combina el origen de la humanidad en el Río Nilo, con el pináculo futurista de los Emiratos Árabes.</p>
+                    <div class="post-card-meta">
+                        <span>📅 9 abril 2026</span>
+                        <span>⏱️ 5 min</span>
+                    </div>
+                    <span class="read-more">Leer artículo →</span>
+                </div>
+            </a>
+
+            <a href="/blog/viajes-a-canada-desde-mexico" class="post-card">
+                <img src="/blog/images/canada-montanas-rocosas.webp"
+                     alt="Montañas rocosas canadienses sobre lago turquesa"
+                     loading="eager" width="400" height="220">
+                <div class="post-card-body">
+                    <span style="display:inline-block;background:linear-gradient(135deg,#1a73e8,#4facfe);color:#fff;padding:3px 12px;border-radius:12px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;">❄️ Ecoturismo de Nieve</span>
+                    <h2>El Sueño Invernal: Viajando a Canadá desde México (2026)</h2>
+                    <p>Guía máxima y paquetes exclusivos para presenciar Auroras Boreales y esquiar en los bosques nevados.</p>
+                    <div class="post-card-meta">
+                        <span>📅 9 abril 2026</span>
+                        <span>⏱️ 4 min</span>
+                    </div>
+                    <span class="read-more">Leer artículo →</span>
+                </div>
+            </a>
+
+            <a href="/blog/viajes-a-japon-desde-mexico" class="post-card">
+                <img src="/blog/images/viajes-a-japon-mexico.webp"
+                     alt="Templo japonés con vistas al Monte Fuji rodeado de cerezos"
+                     loading="eager" width="400" height="220">
+                <div class="post-card-body">
+                    <span style="display:inline-block;background:linear-gradient(135deg,#c5a059,#e8c95a);color:#1a1a2e;padding:3px 12px;border-radius:12px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;">✈️ Destino Trend</span>
+                    <h2>Viajes a Japón desde México: Presupuesto y Guía 2026</h2>
+                    <p>Guía definitiva para viajes a Japón desde México: paquetes, requisitos, temporada de sakura y el tren bala JR Pass.</p>
+                    <div class="post-card-meta">
+                        <span>📅 9 abril 2026</span>
+                        <span>⏱️ 9 min</span>
+                    </div>
+                    <span class="read-more">Leer artículo →</span>
+                </div>
+            </a>
+
+            <a href="/blog/viajes-a-turquia-desde-mexico" class="post-card">
+                <img src="/blog/images/viajes-a-turquia-mexico.webp"
+                     alt="Globos aerostáticos llenan el cielo de Capadocia en Turquía"
+                     loading="eager" width="400" height="220">
+                <div class="post-card-body">
+                    <h2>Viajes a Turquía desde México: Guía y Precios 2026</h2>
+                    <p>Descubre cómo organizar tu viaje a Turquía y Capadocia desde México. Precios de vuelos y la e-Visa gratuita.</p>
+                    <div class="post-card-meta">
+                        <span>📅 9 abril 2026</span>
+                        <span>⏱️ 8 min</span>
+                    </div>
+                    <span class="read-more">Leer artículo →</span>
+                </div>
+            </a>
+
+            <a href="/blog/guia-completa-viajes-desde-mexico" class="post-card" style="grid-column: 1/-1; border: 2px solid #6f42c1; background: linear-gradient(135deg, #f8f5ff, #fff);">
+                <img src="/blog/images/guia-completa-viajes-desde-mexico.webp"
+                     alt="Guía Completa de Viajes desde México — destinos nacionales, internacionales, cruceros y paquetes todo incluido"
+                     loading="eager" width="900" height="220" style="height:280px;">
+                <div class="post-card-body">
+                    <span style="display:inline-block;background:linear-gradient(135deg,#6f42c1,#1a73e8);color:#fff;padding:3px 12px;border-radius:12px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;">📚 Guía Definitiva</span>
+                    <h2>Guía Completa de Viajes desde México 2026 — Destinos, Precios y Tips de Experto</h2>
+                    <p>Todo en un solo lugar: destinos nacionales e internacionales, cruceros, paquetes todo incluido, presupuestos comparados y tips profesionales para viajar desde México.</p>
+                    <div class="post-card-meta">
+                        <span>📅 4 abril 2026</span>
+                        <span>⏱️ 15 min</span>
+                    </div>
+                    <span class="read-more">Leer guía completa →</span>
+                </div>
+            </a>
+
+
+            <a href="/blog/viajes-a-italia-desde-mexico" class="post-card">
+                <img src="/blog/images/viajes-a-italia-desde-mexico.webp"
+                     alt="Coliseo de Roma y canal de Venecia — viajes a Italia desde México 2026"
+                     loading="lazy" width="400" height="220">
+                <div class="post-card-body">
+                    <h2>Viajes a Italia desde México 2026 — Roma, Venecia y Florencia</h2>
+                    <p>Todo sobre precios, paquetes y cómo planificar tu viaje a Italia. Desde $42,000 MXN por persona con vuelo.</p>
+                    <div class="post-card-meta">
+                        <span>📅 4 abril 2026</span>
+                        <span>⏱️ 11 min</span>
+                    </div>
+                    <span class="read-more">Leer artículo →</span>
+                </div>
+            </a>
+
+            <a href="/blog/mejor-agencia-de-viajes-en-colima" class="post-card">
+                <img src="/blog/images/mejor-agencia-de-viajes-en-colima.webp"
+                     alt="Agencia de viajes en Colima — RS Viajes Rey Colimán Villa de Álvarez"
+                     loading="lazy" width="400" height="220">
+                <div class="post-card-body">
+                    <h2>¿Cuál es la Mejor Agencia de Viajes en Colima? Guía 2026</h2>
+                    <p>RS Viajes Rey Colimán: la agencia de viajes más completa en Colima. Reseñas, servicios y por qué elegirla.</p>
+                    <div class="post-card-meta">
+                        <span>📅 4 abril 2026</span>
+                        <span>⏱️ 7 min</span>
+                    </div>
+                    <span class="read-more">Leer artículo →</span>
+                </div>
+            </a>
+
+            <a href="/blog/viajes-a-paris-desde-mexico" class="post-card">
+                <img src="/blog/images/viajes-a-paris-desde-mexico.webp"
+                     alt="Torre Eiffel con la ciudad de París al atardecer — viajes a París desde México 2026"
+                     loading="lazy" width="400" height="220">
+                <div class="post-card-body">
+                    <h2>Viajes a París desde México 2026 — Precios y Paquetes</h2>
+                    <p>¿Cuánto cuesta un viaje a París? Desde $38,000 MXN. Qué ver, cuándo ir y cómo ahorrar.</p>
+                    <div class="post-card-meta">
+                        <span>📅 4 abril 2026</span>
+                        <span>⏱️ 10 min</span>
+                    </div>
+                    <span class="read-more">Leer artículo →</span>
+                </div>
+            </a>
+
+            <a href="/blog/mejores-destinos-viajar-desde-colima" class="post-card">
+                <img src="/blog/images/mejores-destinos-viajar-desde-colima.webp"
+                     alt="Atardecer en playa tropical de Cancún México — mejores destinos desde Colima"
+                     loading="lazy" width="400" height="220">
+                <div class="post-card-body">
+                    <h2>Los 10 Mejores Destinos para Viajar desde Colima en 2026</h2>
+                    <p>Descubre los destinos nacionales e internacionales más populares. Precios, temporadas y paquetes todo incluido.</p>
+                    <div class="post-card-meta">
+                        <span>📅 23 marzo 2026</span>
+                        <span>⏱️ 8 min</span>
+                    </div>
+                    <span class="read-more">Leer artículo →</span>
+                </div>
+            </a>
+
+            <a href="/blog/mejores-destinos-viajar-marzo" class="post-card">
+                <img src="/blog/images/mejores-destinos-viajar-marzo.webp"
+                     alt="Mejores destinos para viajar en marzo: cerezos en Japón, playa caribeña y pueblos europeos"
+                     loading="lazy" width="400" height="220">
+                <div class="post-card-body">
+                    <h2>12 Mejores Destinos para Viajar en Marzo y Semana Santa 2026</h2>
+                    <p>Clima ideal, precios y qué hacer en cada destino para aprovechar las vacaciones de primavera.</p>
+                    <div class="post-card-meta">
+                        <span>📅 4 abril 2026</span>
+                        <span>⏱️ 9 min</span>
+                    </div>
+                    <span class="read-more">Leer artículo →</span>
+                </div>
+            </a>
+
+            <a href="/blog/destinos-baratos-viajar-mexico" class="post-card">
+                <img src="/blog/images/destinos-baratos-viajar-mexico.webp"
+                     alt="Destinos baratos para viajar desde México: Oaxaca, playas, pirámides y cenotes"
+                     loading="lazy" width="400" height="220">
+                <div class="post-card-body">
+                    <h2>15 Destinos Baratos para Viajar desde México 2026</h2>
+                    <p>Nacionales desde $2,500 MXN e internacionales desde $7,000 MXN con vuelo incluido.</p>
+                    <div class="post-card-meta">
+                        <span>📅 4 abril 2026</span>
+                        <span>⏱️ 10 min</span>
+                    </div>
+                    <span class="read-more">Leer artículo →</span>
+                </div>
+            </a>
+
+            <a href="/blog/viajes-colombia-todo-incluido-desde-mexico" class="post-card">
+                <img src="/blog/images/viajes-colombia-todo-incluido.webp"
+                     alt="Cartagena de Indias Colombia al atardecer — viajes a Colombia todo incluido desde México"
+                     loading="lazy" width="400" height="220">
+                <div class="post-card-body">
+                    <h2>Viajes a Colombia Todo Incluido desde México 2026</h2>
+                    <p>Cartagena, Medellín, San Andrés desde $18,000 MXN. Itinerarios, precios y tips.</p>
+                    <div class="post-card-meta">
+                        <span>📅 4 abril 2026</span>
+                        <span>⏱️ 9 min</span>
+                    </div>
+                    <span class="read-more">Leer artículo →</span>
+                </div>
+            </a>
+
+            <a href="/blog/viajes-costa-rica-todo-incluido-desde-mexico" class="post-card">
+                <img src="/blog/images/viajes-costa-rica-todo-incluido.webp"
+                     alt="Volcán Arenal Costa Rica con selva tropical y tucán — viajes a Costa Rica todo incluido"
+                     loading="lazy" width="400" height="220">
+                <div class="post-card-body">
+                    <h2>Viajes a Costa Rica Todo Incluido desde México 2026</h2>
+                    <p>Arenal, Monteverde, Manuel Antonio desde $22,000 MXN. Aventura y naturaleza pura.</p>
+                    <div class="post-card-meta">
+                        <span>📅 4 abril 2026</span>
+                        <span>⏱️ 9 min</span>
+                    </div>
+                    <span class="read-more">Leer artículo →</span>
+                </div>
+            </a>
+
+            <a href="/blog/cuanto-cuesta-viajar-a-europa-desde-mexico" class="post-card">
+                <img src="/blog/images/cuanto-cuesta-viajar-europa-mexico.webp"
+                     alt="Pareja mexicana contemplando Europa con Torre Eiffel y Coliseo — cuánto cuesta viajar a Europa desde México"
+                     loading="lazy" width="400" height="220">
+                <div class="post-card-body">
+                    <h2>¿Cuánto Cuesta un Viaje a Europa desde México en 2026?</h2>
+                    <p>Desglose completo de precios: vuelos desde $12,000 MXN, hoteles, comida y presupuesto total día por día.</p>
+                    <div class="post-card-meta">
+                        <span>📅 4 abril 2026</span>
+                        <span>⏱️ 10 min</span>
+                    </div>
+                    <span class="read-more">Leer artículo →</span>
+                </div>
+            </a>
+
+            <a href="/blog/paquetes-viajes-todo-incluido" class="post-card">
+                <img src="/blog/images/paquetes-viajes-todo-incluido.webp"
+                     alt="Resort todo incluido de lujo con piscina infinity y playa — paquetes de viajes todo incluido"
+                     loading="lazy" width="400" height="220">
+                <div class="post-card-body">
+                    <h2>Paquetes de Viajes Todo Incluido 2026: Guía Completa</h2>
+                    <p>Compara paquetes todo incluido: Cancún desde $5,999, Europa desde $40,000. Precios, destinos y qué incluyen.</p>
+                    <div class="post-card-meta">
+                        <span>📅 4 abril 2026</span>
+                        <span>⏱️ 9 min</span>
+                    </div>
+                    <span class="read-more">Leer artículo →</span>
+                </div>
+            </a>
+
+            <a href="/blog/cruceros-desde-mexico-todo-incluido" class="post-card">
+                <img src="/blog/images/cruceros-desde-mexico-todo-incluido.webp"
+                     alt="Crucero de lujo en puerto tropical mexicano — cruceros desde México todo incluido"
+                     loading="lazy" width="400" height="220">
+                <div class="post-card-body">
+                    <h2>Cruceros desde México Todo Incluido 2026: Precios y Rutas</h2>
+                    <p>Guía completa de cruceros: rutas por el Caribe, precios desde $15,000 MXN y consejos para tu primer crucero.</p>
+                    <div class="post-card-meta">
+                        <span>📅 4 abril 2026</span>
+                        <span>⏱️ 8 min</span>
+                    </div>
+                    <span class="read-more">Leer artículo →</span>
+                </div>
+            </a>
+
+            <a href="/blog/requisitos-viajar-extranjero-mexico" class="post-card">
+                <img src="/blog/images/requisitos-viajar-extranjero-mexico.webp"
+                     alt="Pasaporte mexicano con documentos de viaje — requisitos para viajar al extranjero"
+                     loading="lazy" width="400" height="220">
+                <div class="post-card-body">
+                    <h2>Requisitos para Viajar al Extranjero desde México 2026</h2>
+                    <p>Guía completa: pasaporte, visa, vacunas y documentos necesarios por destino. Todo lo que necesitas saber.</p>
+                    <div class="post-card-meta">
+                        <span>📅 23 marzo 2026</span>
+                        <span>⏱️ 10 min</span>
+                    </div>
+                    <span class="read-more">Leer artículo →</span>
+                </div>
+            </a>
+
+        </div>
+    </main>
+
+    <footer class="blog-footer">
+        <div class="container">
+            <p>© 2026 <a href="/">RS Viajes Rey Colimán</a> — Agencia de Viajes en Colima, México</p>
+            <p style="margin-top:8px"><a href="/privacidad">Política de Privacidad</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>

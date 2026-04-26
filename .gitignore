@@ -5,10 +5,11 @@ Thumbs.db
 # Lead/outreach CSV files (never in repo root — go in /outreach/)
 *.csv
 
-# Ignore generic txt files but allow IndexNow verification
+# Ignore generic txt files but allow IndexNow verification + AEO entity file
 *.txt
 !indexnow-key.txt
 !9fed92b522db0758fcf399178a479963.txt
+!llms.txt
 
 # Internal tools and docs
 SEO antigravity/
